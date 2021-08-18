@@ -39,14 +39,22 @@ public class PlayerController : MonoBehaviour
     //Variable to check if the player model is in the ground
     bool isGrounded;
 
+    //Capsule collider acts as a collider model
+    CapsuleCollider playerCol;
     //Sets the player model height
-    float playerHeight = 1f;
+    float playerHeight = 2f;
+    //Sets the crouching height
+    float crouchingHeight = 0.75f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         
+
+        playerCol = GetComponentInChildren<CapsuleCollider>();
+        //Original height and collision is maintaned since player is not crouching
+        playerHeight = playerCol.height;
         //getting audiosource clip
         jumpingSound = GetComponent<AudioSource>();
     }
@@ -61,6 +69,15 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(jump) && isGrounded)
         {
             Jump();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Crouch();
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            Stand();
         }
     }
 
@@ -111,5 +128,17 @@ public class PlayerController : MonoBehaviour
     {
         jumpingSound.Play();
         rb.AddForce(transform.up * jumpPower / 2, ForceMode.Impulse);
+    }
+    
+    //Method to reduce height
+    void Crouch()
+    {
+        playerCol.height = crouchingHeight;
+    }
+
+    //Method to reset playerheight after crouching
+    void Stand()
+    {
+        playerCol.height = playerHeight;
     }
 }
