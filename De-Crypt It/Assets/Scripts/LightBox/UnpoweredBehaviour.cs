@@ -23,6 +23,8 @@ public class UnpoweredBehaviour : MonoBehaviour
         if(totalConnection == 4) 
         {
             Debug.Log("All Wires are connected!");
+            //Changing the task complete boolean in fuseboxload to tell the program that the task is completed by the user
+            FuseboxLoad.taskComplete = true;
         }
         LightStatus();
     }

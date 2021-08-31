@@ -10,29 +10,51 @@ public class FuseboxLoad : MonoBehaviour
     public Color startcolor;
     //Boolean that check if the player is within object range
     public bool isRange = false;
+    //Text variable which gives intructions to the player on how to interact with them
     public Text instructions;
+    //A static variable that is readable and modifiable by other scripts. This can be used to determine whether a task is complated by the user
+    public static bool taskComplete = false;
 
     //This function checks if the player is within the range and is pressing the E button, program will switch scene
     void Update() 
     {
-        if (isRange && Input.GetKeyDown("e")) 
+        //If the task is not completed, allow user to interact with the object
+        if(taskComplete == false) 
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene(2);
+            if (isRange && Input.GetKeyDown("e")) 
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene(2);
+            }
         }
+
     }
     //This function will load the the next scene if the player is within object range and is interacting
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        //If the task is already completed, dont highlight the object, dont show instruction and dont update the player within range
+        if(taskComplete == true) 
         {
-            //Highlights the interactable object and changes the is range status to true
             startcolor = GetComponent<Renderer>().material.color;
-            GetComponent<Renderer>().material.color = Color.green;
-            isRange = true;
-            instructions.gameObject.SetActive(true);
+            GetComponent<Renderer>().material.color = startcolor;
+            isRange = false;
+            instructions.gameObject.SetActive(false);
         }
+        //Vice versa if the task is not yet completed
+        else 
+        {
+            if(other.CompareTag("Player"))
+            {
+                //Highlights the interactable object and changes the is range status to true
+                startcolor = GetComponent<Renderer>().material.color;
+                GetComponent<Renderer>().material.color = Color.green;
+                isRange = true;
+                instructions.gameObject.SetActive(true);
+            }
+        }
+
+
     }
 
     void OnTriggerExit(Collider other)
