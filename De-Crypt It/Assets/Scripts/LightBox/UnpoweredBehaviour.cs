@@ -1,21 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//using UnityEngine.SceneManagement;
 public class UnpoweredBehaviour : MonoBehaviour
 {
     //Importing unpowered status script
     UnpoweredStatus ups;
+    //Int variable to keep track of how many wires are connected (max 4)
+    static int totalConnection = 0;
     // Start is called before the first frame update
     void Start()
     {
         //Calling the component of the script
         ups = gameObject.GetComponent<UnpoweredStatus>();
+        //Resetting the total connection to 0 incase the player exits the task, this is necessary as the int is static
+        totalConnection = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(totalConnection == 4) 
+        {
+            Debug.Log("All Wires are connected!");
+        }
         LightStatus();
     }
 
@@ -26,6 +34,8 @@ public class UnpoweredBehaviour : MonoBehaviour
             PoweredStatus ps = collision.GetComponent<PoweredStatus>();
             if(ps.objectColor==ups.objectColor)
             {
+                totalConnection++;
+                Debug.Log(totalConnection);
                 ps.isConnected = true;
                 ups.isConnected = true;
                 //Wire will snap to end point if connected
@@ -38,6 +48,8 @@ public class UnpoweredBehaviour : MonoBehaviour
     {
         if(collision.GetComponent<PoweredStatus>())
         {
+            //totalConnection--;
+            //Debug.Log(totalConnection);
             PoweredStatus ps = collision.GetComponent<PoweredStatus>();
             ps.isConnected = false;
             ups.isConnected = false;
