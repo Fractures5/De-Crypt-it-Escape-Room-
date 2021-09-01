@@ -15,9 +15,33 @@ public class FuseboxLoad : MonoBehaviour
     //A static variable that is readable and modifiable by other scripts. This can be used to determine whether a task is complated by the user
     public static bool taskComplete = false;
 
+    void Start () 
+    {
+        //This disables all the light switches at the start
+        GameObject[] allLights= GameObject.FindGameObjectsWithTag("SwitchLight");
+         
+        foreach (GameObject i in allLights)
+        { 
+            i.SetActive(false); 
+        } 
+        Debug.Log("lights off by default");
+        
+        //Turns on all the light switches if the task is completed
+        if(taskComplete == true) 
+        {
+            //GameObject[] allLights= GameObject.FindGameObjectsWithTag("SwitchLight");
+
+            foreach (GameObject i in allLights)
+            { 
+                i.SetActive(true); 
+            } 
+            Debug.Log("lights shouldve been turned on");
+        }
+    }  
     //This function checks if the player is within the range and is pressing the E button, program will switch scene
     void Update() 
     {
+
         //If the task is not completed, allow user to interact with the object
         if(taskComplete == false) 
         {
