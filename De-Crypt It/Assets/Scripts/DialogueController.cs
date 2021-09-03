@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueController : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class DialogueController : MonoBehaviour
     {
         if(sentences.Count == 0) // If there is no more sentences in queue
         {
-            FinishDialogue();
+            startSinglePlayerGame();
             return;
         }
 
@@ -46,9 +47,10 @@ public class DialogueController : MonoBehaviour
         dialogueText.text = sentence;
     }
 
-    void FinishDialogue()
+    void startSinglePlayerGame()
     {
-        Debug.Log("End of the conversation.");
+        Debug.Log("You are now transfered into the game!");
+        SceneManager.LoadScene("MainGame");
     }
 
 }   
