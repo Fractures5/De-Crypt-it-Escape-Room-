@@ -5,13 +5,25 @@ using UnityEngine.SceneManagement; //Using to change scenes
 
 public class MainMenuScript : MonoBehaviour
 {
-    public void PlaySinglePlayer() // Will load the next level of the game scene
+    public void ShowMainMenu() // Will load the main menu of the game to the user
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex  -1);
+
+    }
+
+    // public void PlaySinglePlayer() // Will load the next level of the game scene
+    // {
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+    // }
+
+    public void PlayStoryboard() // Will load the storyboard scene to the user
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 
-    public void PlayTutorial() // Will load the next level of the game scene
+    public void PlayTutorial() // Will load the tutorial mode scene to the user
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
 
