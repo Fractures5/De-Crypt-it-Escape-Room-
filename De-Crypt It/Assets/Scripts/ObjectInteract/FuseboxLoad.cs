@@ -49,7 +49,7 @@ public class FuseboxLoad : MonoBehaviour
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(4);
             }
         }
 

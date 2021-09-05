@@ -7,6 +7,6 @@ public class SceneLoaderLightBox : MonoBehaviour
 {
     public void LoadMainGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 }

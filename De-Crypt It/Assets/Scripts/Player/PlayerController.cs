@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {    
     //Sets the player movement speed in the ground and air
     [Header("Movement")]
-    public float playerSpeed = 0.1f;
+    public float playerSpeed = 0.02f;
     public float speedMultiplier = 0.1f;
     [SerializeField] float airMultiplier = 0.4f;
 
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.C))
         {
             Crouch();
         }
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
     {
         if(isGrounded)
         {
-            rb.AddForce(playerDirection.normalized * playerSpeed * speedMultiplier/2, ForceMode.Acceleration);
+            rb.AddForce(playerDirection.normalized * playerSpeed * speedMultiplier/4, ForceMode.Acceleration);
         }
         else if (!isGrounded)
         {
