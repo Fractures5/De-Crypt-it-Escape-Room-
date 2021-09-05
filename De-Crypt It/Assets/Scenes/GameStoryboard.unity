@@ -251,24 +251,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    characterName: Character Name Goes Here
+    characterName: Prologue
     sentences:
     - You are next the heir to a rich family, one day, after having dinner at a restaurant,
-      you and your dad/mum walking down passed an alley until...
-    - You hear gunshots and blood hits your face. S masked person has shot and killed
-      your mother and father in front of you, before you see a shadow rise above
-      you before you feel a sharp whack in your head and fall unconscious
+      you and your mother and father are walking past an alley until...
+    - A masked person jumps out from that shadows, and assaults your parents, knocking
+      them out cold.
+    - Before you can even make a sound, see a shadow rise above you and feel a powerful
+      whack in your head and fall unconscious.
     - 'You slowly regain consciousness and find yourself in a house, presumably the
-      killers who just murdered your family. However, it seems they are currently
-      not here, but who knows when they will be back. '
-    - 'You have to escape and let the authorities know and avenge your family, to
-      do this, look around the house for items or clues to help you de-crypt the
-      ominous puzzles around the house to escape!!!! '
-    - 'ADD TIPS HERE???
-
-      Once you press proceed you the game will start!
-
-      GoodLuck'
+      masked people have kidnpapped and are holding you ransom for your family''s
+      wealth. '
+    - 'However, it seems they are currently not here, but who knows when they will
+      be back. '
+    - 'You have to escape and let the authorities know. To do this, look around the
+      house for items or clues to help you to escape! '
+    - Make sure to check every corner of the house - any item could be used to help
+      you escape, if you're smart enough to realize it.
+    - Press Proceed to start....Goodluck.
 --- !u!114 &171245183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,13 +505,14 @@ GameObject:
   - component: {fileID: 235352964}
   - component: {fileID: 235352966}
   - component: {fileID: 235352965}
+  - component: {fileID: 235352967}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &235352964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -572,6 +573,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235352963}
   m_CullTransparentMesh: 1
+--- !u!95 &235352967
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235352963}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24c92882251f5b44da8068e9ac9cba9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &563263299
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49056602, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -844,17 +864,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 28
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Character Name Goes Here...
+  m_Text: 'Prologue '
 --- !u!222 &780357860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1344,6 +1364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterNameText: {fileID: 780357859}
   dialogueText: {fileID: 1601383746}
+  animator: {fileID: 235352967}
 --- !u!4 &1263453166
 Transform:
   m_ObjectHideFlags: 0
@@ -1384,7 +1405,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601383744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 235352964}
@@ -1392,7 +1413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5076, y: -15.6928}
+  m_AnchoredPosition: {x: 2, y: -16}
   m_SizeDelta: {x: 524.3439, y: 102.9535}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601383746
@@ -1408,7 +1429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1418,7 +1439,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
-    m_FontStyle: 0
+    m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 289
