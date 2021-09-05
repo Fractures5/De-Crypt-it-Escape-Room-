@@ -10,6 +10,8 @@ public class DialogueController : MonoBehaviour
     public Text characterNameText;
     public Text dialogueText;
 
+    public Animator animator;
+
     // Create a queue of sentences
     private Queue<string> sentences;
 
@@ -21,6 +23,8 @@ public class DialogueController : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        animator.SetBool("IsOpen", true);
+
        //Debug.Log("Hello there " +dialogue.characterName);
        characterNameText.text = dialogue.characterName; 
 
@@ -44,13 +48,30 @@ public class DialogueController : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue(); // Stores the deqeued sentence in a variable
-        dialogueText.text = sentence;
+        //dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     void startSinglePlayerGame()
     {
         Debug.Log("You are now transfered into the game!");
         SceneManager.LoadScene("MainGame");
+    }
+
+    void EndDialogue()
+    {
+        animator.SetBool("IsOpen", false);
     }
 
 }   
