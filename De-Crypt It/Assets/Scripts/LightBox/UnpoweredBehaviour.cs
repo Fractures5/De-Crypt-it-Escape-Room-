@@ -50,9 +50,12 @@ public class UnpoweredBehaviour : MonoBehaviour
     {
         if(collision.GetComponent<PoweredStatus>())
         {
-            //totalConnection--;
-            //Debug.Log(totalConnection);
             PoweredStatus ps = collision.GetComponent<PoweredStatus>();
+            if(ps.objectColor==ups.objectColor)
+            {
+                totalConnection--;
+                Debug.Log(totalConnection);
+            }
             ps.isConnected = false;
             ups.isConnected = false;
         }
