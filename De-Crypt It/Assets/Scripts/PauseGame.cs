@@ -10,6 +10,7 @@ public class PauseGame : MonoBehaviour
     //public GameObject Player;
     public GameObject Canvas;
     public GameObject Capsule;
+    public GameObject Player;
     //public GameObject PauseMenuCamera;
     // Update is called once per frame
     void Update()
@@ -34,6 +35,7 @@ public class PauseGame : MonoBehaviour
             //PauseMenuCamera.SetActive(true);
             Time.timeScale = 0; //pauses time, regular time is 1
             //Player.GetComponent<PlayerController>().enabled = false;
+            Player.GetComponent<CameraController>().enabled = false;
 
         } 
         else
@@ -47,6 +49,7 @@ public class PauseGame : MonoBehaviour
             Capsule.SetActive(true);
             //PauseMenuCamera.SetActive(false);
             //Player.GetComponent<PlayerController>().enabled = true;
+            Player.GetComponent<CameraController>().enabled = true;
         }
         
     }
