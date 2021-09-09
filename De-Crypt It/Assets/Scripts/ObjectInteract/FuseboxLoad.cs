@@ -14,12 +14,22 @@ public class FuseboxLoad : MonoBehaviour
     public Text instructions;
     //A static variable that is readable and modifiable by other scripts. This can be used to determine whether a task is complated by the user
     public static bool taskComplete = false;
-
+    //Variable to store close sound effect
+    public AudioSource closeSound;
+    //boolean to check if fusebox is closed
+    public static bool isClosed = false;
     void Start () 
     {
+        //If fusebox is exited close sound effect is played
+        if (isClosed == true) 
+        {
+            closeSound.Play();
+        }
+        //Resets this variable
+        isClosed = false;
         //This disables all the light switches at the start
         GameObject[] allLights= GameObject.FindGameObjectsWithTag("SwitchLight");
-         
+        //Getting audio source component
         foreach (GameObject i in allLights)
         { 
             i.SetActive(false); 
@@ -41,7 +51,6 @@ public class FuseboxLoad : MonoBehaviour
     //This function checks if the player is within the range and is pressing the E button, program will switch scene
     void Update() 
     {
-
         //If the task is not completed, allow user to interact with the object
         if(taskComplete == false) 
         {
