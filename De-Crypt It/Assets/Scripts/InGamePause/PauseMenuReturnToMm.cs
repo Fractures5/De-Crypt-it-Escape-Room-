@@ -10,4 +10,10 @@ public class PauseMenuReturnToMm : MonoBehaviour
         SceneManager.LoadScene(0);
 
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("You chose to quit the game"); //Quit message displayed in the console
+        Application.Quit(); //quits application
+    }
 }
