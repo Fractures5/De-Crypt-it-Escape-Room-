@@ -8,9 +8,20 @@ public class UnpoweredBehaviour : MonoBehaviour
     UnpoweredStatus ups;
     //Int variable to keep track of how many wires are connected (max 4)
     static int totalConnection = 0;
+    //Sound effect of wires being connected
+    public AudioSource playSound;
+    public AudioClip ConnectedWire;
+    public AudioClip DisconectedWire;
+    public AudioClip TaskCompleted;
+    //Check to see if task is completed
+    public bool hasPlayedCompleted = false;
+    //Show a text when task is completed
+    public GameObject CompletedText;
     // Start is called before the first frame update
     void Start()
     {
+        //Calling the connected wire sound
+        playSound = GetComponent<AudioSource>();
         //Calling the component of the script
         ups = gameObject.GetComponent<UnpoweredStatus>();
         //Resetting the total connection to 0 incase the player exits the task, this is necessary as the int is static
@@ -22,9 +33,20 @@ public class UnpoweredBehaviour : MonoBehaviour
     {
         if(totalConnection == 4) 
         {
-            Debug.Log("All Wires are connected!");
+            if(!hasPlayedCompleted)
+            {
+                playSound.PlayOneShot(TaskCompleted, 0.2f);
+                hasPlayedCompleted = true;
+            }
+            CompletedText.SetActive(true);
             //Changing the task complete boolean in fuseboxload to tell the program that the task is completed by the user
             FuseboxLoad.taskComplete = true;
+        }
+        else 
+        {
+            CompletedText.SetActive(false);
+            hasPlayedCompleted = false;
+            FuseboxLoad.taskComplete = false;
         }
         LightStatus();
     }
@@ -36,6 +58,7 @@ public class UnpoweredBehaviour : MonoBehaviour
             PoweredStatus ps = collision.GetComponent<PoweredStatus>();
             if(ps.objectColor==ups.objectColor)
             {
+                playSound.PlayOneShot(ConnectedWire);
                 totalConnection++;
                 Debug.Log(totalConnection);
                 ps.isConnected = true;
@@ -56,6 +79,7 @@ public class UnpoweredBehaviour : MonoBehaviour
                 totalConnection--;
                 Debug.Log(totalConnection);
             }
+            playSound.PlayOneShot(DisconectedWire);
             ps.isConnected = false;
             ups.isConnected = false;
         }
