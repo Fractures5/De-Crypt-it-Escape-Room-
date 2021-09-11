@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class TutorialInteraction : MonoBehaviour
 {
     [SerializeField]
-    private Image _parchment;
+    private Image parchment;
 
     public bool isRange = false;
     public Text interactionText;
     public GameObject firstPersonController;
     public GameObject firstPersonCamera;
+    public GameObject exitButton;
+    public GameObject crosshair;
 
     void OnTriggerEnter(Collider other)
     {
@@ -19,7 +21,6 @@ public class TutorialInteraction : MonoBehaviour
         {
             interactionText.gameObject.SetActive(true);
             isRange = true;
-            //_parchment.enabled = true;
         }
     }
 
@@ -29,19 +30,13 @@ public class TutorialInteraction : MonoBehaviour
         {
            interactionText.gameObject.SetActive(false);
            isRange = false;
-           //_parchment.enabled = false;
         }
     }
-
-    // Start is called before the first frame update
-    //void Start()
-   // {
-    //    
-    //}
 
     // Update is called once per frame
     void Update()
     {
+
         if (isRange == true && Input.GetKeyDown("e"))
         {
             interactionText.gameObject.SetActive(false);
@@ -53,12 +48,23 @@ public class TutorialInteraction : MonoBehaviour
 
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            _parchment.enabled = true;
+
+            parchment.enabled = true;
+            exitButton.SetActive(true);
+            crosshair.SetActive(false);
         }
-        else if(isRange == false)
-        {
-            _parchment.enabled = false;
-        }
+    }
+
+    public void hideParchment()
+    {
+        firstPersonController.GetComponent<Jump>().enabled=true;
+        firstPersonController.GetComponent<FirstPersonMovement>().enabled=true;
+        firstPersonCamera.GetComponent<FirstPersonLook>().enabled=true;
+        firstPersonCamera.GetComponent<Zoom>().enabled=true;
         
+        Cursor.visible = false;
+        parchment.enabled = false;
+        exitButton.SetActive(false);
+        crosshair.SetActive(true);
     }
 }
