@@ -7,7 +7,7 @@ public class TutorialInteraction : MonoBehaviour
 {
     [SerializeField]
     private Image parchment;
-
+    public Color startcolor;
     public bool isRange = false;
     public Text interactionText;
     public GameObject firstPersonController;
@@ -19,6 +19,8 @@ public class TutorialInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            startcolor = GetComponent<Renderer>().material.color;
+            GetComponent<Renderer>().material.color = Color.green;
             interactionText.gameObject.SetActive(true);
             isRange = true;
         }
@@ -28,6 +30,7 @@ public class TutorialInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            GetComponent<Renderer>().material.color = startcolor;
            interactionText.gameObject.SetActive(false);
            isRange = false;
         }
