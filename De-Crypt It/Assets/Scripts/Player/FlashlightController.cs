@@ -5,12 +5,13 @@ using UnityEngine;
 public class FlashlightController : MonoBehaviour
 {
     [SerializeField] GameObject FlashlightLight;
-    private bool FlashlightActive = false;
+    private static bool FlashlightActive = false;
+    //public static bool isOn = false;
     public AudioSource clickSound;
     // Start is called before the first frame update
     void Start()
     {
-        FlashlightLight.gameObject.SetActive(false);
+        FlashlightLight.gameObject.SetActive(FlashlightActive);
     }
 
     // Update is called once per frame
@@ -20,12 +21,14 @@ public class FlashlightController : MonoBehaviour
         {
             if (FlashlightActive == false) //checks if flashlight is not on
             {
+                //isOn = true;
                 clickSound.Play(); //plays audio for flashlight turning on (click)
                 FlashlightLight.gameObject.SetActive(true);
                 FlashlightActive = true; //turns on flashlight
             }
             else //if flashlight's state is anything but not on
             {
+                //isOn = false;
                 clickSound.Play(); //plays audio for flashlight turning off (click)
                 FlashlightLight.gameObject.SetActive(false);
                 FlashlightActive = false; //turns off flashlight
