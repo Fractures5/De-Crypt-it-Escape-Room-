@@ -9,6 +9,7 @@ public class PauseGame : MonoBehaviour
     public GameObject Capsule;
     public GameObject Flashlight;
     public GameObject Camera;
+    public static bool isFlashlightOn = false;
     //public Transform Player;
     //public GameObject Environment;
     //public GameObject Player;
@@ -18,6 +19,7 @@ public class PauseGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isFlashlightOn = FlashlightController.FlashlightActive;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.lockState = CursorLockMode.None;
@@ -45,6 +47,7 @@ public class PauseGame : MonoBehaviour
         } 
         else
         {
+            
             //Environment.SetActive(true);
             //Player.SetActive(true);
             crosshairCanvas.SetActive(true);
@@ -58,6 +61,7 @@ public class PauseGame : MonoBehaviour
             //Player.GetComponent<CameraController>().enabled = true; //Getting script for player camera and enables
             Camera.GetComponent<FirstPersonLook>().enabled = true; //Getting script for flashlight and enables
             Camera.GetComponent<FlashlightController>().enabled = true;
+            FlashlightController.FlashlightActive = isFlashlightOn;
         }
         
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlashlightController : MonoBehaviour
 {
     [SerializeField] GameObject FlashlightLight;
-    private static bool FlashlightActive = false;
+    public static bool FlashlightActive = false;
     //public static bool isOn = false;
     public AudioSource clickSound;
     // Start is called before the first frame update
@@ -17,6 +17,7 @@ public class FlashlightController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        FlashlightLight.gameObject.SetActive(FlashlightActive);
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (FlashlightActive == false) //checks if flashlight is not on
