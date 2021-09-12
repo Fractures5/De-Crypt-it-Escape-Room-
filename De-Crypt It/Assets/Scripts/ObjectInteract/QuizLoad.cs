@@ -10,6 +10,8 @@ public class QuizLoad : MonoBehaviour
     public Text interactionText;
     public bool inRange = false;
     public static bool taskComplete = false;
+    public GameObject tvPuzzleMenu;
+    public GameObject tvPuzzleClue;
 
     // Update is called once per frame
     void Update()
@@ -22,6 +24,11 @@ public class QuizLoad : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene(5);
             }
+        }
+        else
+        {
+            tvPuzzleMenu.SetActive(false);
+            tvPuzzleClue.SetActive(true);
         }
     }
 

@@ -4189,18 +4189,34 @@ MonoBehaviour:
     - Smith Anderson
     - Leslie Lola
     CorrectAnswer: 2
+  - Question: What was the second message on note on the fridge?
+    Answers:
+    - we should conduct daily standup meeting
+    - c's get degrees
+    - '"dont cry just try" hmm very good quote'
+    - i like eating hsp
+    CorrectAnswer: 4
+  - Question: What is the name of the book found in the house?
+    Answers:
+    - The Last Cat
+    - The Last Lion
+    - The Last Dog
+    - The Last Lamb
+    CorrectAnswer: 3
   answerOptions:
   - {fileID: 829484631}
   - {fileID: 1050965155}
   - {fileID: 1644258887}
   - {fileID: 1809501165}
   currentQuestion: 0
+  questionCount: 0
   score: 0
   QuestionText: {fileID: 654265166}
   ScoreText: {fileID: 899252165}
   QuizPanel: {fileID: 272727973}
   GameOverPanel: {fileID: 386177992}
   WinnersPanel: {fileID: 93745299}
+  quizCompleted: 0
 --- !u!4 &1533131201
 Transform:
   m_ObjectHideFlags: 0
@@ -4770,9 +4786,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '4/4
-
-'
+  m_Text: 3/3
 --- !u!222 &1849546735
 CanvasRenderer:
   m_ObjectHideFlags: 0

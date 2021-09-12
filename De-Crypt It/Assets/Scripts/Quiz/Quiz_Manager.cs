@@ -6,34 +6,37 @@ using UnityEngine.SceneManagement;
 
 public class Quiz_Manager : MonoBehaviour
 {
-    //List object of the question and answers for the quiz
+    // List object of the question and answers for the quiz
     public List<QuestionsNAnswers> Qna;
 
     // An GameObject array for the answers available for the question
     public GameObject[] answerOptions;
 
-    //Integer variable to keep track of the current question
+    // Integer variable to keep track of the current question
     public int currentQuestion;
+
+    // Integer variable to count the questions created
+    public int questionCount;
 
     //Integer variable tracks the total questions answered
     int totalQuestions = 0;
 
-    //Integer variable keeps tracks of users score
+    // Integer variable keeps tracks of users score
     public int score;
 
-    //Text variable which gives the user the question and score
+    // Text variable which gives the user the question and score
     public Text QuestionText;
     public Text ScoreText;
 
-    //GameObject objects of the quiz, gameover and winners panel
+    // GameObject objects of the quiz, gameover and winners panel
     public GameObject QuizPanel;
     public GameObject GameOverPanel;
     public GameObject WinnersPanel;
 
-    //Checks to see if user has completed quiz
+    // Checks to see if user has completed quiz
     public bool quizCompleted = false; 
 
-    //At the start of the game the game will call the creation question function
+    // At the start of the game the game will call the creation question function
     private void Start()
     {
         totalQuestions=Qna.Count; //Set totalQuestions to the number of Qna questions.
@@ -42,20 +45,20 @@ public class Quiz_Manager : MonoBehaviour
         createQuestion();
     } 
 
-    //Wuill load the active scene again
+    // Will load the active scene again
     public void tryAgain()
     {
-        //Get current scene index and load it
+        // Get current scene index and load it
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    //When called will enable game over panel and disable quiz panel 
+    // When called will enable game over/winners panel and disable quiz panel depending on the users score
     public void GameFinished()
     {
         QuizPanel.SetActive(false);
-        ScoreText.text = score + "/" + totalQuestions;
+        ScoreText.text = score + "/" + 3;
 
-        if(score == 4)
+        if(score == 3)
         {
             WinnersPanel.SetActive(true); // Enable winners panel when user gets all of the questions correct!
             quizCompleted = true; // Change quiz completed variable to true
@@ -69,13 +72,12 @@ public class Quiz_Manager : MonoBehaviour
         }
     }
 
-    // Function removes question and creates another question for the user
-    //When the user is correct
+    // Function removes question and creates another question for the user when the user is correct
     public void answerCorrect()
     {
         score += 1;
-         Qna.RemoveAt(currentQuestion); //Remove question once answered
-         createQuestion(); //Call function that creates the question
+        Qna.RemoveAt(currentQuestion); //Remove question once answered
+        createQuestion(); //Call function that creates the question
     }
 
     // User answers question incorrectly
@@ -103,17 +105,18 @@ public class Quiz_Manager : MonoBehaviour
     // This function will create the question, store it in a variable and then call the function to set answers 
     void createQuestion()
     {
-        if(Qna.Count > 0) // if there is a next valid question
+        // if there is a next valid question and if the question count is less than 3, then generate a random question and set the answers
+        if(Qna.Count > 0 && questionCount < 3) 
         {
             currentQuestion = Random.Range(0, Qna.Count);
             QuestionText.text = Qna[currentQuestion].Question;
-
+            questionCount++; // Increment the question count by one
             SetAnswers();
         } 
-        else // print to the console that there is no more questions left to asnwer 
+        else // Print to the console that there is no more questions left to asnwer 
         {
             Debug.Log("No more questions left!");
-            GameFinished();
+            GameFinished(); // Invoke the method which deals with the game finished panels
         }
         
     }
