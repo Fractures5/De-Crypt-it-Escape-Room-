@@ -43,7 +43,7 @@ public class QuizLoad : MonoBehaviour
         }
     }
 
-    void OnTiggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("Player"))
         {
