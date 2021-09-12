@@ -18,8 +18,14 @@ public class FuseboxLoad : MonoBehaviour
     public AudioSource closeSound;
     //boolean to check if fusebox is closed
     public static bool isClosed = false;
+
+    public GameObject tvPuzzleMenu;
+
     void Start () 
     {
+        //QuizLoad.taskComplete = true;
+        //tvPuzzleClue.SetActive(false);
+
         //If fusebox is exited close sound effect is played
         if (isClosed == true) 
         {
@@ -46,6 +52,7 @@ public class FuseboxLoad : MonoBehaviour
                 i.SetActive(true); 
             } 
             Debug.Log("lights shouldve been turned on");
+            tvPuzzleMenu.SetActive(true);
         }
     }  
     //This function checks if the player is within the range and is pressing the E button, program will switch scene
