@@ -12,7 +12,7 @@ public class QuizLoad : MonoBehaviour
     public static bool taskComplete = false;
     public GameObject tvPuzzleMenu;
     public GameObject tvPuzzleClue;
-
+    public Color startcolor;
     // Update is called once per frame
     void Update()
     {
@@ -37,6 +37,8 @@ public class QuizLoad : MonoBehaviour
         
         if(taskComplete == true)
         {
+            startcolor = GetComponent<Renderer>().material.color;
+            GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
             interactionText.gameObject.SetActive(false);
         }
@@ -44,6 +46,8 @@ public class QuizLoad : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
+                startcolor = GetComponent<Renderer>().material.color;
+                GetComponent<Renderer>().material.color = Color.green;
                 inRange = true;
                 interactionText.gameObject.SetActive(true);
             }
@@ -54,6 +58,7 @@ public class QuizLoad : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
             interactionText.gameObject.SetActive(false);
 
