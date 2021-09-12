@@ -7,7 +7,7 @@ public class MainMenuScript : MonoBehaviour
 {
     public void ShowMainMenu() // Will load the main menu of the game to the user
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex  -1);
+        SceneManager.LoadScene(0);
 
     }
 
@@ -19,13 +19,14 @@ public class MainMenuScript : MonoBehaviour
 
     public void PlayStoryboard() // Will load the storyboard scene to the user
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
 
     }
 
     public void PlayTutorial() // Will load the tutorial mode scene to the user
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        Cursor.visible = false;
+        SceneManager.LoadScene(2);
 
     }
 

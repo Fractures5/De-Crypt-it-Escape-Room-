@@ -63,7 +63,7 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    void startSinglePlayerGame()
+    public void startSinglePlayerGame()
     {
         Debug.Log("You are now transfered into the game!");
         SceneManager.LoadScene("MainGame");
