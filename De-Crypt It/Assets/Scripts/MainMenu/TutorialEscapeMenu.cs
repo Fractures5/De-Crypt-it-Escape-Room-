@@ -75,7 +75,7 @@ public class TutorialEscapeMenu : MonoBehaviour
         firstPersonCamera.GetComponent<Zoom>().enabled=true;
 
         SceneManager.LoadScene(0);
-       // Time.timeScale = 1;
+        Time.timeScale = 1;
         //return;
 
     }
