@@ -34,6 +34,7 @@ public class DigitalDisplay : MonoBehaviour
 
         PushTheButton.ButtonPressed += AddDigitToCodeSequence;
         
+        exitButton.gameObject.SetActive(true);
     }
 
     private void AddDigitToCodeSequence(string digitEntered)
@@ -139,13 +140,14 @@ public class DigitalDisplay : MonoBehaviour
             Debug.Log("Correct!");
             correctFX.Play(0);
             StartCoroutine(correctCoroutine());
-            exitButton.gameObject.SetActive(true);
+            //exitButton.gameObject.SetActive(true);
         }
         else
         {
             Debug.Log("Wrong!");
             wrongFX.Play(0);
             StartCoroutine(incorrectCoroutine());
+            //exitButton.gameObject.SetActive(true);
             
         }
     }
@@ -153,7 +155,7 @@ public class DigitalDisplay : MonoBehaviour
     IEnumerator correctCoroutine()
     {
         correctImage.gameObject.SetActive(true);
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(4);
         correctImage.gameObject.SetActive(false);
         ResetDisplay();
     }
