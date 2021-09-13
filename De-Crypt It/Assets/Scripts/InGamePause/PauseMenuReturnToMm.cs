@@ -16,4 +16,10 @@ public class PauseMenuReturnToMm : MonoBehaviour
         Debug.Log("You chose to quit the game"); //Quit message displayed in the console
         Application.Quit(); //quits application
     }
+
+    public void PlaySinglePlayer() // Will load the next level of the game scene
+    {
+         SceneManager.LoadScene(3);
+
+    }
 }
