@@ -23,7 +23,11 @@ public class CollisionEnd : MonoBehaviour
         }
     }
     public void Exit(){
-        Application.Quit();
+        SceneManager.LoadScene(0);
+        //Application.Quit();
+    }
+     public void LoadGame(){
+        SceneManager.LoadScene("MainGame");
     }
 
 }
