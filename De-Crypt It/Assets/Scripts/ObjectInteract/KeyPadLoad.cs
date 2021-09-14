@@ -19,6 +19,8 @@ public class KeyPadLoad : MonoBehaviour
 
     public static bool isClosed = false;
 
+    public GameObject doorInteractable;
+    public GameObject doorNotInteractable;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,11 @@ public class KeyPadLoad : MonoBehaviour
             }
         }
         
+        if(taskComplete == true)
+        {
+            doorInteractable.gameObject.SetActive(true);
+            doorNotInteractable.gameObject.SetActive(false);
+        }
     }
 
     //This function will load the the next scene if the player is within object range and is interacting
@@ -47,11 +54,12 @@ public class KeyPadLoad : MonoBehaviour
         //If the task is already completed, dont highlight the object, dont show instruction and dont update the player within range
         if(taskComplete == true) 
         {
-            startcolor = GetComponent<Renderer>().material.color;
-            GetComponent<Renderer>().material.color = startcolor;
-            isRange = false;
-            instructions.gameObject.SetActive(false);
-        }
+                startcolor = GetComponent<Renderer>().material.color;
+                GetComponent<Renderer>().material.color = startcolor;
+                isRange = false;
+                instructions.gameObject.SetActive(false);
+        } 
+
         //Vice versa if the task is not yet completed
         else 
         {
@@ -64,7 +72,6 @@ public class KeyPadLoad : MonoBehaviour
                 instructions.gameObject.SetActive(true);
             }
         }
-
 
     }
 

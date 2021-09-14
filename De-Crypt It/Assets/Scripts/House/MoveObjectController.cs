@@ -17,7 +17,9 @@ public class MoveObjectController : MonoBehaviour
 	private string msg;
 
 	private int rayLayerMask; 
-
+	public AudioSource playSound;
+	public AudioClip openSound;
+	public AudioClip closeSound;
 
 	void Start()
 	{
@@ -93,6 +95,14 @@ public class MoveObjectController : MonoBehaviour
 
 					if (Input.GetKeyUp(KeyCode.E) || Input.GetButtonDown("Fire1"))
 					{
+						if(isOpen == true)
+						{
+							playSound.PlayOneShot(closeSound, 0.5f);
+						}
+						else 
+						{
+							playSound.PlayOneShot(openSound, 0.5f);
+						}
 						anim.enabled = true;
 						anim.SetBool(animBoolNameNum,!isOpen);
 						msg = getGuiMsg(!isOpen);
