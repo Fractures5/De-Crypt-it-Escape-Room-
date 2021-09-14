@@ -256,22 +256,26 @@ MonoBehaviour:
   dialogue:
     characterName: Prologue
     sentences:
-    - You are the next heir to a rich family, one day, after having dinner at a restaurant,
-      you and your mother and father are walking past an alley until...
-    - A masked person jumps out from that shadows, and assaults your parents, knocking
-      them out cold.
-    - Before you can even make a sound, see a shadow rise above you and feel a powerful
-      whack in your head and fall unconscious.
-    - 'You slowly regain consciousness and find yourself in a house, presumably the
-      masked people have kidnpapped and are holding you ransom for your family''s
-      wealth. '
-    - 'However, it seems they are currently not here, but who knows when they will
-      be back. '
-    - 'You have to escape and let the authorities know. To do this, look around the
-      house for items or clues to help you to escape! '
-    - Make sure to check every corner of the house - any item could be used to help
-      you escape, if you're smart enough to realize it.
-    - Press Proceed to start....Goodluck.
+    - "You are the heir to a rich family, the next-in-line to claim and inherit the
+      family\u2019s treasure and wealth. You ask and are given everything on a silver
+      platter \u2013 life couldn\u2019t be much better. "
+    - 'One late night, after dining with your parents at a very expensive restaurant,
+      you all decide to take a walk around the city before heading home. However,
+      as you and your parents are walking, you pass an alleyway... '
+    - 'From the corner of your eye, a masked person jumps out from the shadows of
+      the alleyway, and assaults both your parents, knocking them out cold. '
+    - 'You try to make a cry for help, but you feel a cold shiver run down your spine,
+      and see a larger shadow envelop yours before feeling a powerful whack to your
+      head and fall unconscious. '
+    - "Some time has passed before you wake up, and you find yourself in a house
+      that isn\u2019t yours. The shadowy figures in the alleyway have kidnapped you
+      and are holding you for ransom of your family\u2019s wealth."
+    - "However, it seems they are currently not here, but who knows then they will
+      be back, and what kind of torture you may face if you don\u2019t escape. "
+    - "Look around the house for items or clues that will help you to find a means
+      of escaping \u2013 anything could be useful if you\u2019re smart enough to
+      realize it. "
+    - 'Press Proceed to begin your escape.... Goodluck. '
 --- !u!114 &171245183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +396,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1830581968}
+        m_TargetAssemblyTypeName: Narration, Assembly-CSharp
+        m_MethodName: StartOfNarration
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1031,6 +1047,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1830581968}
+        m_TargetAssemblyTypeName: Narration, Assembly-CSharp
+        m_MethodName: NarrationClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &644647577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1259,7 +1287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.226, y: 71}
+  m_AnchoredPosition: {x: 8, y: 71}
   m_SizeDelta: {x: 500.9079, y: 43.7172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &780357859
@@ -2935,6 +2963,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827900634}
   m_CullTransparentMesh: 1
+--- !u!1 &1830581967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1830581969}
+  - component: {fileID: 1830581968}
+  m_Layer: 0
+  m_Name: Narration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1830581968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830581967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2898a423d488e48af9d713aed09274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audSource: {fileID: 644647580}
+  card1: {fileID: 8300000, guid: 2bafa88de982888478ef392d1fedb7f6, type: 3}
+  card2: {fileID: 8300000, guid: c91127328276d854e8b192bdef2195c2, type: 3}
+  card3: {fileID: 8300000, guid: 37241c3553212264dae0767853a78614, type: 3}
+  card4: {fileID: 8300000, guid: 35fd697c18113fd40a04b4da9a7f7c7d, type: 3}
+  card5: {fileID: 8300000, guid: 5496516140b2ee64ebed3036de10ba21, type: 3}
+  card6: {fileID: 8300000, guid: abafd1633154d1a44ba97ded30ebaef8, type: 3}
+  card7: {fileID: 8300000, guid: a9a55dd4704880f449ca601ab16b7780, type: 3}
+  card8: {fileID: 8300000, guid: dc010d60044fc4541b1d0d74afed615c, type: 3}
+--- !u!4 &1830581969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830581967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2761354, y: 1.0927279, z: -12.53562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1920564280
 GameObject:
   m_ObjectHideFlags: 0
