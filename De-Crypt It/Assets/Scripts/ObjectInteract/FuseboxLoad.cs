@@ -21,6 +21,10 @@ public class FuseboxLoad : MonoBehaviour
 
     public GameObject tvPuzzleMenu;
 
+    public GameObject keyPad;
+
+
+
     void Start () 
     {
         //QuizLoad.taskComplete = true;
@@ -53,6 +57,7 @@ public class FuseboxLoad : MonoBehaviour
             } 
             Debug.Log("lights shouldve been turned on");
             tvPuzzleMenu.SetActive(true);
+            
         }
     }  
     //This function checks if the player is within the range and is pressing the E button, program will switch scene
@@ -60,7 +65,8 @@ public class FuseboxLoad : MonoBehaviour
     {
         //If the task is not completed, allow user to interact with the object
         if(taskComplete == false) 
-        {
+        { 
+            keyPad.GetComponent<KeyPadLoad>().enabled = false;
             if (isRange && Input.GetKeyDown("e")) 
             {
                 Cursor.visible = true;
@@ -76,6 +82,8 @@ public class FuseboxLoad : MonoBehaviour
         //If the task is already completed, dont highlight the object, dont show instruction and dont update the player within range
         if(taskComplete == true) 
         {
+            
+            //keyPad.GetComponent<KeyPadLoad>().enabled = true;
             startcolor = GetComponent<Renderer>().material.color;
             GetComponent<Renderer>().material.color = startcolor;
             isRange = false;
