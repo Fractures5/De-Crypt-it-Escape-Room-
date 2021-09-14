@@ -9,6 +9,7 @@ public class PauseGame : MonoBehaviour
     public GameObject Capsule;
     public GameObject Flashlight;
     public GameObject Camera;
+    public GameObject playerAudio;
     public static bool isFlashlightOn = false;
     //public Transform Player;
     //public GameObject Environment;
@@ -44,6 +45,7 @@ public class PauseGame : MonoBehaviour
             //Player.GetComponent<CameraController>().enabled = false; //Getting script for player camera and disables
             Camera.GetComponent<FirstPersonLook>().enabled = false; //Getting script for flashlight and disables
             Camera.GetComponent<FlashlightController>().enabled = false;
+            playerAudio.gameObject.SetActive(false);
         } 
         else
         {
@@ -62,6 +64,7 @@ public class PauseGame : MonoBehaviour
             Camera.GetComponent<FirstPersonLook>().enabled = true; //Getting script for flashlight and enables
             Camera.GetComponent<FlashlightController>().enabled = true;
             FlashlightController.FlashlightActive = isFlashlightOn;
+            playerAudio.gameObject.SetActive(true);
         }
         
     }
