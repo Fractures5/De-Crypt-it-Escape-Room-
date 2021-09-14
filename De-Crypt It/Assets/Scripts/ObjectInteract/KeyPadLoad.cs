@@ -19,6 +19,8 @@ public class KeyPadLoad : MonoBehaviour
 
     public static bool isClosed = false;
 
+    public GameObject doorInteractable;
+    public GameObject doorNotInteractable;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,11 @@ public class KeyPadLoad : MonoBehaviour
             }
         }
         
+        if(taskComplete == true)
+        {
+            doorInteractable.gameObject.SetActive(true);
+            doorNotInteractable.gameObject.SetActive(false);
+        }
     }
 
     //This function will load the the next scene if the player is within object range and is interacting

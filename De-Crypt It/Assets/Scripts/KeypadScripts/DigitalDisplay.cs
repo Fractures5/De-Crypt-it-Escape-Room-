@@ -141,6 +141,7 @@ public class DigitalDisplay : MonoBehaviour
             correctFX.Play(0);
             StartCoroutine(correctCoroutine());
             //exitButton.gameObject.SetActive(true);
+            KeyPadLoad.taskComplete = true;
         }
         else
         {
