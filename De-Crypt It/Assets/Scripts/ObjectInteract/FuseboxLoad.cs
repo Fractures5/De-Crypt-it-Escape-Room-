@@ -23,6 +23,8 @@ public class FuseboxLoad : MonoBehaviour
 
     public GameObject keyPad;
 
+    public GameObject marbleScreen;
+
 
 
     void Start () 
@@ -57,6 +59,7 @@ public class FuseboxLoad : MonoBehaviour
             } 
             Debug.Log("lights shouldve been turned on");
             tvPuzzleMenu.SetActive(true);
+            marbleScreen.SetActive(true);
             
         }
     }  
