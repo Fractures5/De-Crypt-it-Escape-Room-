@@ -702,7 +702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -116}
+  m_AnchoredPosition: {x: 2, y: -116}
   m_SizeDelta: {x: 145.7092, y: 43.7759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &216333774
@@ -2675,7 +2675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1040725908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3984,7 +3984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1506294571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4332,7 +4332,7 @@ MonoBehaviour:
     - Smith Anderson
     - Leslie Lola
     CorrectAnswer: 2
-  - Question: What was the second message on note on the fridge?
+  - Question: What was the second message on the note on the fridge?
     Answers:
     - we should conduct daily standup meeting
     - c's get degrees
@@ -4346,6 +4346,34 @@ MonoBehaviour:
     - The Last Dog
     - The Last Lamb
     CorrectAnswer: 3
+  - Question: What is the last four numbers of the phone number provided in the brochure?
+    Answers:
+    - 9999
+    - 1919
+    - 1234
+    - 9921
+    CorrectAnswer: 1
+  - Question: Who is the Artist which made the painting in the house?
+    Answers:
+    - Duffy Kid
+    - Rick Roll
+    - Steffano Folio
+    - Leandro Silva
+    CorrectAnswer: 3
+  - Question: What is the number of black and white tiles in the bathroom?
+    Answers:
+    - 66
+    - 64
+    - 54
+    - 63
+    CorrectAnswer: 4
+  - Question: What is the 4 digit number the table instructions manual points to?
+    Answers:
+    - 2971
+    - 1729
+    - 9271
+    - 2021
+    CorrectAnswer: 2
   answerOptions:
   - {fileID: 829484631}
   - {fileID: 1050965155}
