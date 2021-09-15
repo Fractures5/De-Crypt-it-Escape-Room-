@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 1007
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1007
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 44173
+  controlID: 148
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 44148
+  controlID: 71
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -303,10 +303,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -815
-    m_HBaseRangeMax: 815
-    m_VBaseRangeMin: -458.5
-    m_VBaseRangeMax: 458.5
+    m_HBaseRangeMin: -576
+    m_HBaseRangeMax: 576
+    m_VBaseRangeMin: -324
+    m_VBaseRangeMax: 324
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -323,24 +323,24 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
-      width: 2560
-      height: 917
+      y: 0
+      width: 1637
+      height: 648
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 1280, y: 458.5}
+    m_Translation: {x: 818.5, y: 324}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1280
-      y: -458.5
-      width: 2560
-      height: 917
+      x: -818.5
+      y: -324
+      width: 1637
+      height: 648
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 2560, y: 938}
+  m_LastWindowPixelSize: {x: 1637, y: 648}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -374,9 +374,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 4c90feff0ec0feff16e6feffece7feffeee7feffb0eafeffceeafeffd0eafeff46f2feff3e18ffffde33ffff944fffffd056ffffee56fffff056ffffa465ffff3466ffffdc79ffff907affff7e97ffff8c98ffffa098ffffe8a6ffffe8abffff5cb8ffffd6b9ffff94c8ffff62e0ffffb2e0ffffceebffff22ecffff52fbffff622f0100ba4c0100124f0100ec4f010042500100ce50010048520100285d0100025e01000e5f0100765f01005e60010086ca0200580403008604030082060300c40703009e08030080090300120a0300fa0a0300e07504002a760400ca7704009a7804008e790400207a040046c30400
+      m_SelectedIDs: 34440000
+      m_LastClickedID: 17460
+      m_ExpandedIDs: 52fbffffec400000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -436,9 +436,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 508.91907, y: 344.2338, z: 434.609}
+    m_Target: {x: 639.3556, y: 417.9427, z: 440.72803}
     speed: 2
-    m_Value: {x: 508.91907, y: 344.2338, z: 434.609}
+    m_Value: {x: 639.3556, y: 417.9427, z: 440.72803}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -485,9 +485,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.12599394, y: 0.0052221026, z: -0.0007648515, w: 0.99217296}
+    m_Target: {x: 0.08847673, y: 0.07093686, z: -0.006420599, w: 0.99368465}
     speed: 2
-    m_Value: {x: -0.12599394, y: -0.0052221026, z: 0.00076485146, w: -0.99217296}
+    m_Value: {x: 0.08847252, y: 0.06943546, z: -0.0062869, w: 0.99363565}
   m_Size:
     m_Target: 502.9489
     speed: 2
@@ -751,23 +751,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\GGPC\Downloads\De-Crypt-it-Escape-Room--master(3)\De-Crypt-it-Escape-Room--master\De-Crypt
-    It
+  m_LastProjectPath: D:\De-Crypt-it-Escape-Room-1\De-Crypt It
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 217}
-    m_SelectedIDs: 80550000
-    m_LastClickedID: 21888
-    m_ExpandedIDs: 00000000d6540000625500007e55000080550000f6560000fa560000
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 4c550000
+    m_LastClickedID: 21836
+    m_ExpandedIDs: 000000004c5500004e55000050550000525500005455000056550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -795,7 +794,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d6540000625500007e55000080550000f6560000fa560000
+    m_ExpandedIDs: 000000004c5500004e55000050550000525500005455000056550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -930,7 +929,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 359}
     m_SelectedIDs: 88550000
     m_LastClickedID: 21896
-    m_ExpandedIDs: 00000000d6540000625500007e55000080550000f6560000fa560000
+    m_ExpandedIDs: 000000004c5500004e55000050550000525500005455000056550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -958,7 +957,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 152}
     m_SelectedIDs: fc670000
     m_LastClickedID: 26620
-    m_ExpandedIDs: 00000000d6540000625500007e55000080550000f6560000fa560000
+    m_ExpandedIDs: 000000004c5500004e55000050550000525500005455000056550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
