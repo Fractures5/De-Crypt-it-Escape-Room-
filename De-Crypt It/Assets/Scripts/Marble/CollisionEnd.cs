@@ -24,9 +24,7 @@ public class CollisionEnd : MonoBehaviour
     }
     public void Exit(){
         ArcadeLoad.taskComplete = false;
-        //SceneManager.LoadScene("MainGame");
         SceneManager.LoadScene(3);
-        //SceneManager.LoadScene(0);
         //Application.Quit();
     }
      public void LoadGame(){
