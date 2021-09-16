@@ -65,10 +65,29 @@ public class DialogueController : MonoBehaviour
 
     public void startSinglePlayerGame()
     {
+        restartStatus();
         Debug.Log("You are now transfered into the game!");
         SceneManager.LoadScene("MainGame");
     }
+    void restartStatus()
+    {
+        StorePlayerLocation.savedPosition = new Vector3(-3.412f,0.2201252f,-16.276f);
+        StorePlayerLocation.restartStatus = true;
+        GameObject[] allLights= GameObject.FindGameObjectsWithTag("SwitchLight");
+        //Getting audio source component
+        foreach (GameObject i in allLights)
+        { 
+            i.SetActive(false); 
+        } 
+        FuseboxLoad.taskComplete = false;
+        KeyPadLoad.taskComplete = false;
+        QuizLoad.taskComplete = false;
+        PhoneDecoy.taskComplete = false;
+        ArcadeLoad.taskComplete = false;
+        FlashlightController.FlashlightActive = false;
+        TimerCountdown.timeLeft = 1800;
 
+    }
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
