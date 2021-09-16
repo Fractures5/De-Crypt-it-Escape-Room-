@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimerCountdown : MonoBehaviour
 {
     public GameObject textDisplay;
-    public static int timeLeft = 1800;
+    public static int timeLeft = 120;
     public static bool timeTaken = false;
     public static int minutes;
     public static int seconds;
@@ -22,6 +23,11 @@ public class TimerCountdown : MonoBehaviour
         if (timeTaken == false && timeLeft > 0)
         {
             StartCoroutine(Timer());
+        }
+        else if (timeLeft == 0)
+        {
+            SceneManager.LoadScene("EndScreen");
+            Debug.Log("You have failed to escape!");
         }
     }
 
