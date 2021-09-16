@@ -18,7 +18,6 @@ public class TimerCountdown : MonoBehaviour
 
     void Update()
     {
-        DontDestroyOnLoad(textDisplay);
 
         if (timeTaken == false && timeLeft > 0)
         {
