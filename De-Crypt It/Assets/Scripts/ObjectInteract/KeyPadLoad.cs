@@ -51,27 +51,36 @@ public class KeyPadLoad : MonoBehaviour
     //This function will load the the next scene if the player is within object range and is interacting
     void OnTriggerEnter(Collider other)
     {
-        //If the task is already completed, dont highlight the object, dont show instruction and dont update the player within range
-        if(taskComplete == true) 
+        if(FuseboxLoad.taskComplete == false)
         {
-                startcolor = GetComponent<Renderer>().material.color;
-                GetComponent<Renderer>().material.color = startcolor;
-                isRange = false;
-                instructions.gameObject.SetActive(false);
-        } 
-
-        //Vice versa if the task is not yet completed
-        else 
+            startcolor = GetComponent<Renderer>().material.color;
+            GetComponent<Renderer>().material.color = startcolor;
+        }
+        else if(FuseboxLoad.taskComplete == true)
         {
-            if(other.CompareTag("Player"))
+            if(taskComplete == true) 
             {
-                //Highlights the interactable object and changes the is range status to true
-                startcolor = GetComponent<Renderer>().material.color;
-                GetComponent<Renderer>().material.color = Color.green;
-                isRange = true;
-                instructions.gameObject.SetActive(true);
+                    startcolor = GetComponent<Renderer>().material.color;
+                    GetComponent<Renderer>().material.color = startcolor;
+                    isRange = false;
+                    instructions.gameObject.SetActive(false);
+            } 
+
+            //Vice versa if the task is not yet completed
+            else 
+            {
+                if(other.CompareTag("Player"))
+                {
+                    //Highlights the interactable object and changes the is range status to true
+                    startcolor = GetComponent<Renderer>().material.color;
+                    GetComponent<Renderer>().material.color = Color.green;
+                    isRange = true;
+                    instructions.gameObject.SetActive(true);
+                }
             }
         }
+        //If the task is already completed, dont highlight the object, dont show instruction and dont update the player within range
+
 
     }
 
