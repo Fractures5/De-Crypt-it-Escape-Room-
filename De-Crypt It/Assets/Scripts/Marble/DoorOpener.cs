@@ -7,12 +7,19 @@ public class DoorOpener : MonoBehaviour {
     #region Attributes
 
     public Transform door;
+    public Transform door1;
 
     public Vector3 closedPosition = new Vector3(-32.276f, 13.144f, 2.152f);
     public Vector3 openedPosition = new Vector3(-32.276f, 13.144f, 2.152f);
     
     //public Vector3 closedPosition = new Vector3(.51f, 3.63f, 0);
     //public Vector3 openedPosition = new Vector3(.51f, 7f, 0);
+   
+    /*public void door1()
+    {
+    public Vector3 closedPosition = new Vector3(-32.276f, 13.144f, 2.152f);
+    public Vector3 openedPosition = new Vector3(-32.276f, 13.144f, 2.152f);
+    }*/
 
     public float openSpeed = 5;
 
