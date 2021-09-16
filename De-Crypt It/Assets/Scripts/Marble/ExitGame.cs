@@ -17,7 +17,7 @@ public class ExitGame : MonoBehaviour
         
     }
     public void Exit(){
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
         //Application.Quit();
     }
 }
