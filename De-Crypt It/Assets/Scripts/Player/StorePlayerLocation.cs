@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StorePlayerLocation : MonoBehaviour
 {
+    public static bool restartStatus = false;
     //Keep track of player location
     public GameObject playerPos;
     //Variable to store player position
@@ -18,6 +19,11 @@ public class StorePlayerLocation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(restartStatus == true) 
+        {
+            playerPos.transform.position = savedPosition;
+            restartStatus = false;
+        }
         //Stores player position based on player location every frame
         savedPosition = playerPos.transform.position;
     }
