@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.14f1 (d0d1bb862f9d) revision 13685179'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 12271 MB
+OS: 'Windows 10 Pro; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16182 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,116 +11,144 @@ C:\Program Files\Unity\Hub\Editor\2020.3.14f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Enrico Serrano/Documents/De-Crypt Ittimer
+C:/Users/Siddarath/Documents/De-Crypt-it-Escape-Room-/De-Crypt It
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60502
-Successfully changed project path to: C:/Users/Enrico Serrano/Documents/De-Crypt Ittimer
-C:/Users/Enrico Serrano/Documents/De-Crypt Ittimer
+58758
+Successfully changed project path to: C:/Users/Siddarath/Documents/De-Crypt-it-Escape-Room-/De-Crypt It
+C:/Users/Siddarath/Documents/De-Crypt-it-Escape-Room-/De-Crypt It
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.14 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 141.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Enrico Serrano/Documents/De-Crypt Ittimer/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Siddarath/Documents/De-Crypt-it-Escape-Room-/De-Crypt It/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 950 (ID=0x1402)
+    Renderer: NVIDIA GeForce GTX 1650 with Max-Q Design (ID=0x1f91)
     Vendor:   
-    VRAM:     2007 MB
+    VRAM:     3964 MB
     Driver:   30.0.14.7111
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005442 seconds.
+Registered in 0.017438 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 62.94 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 148.02 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.936 seconds
+- Completed reload, in  6.221 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1936ms)
-		BeginReloadAssembly (90ms)
+	ReloadAssembly (6223ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (855ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (2225ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (376ms)
+			SetupTypeCache (935ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (308ms)
+			RebuildScriptCaches (94ms)
+			SetupLoadedEditorAssemblies (764ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (63ms)
-				BeforeProcessingInitializeOnLoad (17ms)
-				ProcessInitializeOnLoadAttributes (169ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				RefreshPlugins (148ms)
+				BeforeProcessingInitializeOnLoad (23ms)
+				ProcessInitializeOnLoadAttributes (428ms)
+				ProcessInitializeOnLoadMethodAttributes (150ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010631 seconds.
+Registered in 0.032376 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000025E08B3CB10 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0A3B1020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0476A020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0A3DD5E0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E091EB020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0A3DD5E0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E091EB020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E08ADAC20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E09087220 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E08ADAC20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0476A020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E04AEEA30 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0476A020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E08D2B020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.602 seconds
+- Completed reload, in  4.168 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2603ms)
-		BeginReloadAssembly (280ms)
+	ReloadAssembly (4170ms)
+		BeginReloadAssembly (542ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (2182ms)
-			LoadAssemblies (163ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (3320ms)
+			LoadAssemblies (436ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (721ms)
+			SetupTypeCache (1125ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (112ms)
-			SetupLoadedEditorAssemblies (944ms)
+			RebuildScriptCaches (208ms)
+			SetupLoadedEditorAssemblies (1249ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (340ms)
-				ProcessInitializeOnLoadAttributes (557ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (292ms)
+				ProcessInitializeOnLoadAttributes (889ms)
 				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (17ms)
+				AfterProcessingInitializeOnLoad (20ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (34ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1538 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 76.4 MB.
+System memory in use before: 76.3 MB.
 System memory in use after: 76.4 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1983.
-Total: 2.641700 ms (FindLiveObjects: 0.192100 ms CreateObjectMapping: 0.061200 ms MarkObjects: 2.263200 ms  DeleteObjects: 0.123500 ms)
+Total: 3.402600 ms (FindLiveObjects: 0.278000 ms CreateObjectMapping: 0.078700 ms MarkObjects: 2.832700 ms  DeleteObjects: 0.210700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,1080 +162,189 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.017701 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.020262 seconds .
+  path: Assets/Scripts/House
+  artifactKey: Guid(ba86fa96326c8e34dabde65abaaf582e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/House using Guid(ba86fa96326c8e34dabde65abaaf582e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a1b2d3aaba8c6f471aacee9d4518b6') in 0.010449 seconds 
+  Import took 0.014731 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.059114 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000698 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.004934 seconds .
+  Time since last request: 0.000431 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(f25a7420459cd844dbd008e4cffaf90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(f25a7420459cd844dbd008e4cffaf90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a131d36c267f2712dea35eb8069743dd') in 0.008681 seconds 
+  Import took 0.014458 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.021626 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000427 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.004051 seconds .
+  Time since last request: 0.000569 seconds.
+  path: Assets/Scripts/Game
+  artifactKey: Guid(84daf82aa5aee2c47a412c3e1fabff35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game using Guid(84daf82aa5aee2c47a412c3e1fabff35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75157b8b768bfbc7cae3b02e5731df67') in 0.009575 seconds 
+  Import took 0.016087 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.022555 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000339 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.002713 seconds .
+  Time since last request: 0.000560 seconds.
+  path: Assets/Scripts/Buttons
+  artifactKey: Guid(0cf9594f42e7b9640aca46cf8739d8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Buttons using Guid(0cf9594f42e7b9640aca46cf8739d8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a29a8e9c78ca7777f8a31475819527') in 0.015021 seconds 
+  Import took 0.024452 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.026866 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000340 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.002723 seconds .
+  Time since last request: 0.221414 seconds.
+  path: Assets/Scripts/InGamePause
+  artifactKey: Guid(fb2d3e63bbfbd0940a6e55c77860d472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/InGamePause using Guid(fb2d3e63bbfbd0940a6e55c77860d472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973fa5ccfcf0c430c6640a5626572141') in 0.009178 seconds 
+  Import took 0.014015 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.025057 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000332 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.002714 seconds .
+  Time since last request: 1.388596 seconds.
+  path: Assets/Scripts/KeypadScripts
+  artifactKey: Guid(174736dce3a29444ca2ed65889dfeb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/KeypadScripts using Guid(174736dce3a29444ca2ed65889dfeb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b447305b9cf290ada10daa106e4f1a2') in 0.012604 seconds 
+  Import took 0.019881 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.023269 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000354 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.003011 seconds .
+  Time since last request: 1.728289 seconds.
+  path: Assets/Scripts/LightBox
+  artifactKey: Guid(0a0ea2b99cdb1694caf9bf4628a0b2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LightBox using Guid(0a0ea2b99cdb1694caf9bf4628a0b2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d68618c81ea3398066dd8d79654bb16') in 0.009427 seconds 
+  Import took 0.013872 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.023702 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000601 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.005348 seconds .
+  Time since last request: 1.491089 seconds.
+  path: Assets/Scripts/MainMenu
+  artifactKey: Guid(5cbc384a780da3b42881eea0144b7386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MainMenu using Guid(5cbc384a780da3b42881eea0144b7386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9311c80884f627f934066d5eec2a585e') in 0.007914 seconds 
+  Import took 0.013791 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.021324 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000337 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.002713 seconds .
+  Time since last request: 1.518509 seconds.
+  path: Assets/Scripts/Marble
+  artifactKey: Guid(791f69e80fce96e4a807057cbbb43bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Marble using Guid(791f69e80fce96e4a807057cbbb43bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee972db98eb92c9d6fb8e20e8606aeb') in 0.008250 seconds 
+  Import took 0.014756 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.022989 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000343 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.003066 seconds .
+  Time since last request: 7.771194 seconds.
+  path: Assets/Scripts/ObjectInteract
+  artifactKey: Guid(848c64997cb56dc489ac020e692630e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ObjectInteract using Guid(848c64997cb56dc489ac020e692630e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819b09e3a9dbec43b336fe05ca490af0') in 0.008262 seconds 
+  Import took 0.013115 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.028354 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000378 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.003390 seconds .
+  Time since last request: 2.044386 seconds.
+  path: Assets/Scripts/Player
+  artifactKey: Guid(60f05b0b7615b34479866de1ecdbd7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player using Guid(60f05b0b7615b34479866de1ecdbd7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1e3d3d98c385a69322fdd480ea0133') in 0.009162 seconds 
+  Import took 0.014408 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.022807 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000338 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.002687 seconds .
+  Time since last request: 1.612241 seconds.
+  path: Assets/Scripts/Quiz
+  artifactKey: Guid(dec2c253b6a7f564a99c85023d25c9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Quiz using Guid(dec2c253b6a7f564a99c85023d25c9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1753f1a400e31d790f8698e569e2fad') in 0.009395 seconds 
+  Import took 0.016030 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.025765 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000452 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.003502 seconds .
+  Time since last request: 43.781562 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(fe051e40cab51e14aa416aa0f558ee79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(fe051e40cab51e14aa416aa0f558ee79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e8f27b1066887f4f915ce97a377a26') in 0.007599 seconds 
+  Import took 0.012565 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.026215 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000906 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.004909 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025746 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000744 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.006887 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020129 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000370 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.002720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023731 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000367 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:53.971386Z'
-  Import took 0.003050 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.030797 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000327 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z'
-  Import took 0.002721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028727 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000343 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z'
-  Import took 0.002727 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024027 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000376 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z'
-  Import took 0.003103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026661 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000382 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z'
-  Import took 0.002960 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020861 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000455 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z'
-  Import took 0.005585 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019844 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000342 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.059215Z'
-  Import took 0.002770 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029628 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000346 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z'
-  Import took 0.002695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023914 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000361 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z'
-  Import took 0.002988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024360 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000478 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z'
-  Import took 0.003432 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026277 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000433 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z'
-  Import took 0.003119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024971 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000434 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.2211015Z'
-  Import took 0.003492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021874 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000375 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z'
-  Import took 0.004342 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028338 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000452 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z'
-  Import took 0.004008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026412 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000356 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z'
-  Import took 0.003517 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029204 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000584 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z'
-  Import took 0.005294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027234 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000476 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.3596469Z'
-  Import took 0.003836 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024676 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000350 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.5155367Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.5155367Z'
-  Import took 0.002788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025429 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000334 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.5155367Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.5155367Z'
-  Import took 0.002731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029691 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000363 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.5155367Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.5155367Z'
-  Import took 0.002919 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026894 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000353 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.5155367Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.5155367Z'
-  Import took 0.003033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028223 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000373 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.031782 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000377 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.031076 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000566 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003807 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027958 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000351 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.004098 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.030614 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000414 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003526 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025414 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000369 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003046 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026081 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000372 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.031630 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000340 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002807 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028290 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000479 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.004048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029687 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000481 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.004104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.032210 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000360 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002950 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024688 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000352 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021439 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000630 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.006588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025021 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001785 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.009691 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.124729 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000859 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.008249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.022678 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000344 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002898 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029941 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000848 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.007038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.022936 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000359 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026910 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000343 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002820 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025775 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000414 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.004151 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027654 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000549 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.004551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023633 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000412 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003195 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025208 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000591 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.030698 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000405 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020466 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000691 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.008853 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021301 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000371 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028860 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000360 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023733 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000351 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025092 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000472 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023444 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000352 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028574 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000340 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002710 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019914 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000611 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.007974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020859 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000405 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027278 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000343 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023013 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000461 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024189 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000351 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002863 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026609 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000378 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003010 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019999 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001930 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.006357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020827 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000369 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029377 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000331 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028630 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000426 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026683 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000341 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024783 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000338 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027110 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000360 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002954 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.032606 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000365 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024373 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000340 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002677 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020453 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001124 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.006621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023474 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000498 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.022164 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000342 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027260 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000476 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003467 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023223 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000364 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023220 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000648 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.004408 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.022134 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000345 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003217 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025187 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000342 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027945 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000343 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024217 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000402 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023490 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000391 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026534 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000348 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024882 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000685 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.005875 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021388 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000400 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003243 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027813 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000349 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002905 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021850 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000485 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.004412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024409 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000339 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002949 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027493 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000404 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003173 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021352 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000460 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.004130 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021229 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000375 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027327 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000371 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024095 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000345 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.003139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025146 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000387 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.031839 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000355 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023684 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000345 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002921 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026087 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000350 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.002974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.022220 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000891 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.007377 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.038229 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000624 seconds  code(4) message(Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z')
-  ERROR: Build asset version error: assets/scripts/mainmenu/dialoguecontroller.cs in SourceAssetDB has modification time of '2021-09-16T00:34:20Z' while content on disk has modification time of '2021-09-16T05:02:55.6414488Z'
-  Import took 0.006110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.610034 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e4783999e7ca14e8b5e449ffee3bcad') in 0.020313 seconds 
-  Import took 0.023987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.642846 seconds.
-  path: Assets/Scripts/InGamePause/RestartButtonScript.cs
-  artifactKey: Guid(c4328526011ff2f4fbffe5edf9a3456d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/InGamePause/RestartButtonScript.cs using Guid(c4328526011ff2f4fbffe5edf9a3456d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d4cf61e2ec50321b7f20aa01837032') in 0.015640 seconds 
-  Import took 0.018604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.482006 seconds.
-  path: Assets/Scripts/InGamePause/RestartButtonScript.cs
-  artifactKey: Guid(c4328526011ff2f4fbffe5edf9a3456d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/InGamePause/RestartButtonScript.cs using Guid(c4328526011ff2f4fbffe5edf9a3456d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf34945b3a525c09cceb1a045012d85') in 0.010648 seconds 
-  Import took 0.015271 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.854100 seconds.
-  path: Assets/Scripts/Player/StorePlayerLocation.cs
-  artifactKey: Guid(f4a41c5a937693a48bb3bca9c5a49d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/StorePlayerLocation.cs using Guid(f4a41c5a937693a48bb3bca9c5a49d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54af0e30f7ce6023574bf4c2d15e695') in 0.017001 seconds 
-  Import took 0.022675 seconds .
+  Time since last request: 2.555499 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(a88521902a0cd2d44a359ca59fa7783e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(a88521902a0cd2d44a359ca59fa7783e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78742442a7d29b1fcd9691b3676dd361') in 0.026860 seconds 
+  Import took 0.032742 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005110 seconds.
+Registered in 0.008847 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000025E097A9010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E09898010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0A58CE50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E04E84010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E08E26410 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0F959010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E09376020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0F959010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E04C3E010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0F959010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0A58CE50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E09005010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E04426050 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0A040C50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.485 seconds
+- Completed reload, in  4.081 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1485ms)
-		BeginReloadAssembly (153ms)
+	ReloadAssembly (4083ms)
+		BeginReloadAssembly (498ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (27ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1238ms)
-			LoadAssemblies (132ms)
+			CreateAndSetChildDomain (120ms)
+		EndReloadAssembly (3130ms)
+			LoadAssemblies (509ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (430ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (448ms)
+			SetupTypeCache (1323ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (151ms)
+			SetupLoadedEditorAssemblies (784ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (36ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (282ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (584ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 74.8 MB.
 System memory in use after: 74.9 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1986.
-Total: 2.832300 ms (FindLiveObjects: 0.162700 ms CreateObjectMapping: 0.059900 ms MarkObjects: 2.512100 ms  DeleteObjects: 0.095900 ms)
+Total: 2.962300 ms (FindLiveObjects: 0.337400 ms CreateObjectMapping: 0.118500 ms MarkObjects: 2.401100 ms  DeleteObjects: 0.103700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1221,58 +358,94 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.737850 seconds.
-  path: Assets/Scripts/Player/StorePlayerLocation.cs
-  artifactKey: Guid(f4a41c5a937693a48bb3bca9c5a49d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/StorePlayerLocation.cs using Guid(f4a41c5a937693a48bb3bca9c5a49d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca7b3924b0edaddba8414430971ba45') in 0.010061 seconds 
-  Import took 0.014777 seconds .
+  Time since last request: 1890.211035 seconds.
+  path: Assets/Scripts/ObjectInteract/KeyPadLoad.cs
+  artifactKey: Guid(98343b84c31965245bf43019a1a10bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ObjectInteract/KeyPadLoad.cs using Guid(98343b84c31965245bf43019a1a10bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705a204a5dbce9d3b3273af60b339dbd') in 0.046990 seconds 
+  Import took 0.057629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037490 seconds.
+  path: Assets/Scripts/ObjectInteract/KeyPadLoad.cs
+  artifactKey: Guid(98343b84c31965245bf43019a1a10bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ObjectInteract/KeyPadLoad.cs using Guid(98343b84c31965245bf43019a1a10bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705a204a5dbce9d3b3273af60b339dbd') in 0.011688 seconds 
+  Import took 0.020712 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005387 seconds.
+Registered in 0.005577 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000025E0F861290 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0FBE4830 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0476A020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0CD32030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0CC3BE50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0FBE4830 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E08B0B030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0CD32030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E08DAE020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E049796E0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E09993E30 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0BEE0080 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E04426050 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025E0FAD1020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.494 seconds
+- Completed reload, in  0.960 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1495ms)
-		BeginReloadAssembly (176ms)
+	ReloadAssembly (961ms)
+		BeginReloadAssembly (108ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1206ms)
-			LoadAssemblies (162ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (786ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (425ms)
+			SetupTypeCache (280ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (439ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (275ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (131ms)
-				ProcessInitializeOnLoadAttributes (282ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 74.9 MB.
 System memory in use after: 74.9 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1989.
-Total: 2.129400 ms (FindLiveObjects: 0.193600 ms CreateObjectMapping: 0.067600 ms MarkObjects: 1.784200 ms  DeleteObjects: 0.082500 ms)
+Total: 2.311600 ms (FindLiveObjects: 0.235200 ms CreateObjectMapping: 0.074100 ms MarkObjects: 1.924500 ms  DeleteObjects: 0.075300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1284,394 +457,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 63.205371 seconds.
-  path: Assets/Scripts/Game/LoadMainGame.cs
-  artifactKey: Guid(0d06c724e47f3764993a4a1de786f2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Game/LoadMainGame.cs using Guid(0d06c724e47f3764993a4a1de786f2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04bc1de2002cc6d3952ee1c1fee76a07') in 0.013647 seconds 
-  Import took 0.017171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.321412 seconds.
-  path: Assets/Scripts/Game/TimerCountdown.cs
-  artifactKey: Guid(ce4feffb296aa3246a5c9023341ccccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Game/TimerCountdown.cs using Guid(ce4feffb296aa3246a5c9023341ccccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b694a25804ba4e8f5364e731af964526') in 0.002561 seconds 
-  Import took 0.005370 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002539 seconds.
-  path: Assets/Scripts/Game/TimerCountdown.cs
-  artifactKey: Guid(ce4feffb296aa3246a5c9023341ccccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Game/TimerCountdown.cs using Guid(ce4feffb296aa3246a5c9023341ccccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b694a25804ba4e8f5364e731af964526') in 0.004592 seconds 
-  Import took 0.008467 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004832 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.466 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1467ms)
-		BeginReloadAssembly (165ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1205ms)
-			LoadAssemblies (125ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (420ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (457ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (141ms)
-				ProcessInitializeOnLoadAttributes (289ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.9 MB.
-System memory in use after: 75.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1992.
-Total: 2.154800 ms (FindLiveObjects: 0.154600 ms CreateObjectMapping: 0.060000 ms MarkObjects: 1.825900 ms  DeleteObjects: 0.113000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005696 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.404 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1404ms)
-		BeginReloadAssembly (149ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1160ms)
-			LoadAssemblies (127ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (397ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (431ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (129ms)
-				ProcessInitializeOnLoadAttributes (276ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.9 MB.
-System memory in use after: 75.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1995.
-Total: 2.326100 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.058000 ms MarkObjects: 1.922500 ms  DeleteObjects: 0.093000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004875 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.518 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1519ms)
-		BeginReloadAssembly (158ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1241ms)
-			LoadAssemblies (131ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (428ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (472ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (297ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.9 MB.
-System memory in use after: 75.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1998.
-Total: 2.286400 ms (FindLiveObjects: 0.264200 ms CreateObjectMapping: 0.074100 ms MarkObjects: 1.870700 ms  DeleteObjects: 0.075700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 175.310221 seconds.
-  path: Assets/Scripts/MainMenu/DialogueController.cs
-  artifactKey: Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu/DialogueController.cs using Guid(a704e7411d0fb9a45962dada32394b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43991cdebbe4a949011ff879b42720da') in 0.005868 seconds 
-  Import took 0.008687 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004814 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.417 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1419ms)
-		BeginReloadAssembly (147ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1175ms)
-			LoadAssemblies (129ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (402ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (437ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (289ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.9 MB.
-System memory in use after: 75.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2001.
-Total: 2.232800 ms (FindLiveObjects: 0.153000 ms CreateObjectMapping: 0.060400 ms MarkObjects: 1.922200 ms  DeleteObjects: 0.095300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 110.714790 seconds.
-  path: Assets/Scenes/KeypadScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/KeypadScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea807a5082374f14b27819b58a6698fd') in 0.097180 seconds 
-  Import took 0.103220 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004668 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.424 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1424ms)
-		BeginReloadAssembly (137ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1192ms)
-			LoadAssemblies (125ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (436ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (422ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (132ms)
-				ProcessInitializeOnLoadAttributes (263ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.9 MB.
-System memory in use after: 75.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2004.
-Total: 2.431600 ms (FindLiveObjects: 0.161000 ms CreateObjectMapping: 0.059200 ms MarkObjects: 2.054300 ms  DeleteObjects: 0.155200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004669 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.386 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1387ms)
-		BeginReloadAssembly (157ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (1139ms)
-			LoadAssemblies (126ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (391ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (418ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (255ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1518 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.9 MB.
-System memory in use after: 75.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2007.
-Total: 2.200000 ms (FindLiveObjects: 0.145500 ms CreateObjectMapping: 0.057900 ms MarkObjects: 1.907900 ms  DeleteObjects: 0.087300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 90.712074 seconds.
-  path: Assets/Scenes/MainGame.unity
-  artifactKey: Guid(562dce9d34770b7489912f948d2574e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainGame.unity using Guid(562dce9d34770b7489912f948d2574e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c436b15e4648f83324a307e2d59a4eac') in 0.046311 seconds 
-  Import took 0.050155 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
