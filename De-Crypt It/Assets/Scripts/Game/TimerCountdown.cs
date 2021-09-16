@@ -7,10 +7,11 @@ using UnityEngine.UI;
 public class TimerCountdown : MonoBehaviour
 {
     public GameObject textDisplay;
-    public static int timeLeft = 120;
+    public static int timeLeft = 1800;
     public static bool timeTaken = false;
     public static int minutes;
     public static int seconds;
+    public bool check = false;
 
     void Start()
     {
@@ -24,8 +25,9 @@ public class TimerCountdown : MonoBehaviour
         {
             StartCoroutine(Timer());
         }
-        else if (timeLeft == 0)
+        else if (timeLeft == 0 && check == false)
         {
+            check = true;
             SceneManager.LoadScene("EndScreen");
             Debug.Log("You have failed to escape!");
         }
