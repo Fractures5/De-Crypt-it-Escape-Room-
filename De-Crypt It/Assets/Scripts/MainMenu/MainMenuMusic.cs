@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MainMenuMusic : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    //This script will handle the main menu music interaction
     public AudioSource AudioSource;
 
     private float bgMusicVolume = 1f;
@@ -20,7 +19,7 @@ public class MainMenuMusic : MonoBehaviour
     {
         AudioSource.volume = bgMusicVolume;
     }
-
+    //Updates the volume if the player wishes to change the sound volume
     public void updateVolume(float volume)
     {
         bgMusicVolume = volume;

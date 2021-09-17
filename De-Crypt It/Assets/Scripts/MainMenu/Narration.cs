@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Narration : MonoBehaviour
 {
+    //Audio for the narration
     public AudioSource audSource;
     public AudioClip card1;
     public AudioClip card2;
@@ -15,6 +16,7 @@ public class Narration : MonoBehaviour
     public AudioClip card8;
     int buttonClicks = 0;
 
+    //Depending on how much time the proceed button is clicked, the required narration audio for the card is shown
     public void NarrationClick()
     {
         if (buttonClicks == 0)
@@ -67,7 +69,7 @@ public class Narration : MonoBehaviour
             Debug.Log("Narration 8 is occuring!");
         }        
     }
-
+    //Starts the narration
     public void StartOfNarration()
     {
         audSource.clip = card1;

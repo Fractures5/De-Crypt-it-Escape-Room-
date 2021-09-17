@@ -31,6 +31,7 @@ public class UnpoweredBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Checks if all the wires are connected which plays a sound and sets the completed to true
         if(totalConnection == 4) 
         {
             if(!hasPlayedCompleted)
@@ -50,7 +51,7 @@ public class UnpoweredBehaviour : MonoBehaviour
         }
         LightStatus();
     }
-
+    //A function to check if the player is matching the wire
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.GetComponent<PoweredStatus>())
@@ -58,9 +59,9 @@ public class UnpoweredBehaviour : MonoBehaviour
             PoweredStatus ps = collision.GetComponent<PoweredStatus>();
             if(ps.objectColor==ups.objectColor)
             {
+                //If the player matches the wire, total connection will be incremented
                 playSound.PlayOneShot(ConnectedWire);
                 totalConnection++;
-                Debug.Log(totalConnection);
                 ps.isConnected = true;
                 ups.isConnected = true;
                 //Wire will snap to end point if connected
@@ -69,6 +70,7 @@ public class UnpoweredBehaviour : MonoBehaviour
         }
     }
 
+    //A function to check if the player is not matching the wire
     void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.GetComponent<PoweredStatus>())
@@ -76,8 +78,8 @@ public class UnpoweredBehaviour : MonoBehaviour
             PoweredStatus ps = collision.GetComponent<PoweredStatus>();
             if(ps.objectColor==ups.objectColor)
             {
+                //If the player unmatches the wire, total connection will be decreased
                 totalConnection--;
-                Debug.Log(totalConnection);
             }
             playSound.PlayOneShot(DisconectedWire);
             ps.isConnected = false;
@@ -87,7 +89,8 @@ public class UnpoweredBehaviour : MonoBehaviour
     //This function checks if the wires are connected and correct displayed is shown
     void LightStatus()
     {
-        //If statement to check if wires are connected
+        //If statement to check if wires are connected and appropriate light power will be displayed. A yellow light power indicates its connected
+        //where as a black light power indicates its not powered
         if(ups.isConnected)
         {
             //If wires are connected, change the model to let the player know its connected

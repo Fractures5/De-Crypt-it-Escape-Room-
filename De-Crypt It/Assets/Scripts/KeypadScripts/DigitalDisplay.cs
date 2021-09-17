@@ -37,6 +37,7 @@ public class DigitalDisplay : MonoBehaviour
         exitButton.gameObject.SetActive(true);
     }
 
+    //takes parameter from ButtonPressed event and checks if less than 4, adds the digit to the sequence
     private void AddDigitToCodeSequence(string digitEntered)
     {
         if (codeSequence.Length < 4)
@@ -100,7 +101,7 @@ public class DigitalDisplay : MonoBehaviour
                 break;
         }
     }
-
+    //takes number entered as a parameter and displays the appropriate sprite depending on the order which the button is pressed
     private void DisplayCodeSequence(int digitJustEntered)
     {
         switch (codeSequence.Length)
@@ -133,6 +134,7 @@ public class DigitalDisplay : MonoBehaviour
 
     }
 
+    //checks if input code is equal to code sequence (correct answer)
     private void CheckResults()
     {
         if (codeSequence == "9607")
@@ -140,19 +142,17 @@ public class DigitalDisplay : MonoBehaviour
             Debug.Log("Correct!");
             correctFX.Play(0);
             StartCoroutine(correctCoroutine());
-            //exitButton.gameObject.SetActive(true);
             KeyPadLoad.taskComplete = true;
         }
         else
         {
             Debug.Log("Wrong!");
             wrongFX.Play(0);
-            StartCoroutine(incorrectCoroutine());
-            //exitButton.gameObject.SetActive(true);
-            
+            StartCoroutine(incorrectCoroutine());  
         }
     }
 
+    //Will be invoked when correct pin is input and resets display
     IEnumerator correctCoroutine()
     {
         correctImage.gameObject.SetActive(true);
@@ -161,6 +161,7 @@ public class DigitalDisplay : MonoBehaviour
         ResetDisplay();
     }
 
+    //Will be invoked when incorrect pin is input and resets display
     IEnumerator incorrectCoroutine()
     {
         wrongImage.gameObject.SetActive(true);
@@ -169,6 +170,7 @@ public class DigitalDisplay : MonoBehaviour
         ResetDisplay();
     }
 
+    //Resets Digital display by switching sprites to blank digital sprites
     private void ResetDisplay()
     {
         for (int i = 0; i <= characters.Length - 1; i++)
