@@ -43,9 +43,10 @@ public class PauseGame : MonoBehaviour
             Pause();
         } 
     }
-
+    //Disables the script of necessary game objects
     public void Pause()
     {
+        //Disables the script when the player opens the pause menu
         if (pauseMenuCanvas.gameObject.activeInHierarchy == false)
         {
             crosshairCanvas.SetActive(false);
@@ -76,6 +77,7 @@ public class PauseGame : MonoBehaviour
             Phone.GetComponent<PhoneDecoy>().enabled = false;
             playerAudio.gameObject.SetActive(false);
         } 
+        //enables the script when the player has left the pause menu
         else
         {
             crosshairCanvas.SetActive(true);

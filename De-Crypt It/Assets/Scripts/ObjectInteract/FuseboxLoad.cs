@@ -34,9 +34,6 @@ public class FuseboxLoad : MonoBehaviour
 
     void Start () 
     {
-        //QuizLoad.taskComplete = true;
-        //tvPuzzleClue.SetActive(false);
-
         //If fusebox is exited close sound effect is played
         if (isClosed == true) 
         {
@@ -56,8 +53,6 @@ public class FuseboxLoad : MonoBehaviour
         //Turns on all the light switches if the task is completed
         if(taskComplete == true) 
         {
-            //GameObject[] allLights= GameObject.FindGameObjectsWithTag("SwitchLight");
-
             foreach (GameObject i in allLights)
             { 
                 i.SetActive(true); 
@@ -90,8 +85,6 @@ public class FuseboxLoad : MonoBehaviour
         //If the task is already completed, dont highlight the object, dont show instruction and dont update the player within range
         if(taskComplete == true) 
         {
-            
-            //keyPad.GetComponent<KeyPadLoad>().enabled = true;
             startcolor = GetComponent<Renderer>().material.color;
             GetComponent<Renderer>().material.color = startcolor;
 
