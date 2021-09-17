@@ -23,7 +23,8 @@ public class CollisionEnd : MonoBehaviour
         }
     }
     public void Exit(){
-        SceneManager.LoadScene(0);
+        ArcadeLoad.taskComplete = false;
+        SceneManager.LoadScene(3);
         //Application.Quit();
     }
      public void LoadGame(){

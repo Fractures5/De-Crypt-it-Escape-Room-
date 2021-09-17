@@ -318,9 +318,9 @@ GameObject:
   - component: {fileID: 158752271}
   - component: {fileID: 158752270}
   - component: {fileID: 158752269}
+  - component: {fileID: 158752276}
   - component: {fileID: 158752275}
   - component: {fileID: 158752274}
-  - component: {fileID: 158752276}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -472,7 +472,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158752267}
   m_CullTransparentMesh: 1
---- !u!82 &158752274
+--- !u!114 &158752274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158752267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonClickFx: {fileID: 158752275}
+  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
+  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!82 &158752275
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -568,21 +583,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &158752275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158752267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 158752274}
-  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
-  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
 --- !u!114 &158752276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 158752275}
+        - m_Target: {fileID: 158752274}
           m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -616,7 +616,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 158752275}
+        - m_Target: {fileID: 158752274}
           m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -719,8 +719,8 @@ GameObject:
   - component: {fileID: 201615935}
   - component: {fileID: 201615934}
   - component: {fileID: 201615933}
-  - component: {fileID: 201615939}
   - component: {fileID: 201615938}
+  - component: {fileID: 201615939}
   - component: {fileID: 201615937}
   m_Layer: 5
   m_Name: StartQuizButton
@@ -876,12 +876,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 201615932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 201615938}
-  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
-  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 201615939}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: HoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 201615939}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &201615938
 AudioSource:
   m_ObjectHideFlags: 0
@@ -987,42 +1017,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 201615932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 201615937}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: HoverSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 201615937}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: ClickSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  buttonClickFx: {fileID: 201615938}
+  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
+  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
 --- !u!1 &216333774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,9 +1335,9 @@ GameObject:
   - component: {fileID: 426757763}
   - component: {fileID: 426757762}
   - component: {fileID: 426757761}
+  - component: {fileID: 426757768}
   - component: {fileID: 426757767}
   - component: {fileID: 426757766}
-  - component: {fileID: 426757768}
   m_Layer: 5
   m_Name: ReturnButton
   m_TagString: Untagged
@@ -1489,7 +1489,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426757759}
   m_CullTransparentMesh: 1
---- !u!82 &426757766
+--- !u!114 &426757766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426757759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 426757767}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: HoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 426757767}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &426757767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426757759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonClickFx: {fileID: 426757768}
+  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
+  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!82 &426757768
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1585,66 +1645,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &426757767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426757759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 426757766}
-  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
-  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
---- !u!114 &426757768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426757759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 426757767}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: HoverSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 426757767}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: ClickSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &492949497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,9 +1657,9 @@ GameObject:
   - component: {fileID: 492949501}
   - component: {fileID: 492949500}
   - component: {fileID: 492949499}
-  - component: {fileID: 492949504}
   - component: {fileID: 492949503}
   - component: {fileID: 492949502}
+  - component: {fileID: 492949504}
   m_Layer: 5
   m_Name: EnterButton
   m_TagString: Untagged
@@ -1886,6 +1886,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 492949497}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonClickFx: {fileID: 492949502}
+  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
+  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!114 &492949504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492949497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1894,7 +1909,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 492949504}
+        - m_Target: {fileID: 492949503}
           m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -1910,7 +1925,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 492949504}
+        - m_Target: {fileID: 492949503}
           m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -1922,21 +1937,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &492949504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492949497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 492949502}
-  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
-  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
 --- !u!1 &502858831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,9 +2902,9 @@ GameObject:
   - component: {fileID: 829484634}
   - component: {fileID: 829484633}
   - component: {fileID: 829484637}
-  - component: {fileID: 829484640}
   - component: {fileID: 829484639}
   - component: {fileID: 829484638}
+  - component: {fileID: 829484640}
   m_Layer: 5
   m_Name: AnswerButton1
   m_TagString: Untagged
@@ -3073,7 +3073,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 829484640}
+        - m_Target: {fileID: 829484639}
           m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -3089,7 +3089,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 829484640}
+        - m_Target: {fileID: 829484639}
           m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -3101,7 +3101,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!82 &829484639
+--- !u!114 &829484639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829484631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonClickFx: {fileID: 829484640}
+  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
+  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!82 &829484640
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3197,21 +3212,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &829484640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829484631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 829484639}
-  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
-  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
 --- !u!1 &899252162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3567,8 +3567,8 @@ GameObject:
   - component: {fileID: 1050965158}
   - component: {fileID: 1050965157}
   - component: {fileID: 1050965161}
-  - component: {fileID: 1050965164}
   - component: {fileID: 1050965163}
+  - component: {fileID: 1050965164}
   - component: {fileID: 1050965162}
   m_Layer: 5
   m_Name: AnswerButton2
@@ -4211,9 +4211,9 @@ GameObject:
   - component: {fileID: 1320094536}
   - component: {fileID: 1320094535}
   - component: {fileID: 1320094534}
+  - component: {fileID: 1320094541}
   - component: {fileID: 1320094540}
   - component: {fileID: 1320094539}
-  - component: {fileID: 1320094541}
   m_Layer: 5
   m_Name: RetryButton
   m_TagString: Untagged
@@ -4949,67 +4949,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378597757}
   m_CullTransparentMesh: 1
---- !u!114 &1378597762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378597757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1378597763}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: HoverSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1378597763}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: ClickSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &1378597763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378597757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 1378597764}
-  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
-  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
---- !u!82 &1378597764
+--- !u!82 &1378597762
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5105,6 +5045,66 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1378597763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378597757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonClickFx: {fileID: 1378597762}
+  hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
+  clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!114 &1378597764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378597757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378597763}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: HoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378597763}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1501969169
 GameObject:
   m_ObjectHideFlags: 0
@@ -5241,52 +5241,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501969169}
   m_CullTransparentMesh: 1
---- !u!114 &1501969174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501969169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1501969176}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: HoverSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1501969176}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: ClickSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!82 &1501969175
+--- !u!82 &1501969174
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5382,7 +5337,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1501969176
+--- !u!114 &1501969175
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5394,9 +5349,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 1501969175}
+  buttonClickFx: {fileID: 1501969174}
   hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
   clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!114 &1501969176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501969169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1501969175}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: HoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1501969175}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1506294570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5926,8 +5926,8 @@ GameObject:
   - component: {fileID: 1644258890}
   - component: {fileID: 1644258889}
   - component: {fileID: 1644258893}
-  - component: {fileID: 1644258896}
   - component: {fileID: 1644258895}
+  - component: {fileID: 1644258896}
   - component: {fileID: 1644258894}
   m_Layer: 5
   m_Name: AnswerButton3
@@ -6080,52 +6080,7 @@ MonoBehaviour:
   isCorrect: 0
   quizManager: {fileID: 1533131200}
   initialColor: {r: 0.91764706, g: 1, b: 0.37254903, a: 0}
---- !u!114 &1644258894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644258887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1644258896}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: HoverSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1644258896}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: HoverSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!82 &1644258895
+--- !u!82 &1644258894
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6221,7 +6176,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1644258896
+--- !u!114 &1644258895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6233,9 +6188,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 1644258895}
+  buttonClickFx: {fileID: 1644258894}
   hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
   clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!114 &1644258896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644258887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1644258895}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: HoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1644258895}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1809501165
 GameObject:
   m_ObjectHideFlags: 0
@@ -6250,8 +6250,8 @@ GameObject:
   - component: {fileID: 1809501168}
   - component: {fileID: 1809501167}
   - component: {fileID: 1809501171}
-  - component: {fileID: 1809501174}
   - component: {fileID: 1809501173}
+  - component: {fileID: 1809501174}
   - component: {fileID: 1809501172}
   m_Layer: 5
   m_Name: AnswerButton4
@@ -6404,52 +6404,7 @@ MonoBehaviour:
   isCorrect: 0
   quizManager: {fileID: 1533131200}
   initialColor: {r: 0.91764706, g: 1, b: 0.37254903, a: 0}
---- !u!114 &1809501172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809501165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1809501174}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: HoverSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1809501174}
-          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
-          m_MethodName: ClickSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!82 &1809501173
+--- !u!82 &1809501172
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6545,7 +6500,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1809501174
+--- !u!114 &1809501173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6557,9 +6512,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4911998f8652ee540bca2f501fa2856c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickFx: {fileID: 1809501173}
+  buttonClickFx: {fileID: 1809501172}
   hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
   clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!114 &1809501174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809501165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1809501173}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: HoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1809501173}
+          m_TargetAssemblyTypeName: buttonFX, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1811194548
 GameObject:
   m_ObjectHideFlags: 0
