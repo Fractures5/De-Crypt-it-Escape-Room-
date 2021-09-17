@@ -2,6 +2,7 @@
 COMP602 Software Development Project 
 <br>
 **About the game**
+<br>
 De-Crypt-It is a first person escape room game which presents the player with unique and engaging puzzle which are required to complete in order to acquire clues and escape the house. 
 
 Images:
@@ -14,8 +15,13 @@ Images:
 
 <br>
 **Team Members**
+<br>
 Enrico Serrano 19071299
+<br>
 Siddarath Kumar 19075068
+<br>
 Anuk Silva 19078187
+<br>
 Faaris Khan 19075251
+<br>
 Leandro Machado 18041563
