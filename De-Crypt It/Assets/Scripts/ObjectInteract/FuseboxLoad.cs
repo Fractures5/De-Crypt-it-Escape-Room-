@@ -8,6 +8,8 @@ public class FuseboxLoad : MonoBehaviour
     //Keeps track of the object color
     [SerializeField]
     public Color startcolor;
+    public Color fuseBoxFrontColor;
+
     //Boolean that check if the player is within object range
     public bool isRange = false;
     //Text variable which gives intructions to the player on how to interact with them
@@ -18,6 +20,9 @@ public class FuseboxLoad : MonoBehaviour
     public AudioSource closeSound;
     //boolean to check if fusebox is closed
     public static bool isClosed = false;
+
+    //As the fusebox is the main task to be completed before doing other tasks, some puzzles will be disabled to indicate that power is needed to accomplish them
+    public GameObject fuseBoxFront;
 
     public GameObject tvPuzzleMenu;
 
@@ -39,7 +44,7 @@ public class FuseboxLoad : MonoBehaviour
         }
         //Resets this variable
         isClosed = false;
-        //This disables all the light switches at the start
+        //This disables all the light switches at the start and user will need to complete this task to enable light switches
         GameObject[] allLights= GameObject.FindGameObjectsWithTag("SwitchLight");
         //Getting audio source component
         foreach (GameObject i in allLights)
@@ -57,7 +62,7 @@ public class FuseboxLoad : MonoBehaviour
             { 
                 i.SetActive(true); 
             } 
-            Debug.Log("lights shouldve been turned on");
+            //It will also set the other puzzle as active when this task this completed
             tvPuzzleMenu.SetActive(true);
             marbleScreen.SetActive(true);
             
@@ -89,6 +94,10 @@ public class FuseboxLoad : MonoBehaviour
             //keyPad.GetComponent<KeyPadLoad>().enabled = true;
             startcolor = GetComponent<Renderer>().material.color;
             GetComponent<Renderer>().material.color = startcolor;
+
+            fuseBoxFrontColor = GetComponent<Renderer>().material.color;
+            fuseBoxFront.GetComponent<Renderer> ().material.color = fuseBoxFrontColor;
+
             isRange = false;
             instructions.gameObject.SetActive(false);
         }
@@ -100,6 +109,10 @@ public class FuseboxLoad : MonoBehaviour
                 //Highlights the interactable object and changes the is range status to true
                 startcolor = GetComponent<Renderer>().material.color;
                 GetComponent<Renderer>().material.color = Color.green;
+
+                fuseBoxFrontColor = fuseBoxFront.GetComponent<Renderer>().material.color;
+                fuseBoxFront.GetComponent<Renderer> ().material.color = Color.green;
+
                 isRange = true;
                 instructions.gameObject.SetActive(true);
             }
@@ -114,6 +127,8 @@ public class FuseboxLoad : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GetComponent<Renderer>().material.color = startcolor;
+            
+            fuseBoxFront.GetComponent<Renderer> ().material.color = fuseBoxFrontColor;
             isRange = false;
             instructions.gameObject.SetActive(false);
         }

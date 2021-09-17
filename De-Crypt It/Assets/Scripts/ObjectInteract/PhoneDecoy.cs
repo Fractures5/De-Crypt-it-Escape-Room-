@@ -25,6 +25,8 @@ public class PhoneDecoy : MonoBehaviour
     {
         if(taskComplete == false) 
         { 
+            //When the player is in range and Presses E, since its a decoy, it will only play a sound
+            //This object will also be interactable once per game
             if (isRange && Input.GetKeyDown("e")) 
             {
                 phoneSound.Play();
@@ -32,6 +34,7 @@ public class PhoneDecoy : MonoBehaviour
             }
         }
     }
+    //Check if the player is within the object range
     void OnTriggerEnter(Collider other)
     {
         //If the task is already completed, dont highlight the object, dont show instruction and dont update the player within range
@@ -59,7 +62,7 @@ public class PhoneDecoy : MonoBehaviour
 
 
     }
-
+    //Check if the player is outside the collider range
     void OnTriggerExit(Collider other)
     {
         //Changes the interactable object color to default and changes is range status to false
