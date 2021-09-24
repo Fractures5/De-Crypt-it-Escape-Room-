@@ -11,9 +11,6 @@ public class DoorOpener : MonoBehaviour {
     public Vector3 closedPosition = new Vector3(-32.276f, 13.144f, 2.152f);
     public Vector3 openedPosition = new Vector3(-32.276f, 13.144f, 2.152f);
     
-    //public Vector3 closedPosition = new Vector3(.51f, 3.63f, 0);
-    //public Vector3 openedPosition = new Vector3(.51f, 7f, 0);
-
     public float openSpeed = 5;
 
     private bool open = false;
@@ -22,6 +19,7 @@ public class DoorOpener : MonoBehaviour {
 
     #region MonoBehaviour API
 
+    //Update the position of the door, so that when ball collides the door will move and allow user to pass through.
     private void Update()
     {
         if (open)

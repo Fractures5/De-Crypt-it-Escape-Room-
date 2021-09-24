@@ -24,8 +24,10 @@ public class InstructionImage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If the player is within the object range and presses E, then the image should show
         if (isRange && Input.GetKeyDown("e")) 
         {
+            //If the object is not shown, show it
             if(isOpen == false) 
             {
                 playPickup.Play();
@@ -33,6 +35,7 @@ public class InstructionImage : MonoBehaviour
                 instructions.gameObject.SetActive(false);
                 isOpen = true;
             }
+            //If the object is shown, then dont show it
             else if(isOpen == true) 
             {
                 playPickup.Play();
@@ -43,6 +46,7 @@ public class InstructionImage : MonoBehaviour
 
         }
     }
+    //Check if the player is within the collider range of the object
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -55,6 +59,7 @@ public class InstructionImage : MonoBehaviour
         }
     }
 
+    //Check if the player is outisde the collider range of the object
     void OnTriggerExit(Collider other)
     {
         //Changes the interactable object color to default and changes is range status to false

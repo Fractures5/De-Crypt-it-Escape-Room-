@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class TutorialInteraction : MonoBehaviour
 {
+    //This script will handle the interaction with the desk in the tutorial mode
     [SerializeField]
     private Image parchment;
     public Color startcolor;
@@ -15,6 +16,7 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject exitButton;
     public GameObject crosshair;
 
+    //When player enters the collision range for the paper, then they are able to interact with the paper
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -25,7 +27,7 @@ public class TutorialInteraction : MonoBehaviour
             isRange = true;
         }
     }
-
+    //If the player leaves the collision range of the paper, the paper display will then be closed
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -39,7 +41,7 @@ public class TutorialInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //If the player is in range and presses E, then their player controls are disabled and they are shown the parchment with the instructions
         if (isRange == true && Input.GetKeyDown("e"))
         {
             interactionText.gameObject.SetActive(false);
@@ -48,7 +50,7 @@ public class TutorialInteraction : MonoBehaviour
             firstPersonController.GetComponent<FirstPersonMovement>().enabled=false;
             firstPersonCamera.GetComponent<FirstPersonLook>().enabled=false;
             firstPersonCamera.GetComponent<Zoom>().enabled=false;
-
+            //They are able to use the cursor
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
 
@@ -57,7 +59,7 @@ public class TutorialInteraction : MonoBehaviour
             crosshair.SetActive(false);
         }
     }
-
+    //Hides the parchment and enables player controls
     public void hideParchment()
     {
         firstPersonController.GetComponent<Jump>().enabled=true;

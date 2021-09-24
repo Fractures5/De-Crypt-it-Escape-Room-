@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class RestartButtonScript : MonoBehaviour
 {
-
+    //This script will run and reset necesary variables when the player wishes to restart the game
     [SerializeField] private ConfirmationWindow RestartConfirmationWindow;
-    //public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +20,7 @@ public class RestartButtonScript : MonoBehaviour
         RestartConfirmationWindow.yesButton.onClick.AddListener(YesClicked);
         RestartConfirmationWindow.noButton.onClick.AddListener(NoClicked);
     }
-
+    //This function restarts all the necessary ingame variables and objects
     void restartStatus()
     {
         StorePlayerLocation.savedPosition = new Vector3(-3.412f,0.2201252f,-16.276f);
@@ -39,8 +38,6 @@ public class RestartButtonScript : MonoBehaviour
         ArcadeLoad.taskComplete = false;
         FlashlightController.FlashlightActive = false;
         TimerCountdown.timeLeft = 1800;
-        //TimerCountdown.minutes = Mathf.FloorToInt(TimerCountdown.timeLeft / 60F);
-        //TimerCountdown.seconds = Mathf.FloorToInt(TimerCountdown.timeLeft - TimerCountdown.minutes * 60);
 
     }
     private void YesClicked()
