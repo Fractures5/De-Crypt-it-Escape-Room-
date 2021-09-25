@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class DialogueController : MonoBehaviour
 {
-
+    //This script manages the dialogue for the game story board
     public Text characterNameText;
     public Text dialogueText;
 
@@ -20,7 +20,7 @@ public class DialogueController : MonoBehaviour
     {
         sentences = new Queue<string>(); // Initialise queue of sentences
     }
-
+    //Starts the dialogue
     public void StartDialogue (Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
@@ -38,7 +38,7 @@ public class DialogueController : MonoBehaviour
        
        ShowNextSentence();
     }
-
+    //this function will determine what sentence is shown next in the story board
     public void ShowNextSentence()
     {
         if(sentences.Count == 0) // If there is no more sentences in queue
@@ -52,7 +52,7 @@ public class DialogueController : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
-
+    //this function will determine what sentence is shown next in the story board
     IEnumerator TypeSentence (string sentence)
     {
         dialogueText.text = "";
@@ -62,13 +62,14 @@ public class DialogueController : MonoBehaviour
             yield return null;
         }
     }
-
+    //This will load the main game
     public void startSinglePlayerGame()
     {
         restartStatus();
         Debug.Log("You are now transfered into the game!");
         SceneManager.LoadScene("MainGame");
     }
+    //this function will reset the game variables if the player wishes to restart the game
     void restartStatus()
     {
         StorePlayerLocation.savedPosition = new Vector3(-3.412f,0.2201252f,-16.276f);

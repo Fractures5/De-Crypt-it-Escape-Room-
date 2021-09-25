@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class RestartLevel : MonoBehaviour
 {
+    //Restart the game if player hits out of boundarie places.
     [SerializeField]
     KeyCode keyRestart;
 
