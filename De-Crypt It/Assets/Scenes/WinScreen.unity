@@ -375,6 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 872912434}
   - component: {fileID: 872912435}
+  - component: {fileID: 872912436}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -407,6 +408,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ebb29098834dad458935d1a1c027485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &872912436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872912433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e707004bf7e225d458eb77b1b449ca0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1163631674
@@ -444,7 +457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0026245117, y: -6.2017975}
+  m_AnchoredPosition: {x: 0.0026245117, y: -6.201782}
   m_SizeDelta: {x: 0.0071411133, y: 12.404022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163631676
@@ -722,6 +735,18 @@ MonoBehaviour:
       - m_Target: {fileID: 872912435}
         m_TargetAssemblyTypeName: MainMenuScript, Assembly-CSharp
         m_MethodName: ShowMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 872912436}
+        m_TargetAssemblyTypeName: HighScores, Assembly-CSharp
+        m_MethodName: sendScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
