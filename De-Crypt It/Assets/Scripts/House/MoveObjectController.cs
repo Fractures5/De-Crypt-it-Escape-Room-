@@ -93,12 +93,14 @@ public class MoveObjectController : MonoBehaviour
 					bool isOpen = anim.GetBool(animBoolNameNum);	//need current state for message.
 					msg = getGuiMsg(isOpen);
 
-					if (Input.GetKeyUp(KeyCode.E) || Input.GetButtonDown("Fire1"))
+					if (Input.GetKeyUp(KeyCode.E))
 					{
+						//If the object is open, then play the closing sound when the player presses E
 						if(isOpen == true)
 						{
 							playSound.PlayOneShot(closeSound, 0.5f);
 						}
+						//If the object is closed, then play the open sound the player presses E
 						else 
 						{
 							playSound.PlayOneShot(openSound, 0.5f);
@@ -167,15 +169,16 @@ public class MoveObjectController : MonoBehaviour
 		msg = "Press E/Fire1 to Open";
 	}
 
+	//A function which shows the status of the object, lets the user know which objects they have to press to interact with an object
 	private string getGuiMsg(bool isOpen)
 	{
 		string rtnVal;
 		if (isOpen)
 		{
-			rtnVal = "Press E/Fire1 to Close";
+			rtnVal = "Press E to Close";
 		}else
 		{
-			rtnVal = "Press E/Fire1 to Open";
+			rtnVal = "Press E to Open";
 		}
 
 		return rtnVal;

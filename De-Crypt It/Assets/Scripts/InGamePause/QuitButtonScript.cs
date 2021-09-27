@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class QuitButtonScript : MonoBehaviour
 {
-
+    //This script will handle the interaction between the player and the quit button
     [SerializeField] private ConfirmationWindow QuitConfirmationWindow;
 
     void Start()
