@@ -35,4 +35,8 @@ public class MainMenuScript : MonoBehaviour
         Debug.Log("You chose to quit the game"); // Quit message displayed in the console (testing)
         Application.Quit(); // Will quit the application
     }
+    public void viewLeaderboard()
+    {
+        SceneManager.LoadScene("Leaderboard");
+    }
 }
