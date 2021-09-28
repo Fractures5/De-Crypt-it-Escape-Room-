@@ -15,11 +15,11 @@ C:/Users/Siddarath/Documents/De-Crypt-it-Escape-Room-/De-Crypt It
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61463
+57779
 Successfully changed project path to: C:/Users/Siddarath/Documents/De-Crypt-it-Escape-Room-/De-Crypt It
 C:/Users/Siddarath/Documents/De-Crypt-it-Escape-Room-/De-Crypt It
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.15 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 57.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -35,398 +35,403 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002563 seconds.
+Registered in 0.007639 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 38.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 54.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.983 seconds
+- Completed reload, in  1.487 seconds
 Domain Reload Profiling:
-	ReloadAssembly (983ms)
-		BeginReloadAssembly (48ms)
+	ReloadAssembly (1488ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (365ms)
-			LoadAssemblies (46ms)
+		EndReloadAssembly (581ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (134ms)
+			SetupTypeCache (213ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (144ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (232ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (38ms)
-				BeforeProcessingInitializeOnLoad (6ms)
-				ProcessInitializeOnLoadAttributes (71ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				RefreshPlugins (55ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005208 seconds.
+Registered in 0.012041 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001468AFCE050 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000001BC8B910020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B987020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000001BC8D13A030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688C00440 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000001BC899F1FE0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B23A230 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000001BC8B97ED50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B4AB020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000001BC8BA59030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688FCF060 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000001BC89A73A20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B4AB020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000001BC8BAB5030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B23A230 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000001BC89A73A20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468C896430 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000001BC8BA87240 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468C896430 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-000001BC89A73A20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B292A40 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000001BC8CDA8A50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B4FF020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-000001BC8C19E020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B292A40 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-000001BC8D14E840 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000146891AF020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000001BC8CB53A90 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.898 seconds
+- Completed reload, in  1.412 seconds
 Domain Reload Profiling:
-	ReloadAssembly (899ms)
-		BeginReloadAssembly (131ms)
+	ReloadAssembly (1413ms)
+		BeginReloadAssembly (216ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (712ms)
-			LoadAssemblies (77ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1107ms)
+			LoadAssemblies (125ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
+			SetupTypeCache (389ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (258ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (408ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (193ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1549 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.7 MB.
-System memory in use after: 77.7 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1994.
-Total: 2.232700 ms (FindLiveObjects: 0.201600 ms CreateObjectMapping: 0.056100 ms MarkObjects: 1.875800 ms  DeleteObjects: 0.098600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(fe051e40cab51e14aa416aa0f558ee79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(fe051e40cab51e14aa416aa0f558ee79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e8f27b1066887f4f915ce97a377a26') in 0.005666 seconds 
-  Import took 0.007802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.130115 seconds.
-  path: Assets/Scenes/CardSwipe.unity
-  artifactKey: Guid(2a48dedb8fdccbd4482157b8e4a1773a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/CardSwipe.unity using Guid(2a48dedb8fdccbd4482157b8e4a1773a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4e2fd6bc95f4ce152205729bbb4a3f') in 0.010575 seconds 
-  Import took 0.013547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000940 seconds.
-  path: Assets/Scenes/CardSwipe.unity
-  artifactKey: Guid(2a48dedb8fdccbd4482157b8e4a1773a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/CardSwipe.unity using Guid(2a48dedb8fdccbd4482157b8e4a1773a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4e2fd6bc95f4ce152205729bbb4a3f') in 0.004256 seconds 
-  Import took 0.007467 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.016900 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000014688D96320 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F1AA020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468ACADE80 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F1AA020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B257020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F1AA020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468AEC6010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F1AA020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468EA2B010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F1AA020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468ACADE80 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B6DE020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B435040 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EF7DC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.266 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3268ms)
-		BeginReloadAssembly (358ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (96ms)
-		EndReloadAssembly (2719ms)
-			LoadAssemblies (384ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (952ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (151ms)
-			SetupLoadedEditorAssemblies (958ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (154ms)
-				ProcessInitializeOnLoadAttributes (745ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.05 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1529 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 76.1 MB.
-System memory in use after: 76.2 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1997.
-Total: 8.300200 ms (FindLiveObjects: 0.619500 ms CreateObjectMapping: 0.170200 ms MarkObjects: 7.044600 ms  DeleteObjects: 0.411500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004985 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001468B242240 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014689197020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B762050 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B40D010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468902C1B0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B531010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468AEC6010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B40D010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468FBFF9B0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B531010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B892010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468C877020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B435040 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EF7DC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.852 seconds
-Domain Reload Profiling:
-	ReloadAssembly (852ms)
-		BeginReloadAssembly (104ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (692ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (245ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (247ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (186ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1529 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 76.2 MB.
-System memory in use after: 76.2 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2000.
-Total: 2.217600 ms (FindLiveObjects: 0.182500 ms CreateObjectMapping: 0.037600 ms MarkObjects: 1.933400 ms  DeleteObjects: 0.063100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004873 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000014683F41E60 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014689197020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688F1D430 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B40D010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468909C050 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B4BB030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468AEC6010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B40D010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000146891AC750 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B4BB030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688F1D430 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B6DE020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EEF5A0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EF7DC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.825 seconds
-Domain Reload Profiling:
-	ReloadAssembly (826ms)
-		BeginReloadAssembly (97ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (668ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (241ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (235ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (175ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (308ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 2.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1550 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.7 MB.
+System memory in use after: 77.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1995.
+Total: 7.736400 ms (FindLiveObjects: 0.786500 ms CreateObjectMapping: 0.293100 ms MarkObjects: 6.143800 ms  DeleteObjects: 0.508900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Leaderboard.unity
+  artifactKey: Guid(587a0035b79133c498d0a6c7f4097170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Leaderboard.unity using Guid(587a0035b79133c498d0a6c7f4097170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f773e461f0dca7875bbf196532c0b30f') in 0.067071 seconds 
+  Import took 0.074998 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 45.9 MB.
+System memory in use after: 46.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1995.
+Total: 2.560200 ms (FindLiveObjects: 0.226700 ms CreateObjectMapping: 0.073400 ms MarkObjects: 2.186700 ms  DeleteObjects: 0.072100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.096918 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BC89B5BB10 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC9077F010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC89856020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC9077F010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8D917420 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC9077F010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8FE0BF60 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC9077F010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8F7FAC00 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC9077F010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8D544020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8CD6D030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8CE73E20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8C0F6020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.253 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2259ms)
+		BeginReloadAssembly (919ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (70ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (272ms)
+		EndReloadAssembly (1148ms)
+			LoadAssemblies (467ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (459ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (349ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (258ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 76.2 MB.
+System memory in use after: 76.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1998.
+Total: 2.293500 ms (FindLiveObjects: 0.227700 ms CreateObjectMapping: 0.063000 ms MarkObjects: 1.929400 ms  DeleteObjects: 0.072000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006210 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BC8BB21880 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8FB04E60 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8BBAC020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8DAA3020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8F80CCD0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8DAA3020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8FE0BF60 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8DAA3020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8BB0E030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8FB04E60 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC9020CB90 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8BD79030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8CE73E20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC89AD2010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.251 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1251ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1034ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (406ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (344ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (257ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 76.2 MB.
+System memory in use after: 76.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2001.
+Total: 1.860700 ms (FindLiveObjects: 0.167700 ms CreateObjectMapping: 0.042900 ms MarkObjects: 1.587500 ms  DeleteObjects: 0.061600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005762 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BC8D248020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8F093020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC89DE1020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8DAA3020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8D7E8F90 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8F093020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8FE0BF60 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8DAA3020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8BB0E030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8F093020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC89DE1020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8C403010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8CE73E20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC90ABD040 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.104 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1104ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (898ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (319ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (304ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 76.2 MB.
 System memory in use after: 76.3 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2004.
-Total: 2.189500 ms (FindLiveObjects: 0.213200 ms CreateObjectMapping: 0.038500 ms MarkObjects: 1.849500 ms  DeleteObjects: 0.087700 ms)
+Total: 2.348600 ms (FindLiveObjects: 0.238500 ms CreateObjectMapping: 0.075800 ms MarkObjects: 1.961600 ms  DeleteObjects: 0.071400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -439,1038 +444,164 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 223.108648 seconds.
-  path: Assets/PingingPuzzleContent
-  artifactKey: Guid(e88980a060ce88142b946ca05cfced11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PingingPuzzleContent using Guid(e88980a060ce88142b946ca05cfced11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3562b346a52602626bdff42540ecf113') in 0.006858 seconds 
-  Import took 0.009668 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.064443 seconds.
-  path: Assets/PingingPuzzleContent/appLauncherIcon.jpg
-  artifactKey: Guid(aac857adc993b8e4d9691924e2652358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PingingPuzzleContent/appLauncherIcon.jpg using Guid(aac857adc993b8e4d9691924e2652358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e64fbd1522724f8b681b581e4837523') in 0.103380 seconds 
-  Import took 0.106822 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/PingingPuzzleContent/serverRoomKeypadMsg.PNG
-  artifactKey: Guid(ff2ad4070e6ccaf4cad48bcff1a9f2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PingingPuzzleContent/serverRoomKeypadMsg.PNG using Guid(ff2ad4070e6ccaf4cad48bcff1a9f2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ff5366c78d379229f249a4dbb82034') in 0.010580 seconds 
-  Import took 0.013348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/PingingPuzzleContent/New Material.mat
-  artifactKey: Guid(3f3aae8911d12b140b96ef80ceb378d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PingingPuzzleContent/New Material.mat using Guid(3f3aae8911d12b140b96ef80ceb378d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb66cb43926dfc3ebd017b48f8630f5f') in 0.039826 seconds 
-  Import took 0.042828 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/PingingPuzzleContent/notesIcon.png
-  artifactKey: Guid(095a6b0e1eb6ebe44acc6d71e5dc4b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PingingPuzzleContent/notesIcon.png using Guid(095a6b0e1eb6ebe44acc6d71e5dc4b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94559eea0d042b353c1544a6820cfcd1') in 0.014779 seconds 
-  Import took 0.017230 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000382 seconds.
-  path: Assets/PingingPuzzleContent/settingsIcon.png
-  artifactKey: Guid(5aa0fee6201227846866071826cdb550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PingingPuzzleContent/settingsIcon.png using Guid(5aa0fee6201227846866071826cdb550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f0964d07d13670a0d573f6657bbf46') in 0.043216 seconds 
-  Import took 0.046925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/PingingPuzzleContent/networksIcon.png
-  artifactKey: Guid(9d7a16f29eb45b6439e0fe92f78acf0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PingingPuzzleContent/networksIcon.png using Guid(9d7a16f29eb45b6439e0fe92f78acf0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7df3da4032356b687b00b54eb640e6') in 0.043106 seconds 
-  Import took 0.046185 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/PingingPuzzleContent/mediaIcon.png
-  artifactKey: Guid(063a62f485fa203419fd9a9a61ce1a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PingingPuzzleContent/mediaIcon.png using Guid(063a62f485fa203419fd9a9a61ce1a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c96b7ece5cf09dfb7243bf4711e937a') in 0.040412 seconds 
-  Import took 0.043472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.607446 seconds.
-  path: Assets/Materials/Textures
-  artifactKey: Guid(559a62a5ff824364d89f302e15f83c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures using Guid(559a62a5ff824364d89f302e15f83c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4ea86fcee3aef69edebd03f8867861c') in 0.006165 seconds 
-  Import took 0.008875 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.065679 seconds.
-  path: Assets/Materials/Textures/blueRamps.jpg
-  artifactKey: Guid(3d850e62aac863b41b3a1819ab0fea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/blueRamps.jpg using Guid(3d850e62aac863b41b3a1819ab0fea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398b35b628150349fe13f201c99711fb') in 0.010132 seconds 
-  Import took 0.013032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Materials/Textures/HoneyComb.jpg
-  artifactKey: Guid(6b6b09fc62dbab84b92b70ffb6a7bceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/HoneyComb.jpg using Guid(6b6b09fc62dbab84b92b70ffb6a7bceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7404932f1cd4e0280445c9b8cf495f0') in 0.011622 seconds 
-  Import took 0.014343 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Materials/Textures/Decrypt-It Logo.png
-  artifactKey: Guid(7bcf9dcaa86401e488f2fd7a28202ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/Decrypt-It Logo.png using Guid(7bcf9dcaa86401e488f2fd7a28202ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5b15fa86cd9b8be0b7142169a7d258') in 0.019962 seconds 
-  Import took 0.022849 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Materials/Textures/Red lava.jpg
-  artifactKey: Guid(37585bd6751a2b64cbb4f5850dfd62d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/Red lava.jpg using Guid(37585bd6751a2b64cbb4f5850dfd62d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fcc16338c2a017bbddd9e31193db98') in 0.009542 seconds 
-  Import took 0.011947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Materials/Textures/RedBack.jpg
-  artifactKey: Guid(017c05bef47a0ac4f8384cf53191a84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/RedBack.jpg using Guid(017c05bef47a0ac4f8384cf53191a84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b4269100aa6bdc9e9f12356e80b47c') in 0.011032 seconds 
-  Import took 0.013586 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Materials/Textures/Brickwall.png
-  artifactKey: Guid(4c06a48eb3fddc5449dac51ce4eb1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/Brickwall.png using Guid(4c06a48eb3fddc5449dac51ce4eb1067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2352803cd7efd9b0219ce176338cc8') in 0.011239 seconds 
-  Import took 0.014280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Materials/Textures/yello.jpg
-  artifactKey: Guid(02455db8d96bbd1499dd386d9d8a8d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/yello.jpg using Guid(02455db8d96bbd1499dd386d9d8a8d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03921611b3f1b6f4b329bb95bdc849cc') in 0.011682 seconds 
-  Import took 0.014548 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Materials/Textures/GameOverBackground.jpg
-  artifactKey: Guid(61dedddcdb31b374ca38398172b6b050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/GameOverBackground.jpg using Guid(61dedddcdb31b374ca38398172b6b050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9666c137f378a778b23a464e0a7357f2') in 0.030266 seconds 
-  Import took 0.033339 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Materials/Textures/Carbon.jpg
-  artifactKey: Guid(858e2940ef5a2b848a5837fa413d9d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Textures/Carbon.jpg using Guid(858e2940ef5a2b848a5837fa413d9d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0741736f6742542590a2f823637d88') in 0.010536 seconds 
-  Import took 0.013242 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.401187 seconds.
-  path: Assets/Materials/ServerRoom
-  artifactKey: Guid(03191829c280669449ba09b001cda5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom using Guid(03191829c280669449ba09b001cda5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7213600281252f883bc122ac49ac7405') in 0.004722 seconds 
-  Import took 0.007368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.089155 seconds.
-  path: Assets/Materials/ServerRoom/Alpha.mat
-  artifactKey: Guid(325c26d158a553c4a933aa0b7ef45a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Alpha.mat using Guid(325c26d158a553c4a933aa0b7ef45a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3f3899540e01143ba26e21b458da8d') in 0.014091 seconds 
-  Import took 0.016629 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Materials/ServerRoom/New Material 1.mat
-  artifactKey: Guid(512aea7b93973794796ce48f34573299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/New Material 1.mat using Guid(512aea7b93973794796ce48f34573299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71030a2e51383a5847ba45ee1246d1de') in 0.010510 seconds 
-  Import took 0.012855 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Materials/ServerRoom/Black.mat
-  artifactKey: Guid(4dc433cad83879e4b91ef90e7c574cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Black.mat using Guid(4dc433cad83879e4b91ef90e7c574cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca361fb19be6f79daad433ffb38c767') in 0.013559 seconds 
-  Import took 0.016407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Materials/ServerRoom/Gray.mat
-  artifactKey: Guid(3c973fa156007ff4f84176a2c67b9645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Gray.mat using Guid(3c973fa156007ff4f84176a2c67b9645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34d2808a56edfbee61e83838c8cc4d6') in 0.015085 seconds 
-  Import took 0.018037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Materials/ServerRoom/Green.mat
-  artifactKey: Guid(a2df5ea5e8046404f9ea4f0ae3387cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Green.mat using Guid(a2df5ea5e8046404f9ea4f0ae3387cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd20f6ab7f0fdcbd3b927ace49902403e') in 0.012851 seconds 
-  Import took 0.015818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Materials/ServerRoom/Golf.mat
-  artifactKey: Guid(bae88530be0669e40bc475465c72334d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Golf.mat using Guid(bae88530be0669e40bc475465c72334d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697e38470ff0acc039d4fd73c3f1aa79') in 0.015691 seconds 
-  Import took 0.018764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Materials/ServerRoom/Foxtrot.mat
-  artifactKey: Guid(cde609ecc9e8ac44bbe788427dd27f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Foxtrot.mat using Guid(cde609ecc9e8ac44bbe788427dd27f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e482bc030aa33a4d967090ebc38467') in 0.017056 seconds 
-  Import took 0.020121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Materials/ServerRoom/Maroon.mat
-  artifactKey: Guid(caa3d948de184dd44a1ae50c326160be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Maroon.mat using Guid(caa3d948de184dd44a1ae50c326160be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73eb0dcbdb6e9835e39dae762ced46d1') in 0.014981 seconds 
-  Import took 0.017813 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Materials/ServerRoom/New Material 5.mat
-  artifactKey: Guid(4cfd0114ac7bb9d4a87555fa3a0444aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/New Material 5.mat using Guid(4cfd0114ac7bb9d4a87555fa3a0444aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138d0f1e82c781e8d901cfff0634c81d') in 0.018014 seconds 
-  Import took 0.020578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Materials/ServerRoom/DarkPurple.mat
-  artifactKey: Guid(8551c2e2b74a6ce4ca22a0e24ce52824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/DarkPurple.mat using Guid(8551c2e2b74a6ce4ca22a0e24ce52824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ed32ab86ff217f545c7d87fc1dd915') in 0.014919 seconds 
-  Import took 0.017563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Materials/ServerRoom/New Material 4.mat
-  artifactKey: Guid(b6682eba1c3dfc64eb4d857e60dd1f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/New Material 4.mat using Guid(b6682eba1c3dfc64eb4d857e60dd1f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc611b98e1f72fd66e5b51e4dd1ddde') in 0.018367 seconds 
-  Import took 0.020988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Materials/ServerRoom/Delta.mat
-  artifactKey: Guid(8740af7fb1d412a49b33154c378ad98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Delta.mat using Guid(8740af7fb1d412a49b33154c378ad98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d5d1496d7ca882b4c9932fec66ce323') in 0.017417 seconds 
-  Import took 0.019897 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Materials/ServerRoom/New Material 3.mat
-  artifactKey: Guid(51ee5b9cec4aee8489d009959021af99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/New Material 3.mat using Guid(51ee5b9cec4aee8489d009959021af99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732cf7d557d238616e6583973608cc64') in 0.014136 seconds 
-  Import took 0.017404 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000502 seconds.
-  path: Assets/Materials/ServerRoom/New Material.mat
-  artifactKey: Guid(ba9f19634854fe049a5f2efa105e456c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/New Material.mat using Guid(ba9f19634854fe049a5f2efa105e456c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd533b078300ff1c1038c7462033eac08') in 0.014031 seconds 
-  Import took 0.017071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/Materials/ServerRoom/Red.mat
-  artifactKey: Guid(795ca91c45ca95c4696918d5ba5d3690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Red.mat using Guid(795ca91c45ca95c4696918d5ba5d3690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5273afecedb8fab0b16ed3d9ff75a73') in 0.014748 seconds 
-  Import took 0.017711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Materials/ServerRoom/DarkGreen.mat
-  artifactKey: Guid(22412357955962f4fb6c1087b7128b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/DarkGreen.mat using Guid(22412357955962f4fb6c1087b7128b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64020b0cc0de581e0f06f61208bb4c96') in 0.013948 seconds 
-  Import took 0.016925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Materials/ServerRoom/Bravo.mat
-  artifactKey: Guid(84b5bdec2432caa44b968f700bcb2010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Bravo.mat using Guid(84b5bdec2432caa44b968f700bcb2010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa1b837e7769290caaacabee6fdd2a9') in 0.015484 seconds 
-  Import took 0.018213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Materials/ServerRoom/Yellow.mat
-  artifactKey: Guid(275bb639f47220e45beb8be0f204a1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Yellow.mat using Guid(275bb639f47220e45beb8be0f204a1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60548aa3f21ee1a1c4b525d72ab823c6') in 0.013666 seconds 
-  Import took 0.016720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Materials/ServerRoom/KeypadStartMsg.mat
-  artifactKey: Guid(3300b39bbdec60046952b640ea58f486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/KeypadStartMsg.mat using Guid(3300b39bbdec60046952b640ea58f486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f91eb2c2d3a096014542ddb368331e9') in 0.028800 seconds 
-  Import took 0.031981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Materials/ServerRoom/New Material 2.mat
-  artifactKey: Guid(961696448a477d4409f6af47e7f570b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/New Material 2.mat using Guid(961696448a477d4409f6af47e7f570b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afbbef7d45f4d4eacf28218ead31721') in 0.012165 seconds 
-  Import took 0.014915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Materials/ServerRoom/Charlie.mat
-  artifactKey: Guid(da328fa67d6b1c0489486e3544dacf49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Charlie.mat using Guid(da328fa67d6b1c0489486e3544dacf49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db75f12037654a8d21e28e97dcf17d2') in 0.014349 seconds 
-  Import took 0.017253 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Materials/ServerRoom/DarkYellow.mat
-  artifactKey: Guid(f2a9992a6f1dced4ebbe7d284ae0781c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/DarkYellow.mat using Guid(f2a9992a6f1dced4ebbe7d284ae0781c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9fd4d69c1e21e4c49b1e3fa74c48b6') in 0.015855 seconds 
-  Import took 0.018389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Materials/ServerRoom/Purple.mat
-  artifactKey: Guid(c2e31250b3d573544b6908d575f10df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Purple.mat using Guid(c2e31250b3d573544b6908d575f10df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c724ca4904f0a2674381ce450556944') in 0.015773 seconds 
-  Import took 0.018409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Materials/ServerRoom/LightBLue.mat
-  artifactKey: Guid(9dc618becd0cd2b42847cbfd45307c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/LightBLue.mat using Guid(9dc618becd0cd2b42847cbfd45307c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f358cb43e74094c50c24e5beaaf9d73') in 0.016258 seconds 
-  Import took 0.019026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/Materials/ServerRoom/White.mat
-  artifactKey: Guid(d9b5d99624eeb6649a73f8655ea04c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/White.mat using Guid(d9b5d99624eeb6649a73f8655ea04c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc03a49851900a916f935a4b908a916e') in 0.013497 seconds 
-  Import took 0.016188 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Materials/ServerRoom/Echo.mat
-  artifactKey: Guid(9815e31bdcc03fd43b2fc99275127e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Echo.mat using Guid(9815e31bdcc03fd43b2fc99275127e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460eb07400d6a903e345d3acd004886b') in 0.013763 seconds 
-  Import took 0.016791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Materials/ServerRoom/Blue.mat
-  artifactKey: Guid(eb6882b041539a84491cdf51647518ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Blue.mat using Guid(eb6882b041539a84491cdf51647518ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9cb143c8f25b72d8884019aa7ba15c') in 0.014750 seconds 
-  Import took 0.017380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Materials/ServerRoom/Orange.mat
-  artifactKey: Guid(2bc7409f3bb09df4d9560c0be9c5ce2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ServerRoom/Orange.mat using Guid(2bc7409f3bb09df4d9560c0be9c5ce2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52837ad12c832b1e5e34671d696e766d') in 0.018406 seconds 
-  Import took 0.021559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.810278 seconds.
-  path: Assets/Textures
-  artifactKey: Guid(7478b35ac47c52b4ba6da74a005b5c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures using Guid(7478b35ac47c52b4ba6da74a005b5c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e962d3a095c334c46d0643a30fa4bed6') in 0.004444 seconds 
-  Import took 0.007326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.641926 seconds.
-  path: Assets/Textures/Puzzles
-  artifactKey: Guid(abb86b0f08f20b74fb566edb7fefb64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Puzzles using Guid(abb86b0f08f20b74fb566edb7fefb64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c24781fd04c907e4b2502d9223939c9') in 0.005839 seconds 
-  Import took 0.008852 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.205803 seconds.
-  path: Assets/Textures/Puzzles/Fusebox.png
-  artifactKey: Guid(f88dc3e2e84fd904e80442dd8352c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Puzzles/Fusebox.png using Guid(f88dc3e2e84fd904e80442dd8352c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fcd87c1714ff9119537298b6d6c58b8') in 0.009807 seconds 
-  Import took 0.013114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Textures/Puzzles/KeyPad.PNG
-  artifactKey: Guid(b7b48cb413f2a114c97a871804f70976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Puzzles/KeyPad.PNG using Guid(b7b48cb413f2a114c97a871804f70976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9b3d566eaa58873c977b4af92d5920') in 0.010273 seconds 
-  Import took 0.012653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Textures/Puzzles/TvClue.png
-  artifactKey: Guid(3ae55c1ee1a7fd648b37943f244ebe5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Puzzles/TvClue.png using Guid(3ae55c1ee1a7fd648b37943f244ebe5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aceee01f8eaf62ce25221172b198f165') in 0.009737 seconds 
-  Import took 0.012381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Textures/Puzzles/quiz-background.jpg
-  artifactKey: Guid(6028a7581d2332b4883971cb03a5c98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Puzzles/quiz-background.jpg using Guid(6028a7581d2332b4883971cb03a5c98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992bbaeff28097085b6c06db0bf9afd1') in 0.028473 seconds 
-  Import took 0.031708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Textures/Puzzles/quiz-tv-UI.PNG
-  artifactKey: Guid(1a7757fe62621f84bb4e50c7714d3bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Puzzles/quiz-tv-UI.PNG using Guid(1a7757fe62621f84bb4e50c7714d3bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d3c7ea21da6c39b47042ea312d65ef') in 0.009973 seconds 
-  Import took 0.012623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.086082 seconds.
-  path: Assets/Textures/ServerRoom
-  artifactKey: Guid(bf643840c41465641b7157f60e5fdc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom using Guid(bf643840c41465641b7157f60e5fdc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76af22c86abfc9b4d47af8448d20456') in 0.004060 seconds 
-  Import took 0.006591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.064030 seconds.
-  path: Assets/Textures/ServerRoom/Alpha.png
-  artifactKey: Guid(4928c4d198194f947924b6662ed9493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Alpha.png using Guid(4928c4d198194f947924b6662ed9493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3c0a64c18eaa5f034bd6c135620552') in 0.009393 seconds 
-  Import took 0.012930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Textures/ServerRoom/note.png
-  artifactKey: Guid(c2a27f5cb80cbe94bada1244df9d5e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/note.png using Guid(c2a27f5cb80cbe94bada1244df9d5e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb4ab9074106a2a1aabe4ee4a32e507a') in 0.009723 seconds 
-  Import took 0.012002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Textures/ServerRoom/Bravo.png
-  artifactKey: Guid(893870e6c696c254ea0988b5a7bd9bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Bravo.png using Guid(893870e6c696c254ea0988b5a7bd9bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90429694200f9a13ac4e65bb206bd525') in 0.010306 seconds 
-  Import took 0.013410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Textures/ServerRoom/Golf.png
-  artifactKey: Guid(e8c11785834370d45a81c07377e4b2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Golf.png using Guid(e8c11785834370d45a81c07377e4b2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59ff7c36371708c9c8a74eec6ff0e55') in 0.018323 seconds 
-  Import took 0.021324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Textures/ServerRoom/Charlie.png
-  artifactKey: Guid(2eb706c2b88d51940beaefae17ab2532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Charlie.png using Guid(2eb706c2b88d51940beaefae17ab2532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '545193be122872f101baab3399e972f3') in 0.015076 seconds 
-  Import took 0.017456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Textures/ServerRoom/Delta.png
-  artifactKey: Guid(b3b97cee745534540b2a984c229e2b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Delta.png using Guid(b3b97cee745534540b2a984c229e2b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8234757e48d7de9bf8022d6457cebf21') in 0.012060 seconds 
-  Import took 0.014842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Textures/ServerRoom/Foxtrot.png
-  artifactKey: Guid(7707b48b0ccde9f41b59b71b6e03dd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Foxtrot.png using Guid(7707b48b0ccde9f41b59b71b6e03dd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0bbd39b36082ee4deaac4b3ef94788') in 0.009939 seconds 
-  Import took 0.012420 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Textures/ServerRoom/Echo.png
-  artifactKey: Guid(bde6795d9b6258d4c930efcb0c036faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Echo.png using Guid(bde6795d9b6258d4c930efcb0c036faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67636aa7fb3329bfc7c14b2fba3c7206') in 0.011560 seconds 
-  Import took 0.014409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.251958 seconds.
-  path: Assets/Textures/ServerRoom/Materials
-  artifactKey: Guid(699a9042915a34948a6841fced3aaf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Materials using Guid(699a9042915a34948a6841fced3aaf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eec4e5836543eed16784837905df3fd') in 0.007870 seconds 
-  Import took 0.010854 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.105085 seconds.
-  path: Assets/Textures/ServerRoom/Materials/serverRoomKeypadMsg.mat
-  artifactKey: Guid(de74360b54ba4cc4a9a26703f907064c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ServerRoom/Materials/serverRoomKeypadMsg.mat using Guid(de74360b54ba4cc4a9a26703f907064c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed791fd9182f7834b2e4054eea6f8914') in 0.011196 seconds 
-  Import took 0.013918 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.609248 seconds.
-  path: Assets/Materials
-  artifactKey: Guid(a55fcd0b6060b6749af17ba4162772ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials using Guid(a55fcd0b6060b6749af17ba4162772ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233e91cf238c1fc00c6aa52f3e0bed98') in 0.004203 seconds 
-  Import took 0.007484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.508885 seconds.
-  path: Assets/Textures/HardGamePuzzles
-  artifactKey: Guid(abb86b0f08f20b74fb566edb7fefb64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/HardGamePuzzles using Guid(abb86b0f08f20b74fb566edb7fefb64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4999bf993fdeebee86d0d4df08c0734') in 0.004333 seconds 
-  Import took 0.007265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 99.280569 seconds.
-  path: Assets/Textures/Prop/Envelope.png
-  artifactKey: Guid(f61fb79972ad64942839708e867a6ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Prop/Envelope.png using Guid(f61fb79972ad64942839708e867a6ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6000def3680d965b5d28448da3beb8bf') in 0.010358 seconds 
-  Import took 0.013359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Textures/Prop/PropImage.png
-  artifactKey: Guid(767df648055ecd24ab853df07b1bb050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Prop/PropImage.png using Guid(767df648055ecd24ab853df07b1bb050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96b460e4f8de6c12976459114261123') in 0.009948 seconds 
-  Import took 0.012218 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Textures/Prop/FrameTwo.png
-  artifactKey: Guid(f7d665d667137d443b23916ae8bc1f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Prop/FrameTwo.png using Guid(f7d665d667137d443b23916ae8bc1f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e3658c603836b42e4e9ff94baadd50') in 0.011291 seconds 
-  Import took 0.014228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.337339 seconds.
-  path: Assets/Textures/PlayerTexture/FlashlightCookie.tif
-  artifactKey: Guid(8b6bbe374be149d46a8ff9811bbd0666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/PlayerTexture/FlashlightCookie.tif using Guid(8b6bbe374be149d46a8ff9811bbd0666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e08f1bb5dd4b20e230613a5cae53497') in 0.015432 seconds 
-  Import took 0.018535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.967992 seconds.
-  path: Assets/Textures/Hints/BookCover.png
-  artifactKey: Guid(b87b235c246391744a4232b89080ba84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Hints/BookCover.png using Guid(b87b235c246391744a4232b89080ba84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c39f8f3f70dd94fbc2785029ab0ae7d') in 0.009666 seconds 
-  Import took 0.012681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Textures/Hints/Tutorial-interactive-message.png
-  artifactKey: Guid(2672f0f99edd33b4ca961e3a9d2a931d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Hints/Tutorial-interactive-message.png using Guid(2672f0f99edd33b4ca961e3a9d2a931d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff6dd7568b35a09e87a5078638bc7af') in 0.026329 seconds 
-  Import took 0.028647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Textures/Hints/Clock.png
-  artifactKey: Guid(32fdf5fae188fbe4ca07a5281fa2f83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Hints/Clock.png using Guid(32fdf5fae188fbe4ca07a5281fa2f83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796ab4ce674efcf53d61c3a3a7fbf76d') in 0.009131 seconds 
-  Import took 0.011928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Textures/Hints/Calendar.png
-  artifactKey: Guid(0e9333513bca22548a8f3509f0b4ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Hints/Calendar.png using Guid(0e9333513bca22548a8f3509f0b4ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214cca45fd333c6d91122b2c4428e90e') in 0.020506 seconds 
-  Import took 0.023867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Textures/Hints/FridgeNote.png
-  artifactKey: Guid(ca63168c9221d8940ab9019d13ef7a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Hints/FridgeNote.png using Guid(ca63168c9221d8940ab9019d13ef7a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ca4637f77b565b696a4f6abe46f914') in 0.011536 seconds 
-  Import took 0.014215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Textures/Hints/ChessTile.png
-  artifactKey: Guid(c05d32dce5827104395e32df0228209e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Hints/ChessTile.png using Guid(c05d32dce5827104395e32df0228209e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9875b3205275e9bb6d14e35f7223089') in 0.018339 seconds 
-  Import took 0.021665 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Textures/Hints/TimeFrame.png
-  artifactKey: Guid(55fb5c7611d3d944796faf0b1d2c3bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Hints/TimeFrame.png using Guid(55fb5c7611d3d944796faf0b1d2c3bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7021e74f6f04023bfe44bd932b24886') in 0.015390 seconds 
-  Import took 0.017924 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Textures/Hints/ClueOne.png
-  artifactKey: Guid(4e459d5565da45744aadc1c8e913946c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Hints/ClueOne.png using Guid(4e459d5565da45744aadc1c8e913946c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf412ea14ae1deadbabf040c20783820') in 0.020759 seconds 
-  Import took 0.023774 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.321023 seconds.
-  path: Assets/Textures/Decoy/DecoyFour.png
-  artifactKey: Guid(f86bbc7e5aaf48c47b9919fc976503f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Decoy/DecoyFour.png using Guid(f86bbc7e5aaf48c47b9919fc976503f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9548e048f0e9802a11ad5336e84c51df') in 0.009472 seconds 
-  Import took 0.012939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Textures/Decoy/DigitDecoyClue.png
-  artifactKey: Guid(66edb658dc8278449be7746ed9eab0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Decoy/DigitDecoyClue.png using Guid(66edb658dc8278449be7746ed9eab0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6144419c39fc86e73e2011d38366612f') in 0.011279 seconds 
-  Import took 0.013810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Textures/Decoy/DecoyTwo.png
-  artifactKey: Guid(58272e722c54bd646b265a034b255c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Decoy/DecoyTwo.png using Guid(58272e722c54bd646b265a034b255c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edf6dd9258c624edeaa2a118cb932277') in 0.011318 seconds 
-  Import took 0.014146 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Textures/Decoy/DecoyThree.png
-  artifactKey: Guid(f2dfa3913ebd7ff45b88fac7f47b1e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Decoy/DecoyThree.png using Guid(f2dfa3913ebd7ff45b88fac7f47b1e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f4882d7968a5adb6ad7b4e98706b60') in 0.014813 seconds 
-  Import took 0.018375 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 111.274766 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(f25a7420459cd844dbd008e4cffaf90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(f25a7420459cd844dbd008e4cffaf90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a131d36c267f2712dea35eb8069743dd') in 0.006301 seconds 
-  Import took 0.009483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.987588 seconds.
-  path: Assets/Scripts/PingingPuzzle
-  artifactKey: Guid(3c9ee3f81e55f484fb2cf787f466d285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PingingPuzzle using Guid(3c9ee3f81e55f484fb2cf787f466d285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f4b5960bc9fa3c307612442d67bd3b') in 0.007853 seconds 
-  Import took 0.010940 seconds .
-
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004962 seconds.
+Registered in 0.006916 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001468B242240 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000001BC8D248020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468C877020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000001BC8D27A710 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F727E30 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000001BC89856020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688E2B010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000001BC90389B80 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468E8AF9E0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000001BC89A26E90 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688E2B010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000001BC90389B80 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468AEC6010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000001BC8FE0BF60 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688E2B010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000001BC90389B80 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000146891AC1F0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000001BC8BB0E030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468C877020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-000001BC90389B80 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F727E30 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000001BC89CA5E80 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468EBF3BE0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-000001BC8DA82C90 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EEF5A0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-000001BC90698570 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EF7DC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000001BC9006C630 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.826 seconds
+- Completed reload, in  1.374 seconds
 Domain Reload Profiling:
-	ReloadAssembly (826ms)
-		BeginReloadAssembly (97ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (663ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (228ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.6 MB.
-System memory in use after: 79.7 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2065.
-Total: 2.167800 ms (FindLiveObjects: 0.133100 ms CreateObjectMapping: 0.036700 ms MarkObjects: 1.912900 ms  DeleteObjects: 0.084200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 60.271205 seconds.
-  path: Assets/Scenes/MainMenu.unity
-  artifactKey: Guid(a88521902a0cd2d44a359ca59fa7783e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu.unity using Guid(a88521902a0cd2d44a359ca59fa7783e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d69cf271a8adb221fa4cccfbd09de4c') in 0.015974 seconds 
-  Import took 0.018907 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005948 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001468F72DAC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B531020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F573170 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468C600010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000146B0352010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F855120 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468AEC6010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468C600010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000146891ABDC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F855120 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F573170 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468EBF3BE0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EEF5A0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EF7DC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.252 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2253ms)
-		BeginReloadAssembly (324ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (95ms)
-		EndReloadAssembly (1754ms)
-			LoadAssemblies (322ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (871ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (150ms)
-			SetupLoadedEditorAssemblies (256ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (192ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.7 MB.
-System memory in use after: 79.7 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2068.
-Total: 2.361700 ms (FindLiveObjects: 0.182700 ms CreateObjectMapping: 0.037300 ms MarkObjects: 2.085300 ms  DeleteObjects: 0.055600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 17.370605 seconds.
-  path: Assets/Scenes/MediumGame.unity
-  artifactKey: Guid(4c684ddb68a03b345a62eec31dfa72b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MediumGame.unity using Guid(4c684ddb68a03b345a62eec31dfa72b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f9e66ff40171a9690dccf1ad0b1975') in 0.014023 seconds 
-  Import took 0.016555 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005371 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000014689089D70 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B796030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F18A030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F6EFD50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468E4C7010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468CC80D90 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468AEC6010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F6EFD50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468BE30080 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B796030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F18A030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468EBF3BE0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EEF5A0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EF7DC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.828 seconds
-Domain Reload Profiling:
-	ReloadAssembly (828ms)
-		BeginReloadAssembly (103ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (669ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (239ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (240ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (179ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.7 MB.
-System memory in use after: 79.7 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2071.
-Total: 1.885800 ms (FindLiveObjects: 0.166200 ms CreateObjectMapping: 0.039300 ms MarkObjects: 1.611500 ms  DeleteObjects: 0.067800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 40.424421 seconds.
-  path: Assets/Scenes/PingingTask.unity
-  artifactKey: Guid(487ac39c347ec19489c4890e3aea80d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PingingTask.unity using Guid(487ac39c347ec19489c4890e3aea80d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4edcc9ae99a01f4901de0c70744a7532') in 0.012048 seconds 
-  Import took 0.014511 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008325 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001468E625030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468C89A010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014689080020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468E762BE0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000146B07FA700 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468AF2F010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468AEC6010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F751520 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468BE30080 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F18A030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468B892010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001468F4AD290 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EEF5A0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014688EF7DC0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.993 seconds
-Domain Reload Profiling:
-	ReloadAssembly (993ms)
-		BeginReloadAssembly (128ms)
+	ReloadAssembly (1374ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (791ms)
-			LoadAssemblies (97ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1156ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (292ms)
+			SetupTypeCache (437ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (272ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (372ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (203ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (273ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.7 MB.
-System memory in use after: 79.8 MB.
+System memory in use before: 76.2 MB.
+System memory in use after: 76.3 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2074.
-Total: 2.404700 ms (FindLiveObjects: 0.187400 ms CreateObjectMapping: 0.041600 ms MarkObjects: 2.102900 ms  DeleteObjects: 0.071600 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2007.
+Total: 2.546200 ms (FindLiveObjects: 0.224100 ms CreateObjectMapping: 0.049300 ms MarkObjects: 2.190400 ms  DeleteObjects: 0.080900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006294 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001BC90092A60 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8BD9B020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8FEB1020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC905D34C0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8F299D30 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8BD9B020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC905A5F50 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC905D34C0 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8BB0E030 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8BD9B020 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8FE4D010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8DA82C90 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC8CE73E20 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001BC904F9010 doesn't match image C:\Users\Siddarath\Documents\De-Crypt-it-Escape-Room-\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.655 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1656ms)
+		BeginReloadAssembly (213ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1317ms)
+			LoadAssemblies (172ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (504ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (458ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (352ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 76.2 MB.
+System memory in use after: 76.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2010.
+Total: 6.505600 ms (FindLiveObjects: 0.410300 ms CreateObjectMapping: 0.149900 ms MarkObjects: 5.772600 ms  DeleteObjects: 0.169700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
