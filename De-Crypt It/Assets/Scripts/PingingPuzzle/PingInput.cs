@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PingInput : MonoBehaviour
 {
@@ -25,13 +26,18 @@ public class PingInput : MonoBehaviour
     public GameObject pingFailedMsg5;
     public GameObject unsuccessfulMsg1;
     public GameObject unsuccessfulMsg2;
-    
+
+    public static bool taskComplete = false;
+
+    public GameObject proceedBtn;
+    public GameObject tryAgainBtn;
+    public GameObject returnBtn;
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Return))
         {
-            Debug.Log("Return was pressed");
+            Debug.Log("Enter was pressed");
             pingStatus();
         }
     }
@@ -40,6 +46,8 @@ public class PingInput : MonoBehaviour
     {
 
         pingInput = inputField.GetComponent<Text>().text;
+        resetPingMessages();
+        
 
         if (pingInput == correctPing)
         {
@@ -51,6 +59,7 @@ public class PingInput : MonoBehaviour
         {
             messageDisplay.GetComponent<Text>().text = "Ping unsuccessful - try again!";
             //add code here to show the hiddent text showing the unsuccesful ping message.
+            
             StartCoroutine(pingFailedCoroutine());
         }
     }
@@ -69,6 +78,10 @@ public class PingInput : MonoBehaviour
         pingPassedMsg5.SetActive(true);
         yield return new WaitForSeconds(2);
         successfulMsg.SetActive(true);
+
+        proceedBtn.SetActive(true);
+        tryAgainBtn.SetActive(false);
+        returnBtn.SetActive(false);
     }
 
     IEnumerator pingFailedCoroutine()
@@ -87,5 +100,42 @@ public class PingInput : MonoBehaviour
         unsuccessfulMsg1.SetActive(true);
         yield return new WaitForSeconds(1);
         unsuccessfulMsg2.SetActive(true);
+    }
+
+    public void tryAgain()
+    {
+        resetPingMessages();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }   
+
+    public void resetPingMessages()
+    {
+        pingPassedMsg1.SetActive(false);
+        pingPassedMsg2.SetActive(false);
+        pingPassedMsg3.SetActive(false);
+        pingPassedMsg4.SetActive(false);
+        pingPassedMsg5.SetActive(false);
+        successfulMsg.SetActive(false);
+
+        pingFailedMsg1.SetActive(false);
+        pingFailedMsg2.SetActive(false);
+        pingFailedMsg3.SetActive(false);
+        pingFailedMsg4.SetActive(false);
+        pingFailedMsg5.SetActive(false);
+        unsuccessfulMsg1.SetActive(false);
+        unsuccessfulMsg2.SetActive(false);
+    }
+
+    public void returnBtnClick()
+    {
+        resetPingMessages();
+        SceneManager.LoadScene("MediumGame");
+    }
+
+    public void proceedBtnClick()
+    {
+        taskComplete = true;
+        SceneManager.LoadScene("MediumGame");
     }
 }
