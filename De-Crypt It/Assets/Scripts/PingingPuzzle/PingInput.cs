@@ -27,7 +27,7 @@ public class PingInput : MonoBehaviour
     public GameObject unsuccessfulMsg1;
     public GameObject unsuccessfulMsg2;
 
-    public static bool taskComplete = false;
+    //public static bool taskComplete = false;
 
     public GameObject proceedBtn;
     public GameObject tryAgainBtn;
@@ -54,6 +54,7 @@ public class PingInput : MonoBehaviour
             messageDisplay.GetComponent<Text>().text = "Ping successfu! - Door Keypad unlocked";
             // add code here to show the hidden text showing the congrats message and next steps.
             StartCoroutine(pingPassCoroutine());
+            PingingTaskLoad.taskComplete = true;
         }
         else
         {
@@ -135,7 +136,7 @@ public class PingInput : MonoBehaviour
 
     public void proceedBtnClick()
     {
-        taskComplete = true;
+        //taskComplete = true;
         SceneManager.LoadScene("MediumGame");
     }
 }
