@@ -31,6 +31,7 @@ public class SwipeTask : MonoBehaviour
         if (wasSuccesful)
         {
             greenOn.SetActive(true);
+            //load new scene here which says the card swipe is succesful and a button to return back to the game, potentially show a clue/image after on the screen
         }
         else
         {
