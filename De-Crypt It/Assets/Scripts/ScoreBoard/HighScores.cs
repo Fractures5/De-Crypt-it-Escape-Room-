@@ -7,8 +7,8 @@ public class HighScores : MonoBehaviour
     const string privateCode = "T1RsBtc-40-deiLIY04MJAfJ7HV1_aP0mM-RIxN56iWg";  //Key to Upload New Info
     const string publicCode = "61504bb08f40bb0e2871fa8b";   //Key to download
     const string webURL = "http://dreamlo.com/lb/"; //  Website the keys are for
-    public static string trackuserName;
-    public static int trackuserScore;
+    public static string playerName;
+    public static int playerScore;
     public PlayerScore[] scoreList;
     DisplayHighscores myDisplay;
 
@@ -26,7 +26,7 @@ public class HighScores : MonoBehaviour
 
     public void sendScore()
     {
-        UploadScore(trackuserName, trackuserScore);
+        UploadScore(playerName, playerScore);
     }
     IEnumerator DatabaseUpload(string userame, int score) //Called when sending new score to Website
     {

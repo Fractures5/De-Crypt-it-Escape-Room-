@@ -11,6 +11,12 @@ public class MainMenuScript : MonoBehaviour
 
     }
 
+    // public void PlaySinglePlayer() // Will load the next level of the game scene
+    // {
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+    // }
+
     public void PlayStoryboard() // Will load the storyboard scene to the user
     {
         SceneManager.LoadScene(1);
@@ -29,12 +35,7 @@ public class MainMenuScript : MonoBehaviour
         Debug.Log("You chose to quit the game"); // Quit message displayed in the console (testing)
         Application.Quit(); // Will quit the application
     }
-    
-    public void EnterName()
-    {
-        SceneManager.LoadScene("EnterName");
-    }
-    public void ViewLeaderboard()
+    public void viewLeaderboard()
     {
         SceneManager.LoadScene("Leaderboard");
     }
