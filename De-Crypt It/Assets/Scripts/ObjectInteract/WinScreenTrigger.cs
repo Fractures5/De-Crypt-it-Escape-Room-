@@ -10,13 +10,14 @@ public class WinScreenTrigger : MonoBehaviour
     public int secondsLeft;
     public int timeLeft;
     public string overallTimeLeft;
+    public static string playernameInput;
     //This script will load if the player model interacts with the object collision outside the house (will load winning scene)
     void OnTriggerEnter()
     {
         keeptimer();
         SceneManager.LoadScene("WinScreen");
     }
-
+    //this is for hard mode
     public void keeptimer()
     {
         timeLeft = TimerCountdown.timeLeft;
@@ -26,7 +27,7 @@ public class WinScreenTrigger : MonoBehaviour
 
         overallTimeLeft = minutesLeft.ToString() + secondsLeft.ToString();
 
-        HighScores.playerName = "test";
-        HighScores.playerScore = int.Parse(overallTimeLeft);
+        HighScores.trackuserName = playernameInput;
+        HighScores.trackuserScore = int.Parse(overallTimeLeft);
     }
 }
