@@ -26,8 +26,7 @@ public class CardSwipe : MonoBehaviour
             }
             /*else
             {
-                cardSwipeUI.SetActive(false);
-                //could add here to show a clue
+                //could add here to show a clue here once 
             }*/
         }
     }
