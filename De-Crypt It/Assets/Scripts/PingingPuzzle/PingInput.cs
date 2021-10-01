@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// This script will check if the player has pinged correctly to unlock the keypad to unlock the door and escape.
 public class PingInput : MonoBehaviour
 {
-    // This script will check if the player has pinged correctly to unlock the keypad to unlock the door and escape.
+    
     public string pingInput;
     public string correctPing = "ping 192.168.20.1";
+    
+    // The following are GameObjects in the pinging task puzzle scene
     public GameObject inputField;
     public GameObject messageDisplay;
 
@@ -27,14 +30,13 @@ public class PingInput : MonoBehaviour
     public GameObject unsuccessfulMsg1;
     public GameObject unsuccessfulMsg2;
 
-    public static bool taskComplete = false;
-
     public GameObject proceedBtn;
     public GameObject tryAgainBtn;
     public GameObject returnBtn;
 
     void Update()
     {
+        // If the user presses "enter" then the "pingStatus" method will be invoked to determine what message and buttons are shown
         if(Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("Enter was pressed");
@@ -42,28 +44,32 @@ public class PingInput : MonoBehaviour
         }
     }
     
+    // This method is invoked when the user presses "enter" in the terminal.
+    // This method will initialise the user input and compare it to the required ping value and determine
+    // what conditional statement to trigger and hence what method to invoke to show the required ping message and buttons.
     public void pingStatus()
     {
 
-        pingInput = inputField.GetComponent<Text>().text;
-        resetPingMessages();
+        pingInput = inputField.GetComponent<Text>().text; // initliases user input into the variable
+        resetPingMessages(); // hides all ping messages gameObjects that may be currently set to true
         
 
-        if (pingInput == correctPing)
+        if (pingInput == correctPing) // If the user input matches the correct exepcted ping then the following is executed
         {
             messageDisplay.GetComponent<Text>().text = "Ping successfu! - Door Keypad unlocked";
-            // add code here to show the hidden text showing the congrats message and next steps.
-            StartCoroutine(pingPassCoroutine());
+            StartCoroutine(pingPassCoroutine()); // invokes the coroutine function that will display the successful ping messages in small increments
+            PingingTaskLoad.taskComplete = true; // sets the ping task to complete so once the user exits, they will be unable to enter it again since its completed.
         }
-        else
+        else // If the user input does not match the correct expected ping then the following is executed
         {
             messageDisplay.GetComponent<Text>().text = "Ping unsuccessful - try again!";
-            //add code here to show the hiddent text showing the unsuccesful ping message.
-            
-            StartCoroutine(pingFailedCoroutine());
+            StartCoroutine(pingFailedCoroutine()); // invokes the coroutine function that will display the unsuccessful ping messages in small increments
         }
     }
 
+    // This method when invoked after every few seconds as specified will set the gameobject for the succesfull ping messages to true to show
+    // the messages on the terminal and set the proceed button to show and hide the other buttons.
+    // This method will return the IEnumerator type variable.
     IEnumerator pingPassCoroutine()
     {
         yield return new WaitForSeconds(2);
@@ -79,11 +85,14 @@ public class PingInput : MonoBehaviour
         yield return new WaitForSeconds(2);
         successfulMsg.SetActive(true);
 
-        proceedBtn.SetActive(true);
-        tryAgainBtn.SetActive(false);
-        returnBtn.SetActive(false);
+        proceedBtn.SetActive(true); // Will enable and show the proceed button
+        tryAgainBtn.SetActive(false); // Will hide the try again button
+        returnBtn.SetActive(false); // Will hide the return button
     }
 
+    // This method when invoked after every few seconds as specified will set the gameobject for the unsuccesfull ping messages to true to show
+    // the ping fail messages on the terminal.
+    // This method will return the IEnumerator type variable.
     IEnumerator pingFailedCoroutine()
     {
         yield return new WaitForSeconds(2);
@@ -102,6 +111,7 @@ public class PingInput : MonoBehaviour
         unsuccessfulMsg2.SetActive(true);
     }
 
+    // This function will be invoked when the try again button is clicked to reset the ping messages and the scene for the user to try again
     public void tryAgain()
     {
         resetPingMessages();
@@ -109,6 +119,7 @@ public class PingInput : MonoBehaviour
 
     }   
 
+    // This function when invoked will hide all the ping messages which are meant to be shown in the terminal after their input.
     public void resetPingMessages()
     {
         pingPassedMsg1.SetActive(false);
@@ -127,15 +138,16 @@ public class PingInput : MonoBehaviour
         unsuccessfulMsg2.SetActive(false);
     }
 
+    // This function will be invoked when the return button is clicked to return back to the medium game scene when they have not completed the puzzle.
     public void returnBtnClick()
     {
-        resetPingMessages();
+        resetPingMessages(); // Invokes the method which will hide all the ping messages to the default state.
         SceneManager.LoadScene("MediumGame");
     }
 
+    // This function will be invoked when the proceed button is clicked to return the user back to the medium game scene.
     public void proceedBtnClick()
     {
-        taskComplete = true;
         SceneManager.LoadScene("MediumGame");
     }
 }
