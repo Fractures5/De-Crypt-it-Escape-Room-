@@ -11,6 +11,9 @@ public class SwipeTask : MonoBehaviour
     public GameObject greenOn;
     public GameObject redOn;
 
+    public GameObject winScreen;
+    public GameObject closeCardSwipe;
+
     private int currentSwipePointIndex = 0;
 
     private float countdown = 0;
@@ -31,6 +34,9 @@ public class SwipeTask : MonoBehaviour
         if (wasSuccesful)
         {
             greenOn.SetActive(true);
+            winScreen.SetActive(true);
+            closeCardSwipe.SetActive(true);
+
             //load new scene here which says the card swipe is succesful and a button to return back to the game, potentially show a clue/image after on the screen
         }
         else
