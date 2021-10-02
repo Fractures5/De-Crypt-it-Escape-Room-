@@ -6,11 +6,21 @@ using UnityEngine.UI;
 
 public class BoxInteraction : MonoBehaviour
 {
+
+    [SerializeField]
+    public Color startcolor;
+
+    public bool isRange = false;
+
     public AnimationClip testingClip;
     public Animation boxOpenClip;
 
     public bool box;
     public Text boxInstructions;
+
+    public static bool taskComplete = false;
+
+    public static bool isClosed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +33,17 @@ public class BoxInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             box = true;
+            if (isRange == false)
+            {
+                boxInstructions.gameObject.SetActive(false);
+            }
+
+            if(LockControl.isPadlockOpened == false)
+            {
+                startcolor = GetComponent<Renderer>().material.color;
+                GetComponent<Renderer>().material.color = startcolor;
+                boxInstructions.gameObject.SetActive(true);
+            }
         }
     }
 
@@ -31,6 +52,9 @@ public class BoxInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             box = false;
+            GetComponent<Renderer>().material.color = startcolor;
+            isRange = false;
+            boxInstructions.gameObject.SetActive(false);
         }
     }
 
