@@ -4,13 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//This script manages the dialogue for the game story board
 public class DialogueController : MonoBehaviour
 {
-    //This script manages the dialogue for the game story board
+    
     public Text characterNameText;
     public Text dialogueText;
-
     public Animator animator;
+    public GameObject levelSelectUI;
+    public GameObject storyboardUI;
+    public GameObject levelReturnButton;
+    public GameObject returnToMainButton;
 
     // Create a queue of sentences
     private Queue<string> sentences;
@@ -43,12 +47,14 @@ public class DialogueController : MonoBehaviour
     {
         if(sentences.Count == 0) // If there is no more sentences in queue
         {
-            startSinglePlayerGame();
+            storyboardUI.SetActive(false);
+            levelReturnButton.SetActive(false);
+            levelSelectUI.SetActive(true);
+            returnToMainButton.SetActive(true);
             return;
         }
 
         string sentence = sentences.Dequeue(); // Stores the deqeued sentence in a variable
-        //dialogueText.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
