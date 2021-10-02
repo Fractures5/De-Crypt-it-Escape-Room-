@@ -39,6 +39,11 @@ public class LevelSelection : MonoBehaviour
         confirmButton.interactable = true;
     }
 
+    public void disableConfirmButton()
+    {
+        confirmButton.interactable = false;
+    }
+
     public void easyClicked()
     {
         selectedEasyButton = true;
