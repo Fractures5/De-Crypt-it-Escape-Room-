@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BoxInteraction : MonoBehaviour
 {
     public AnimationClip testingClip;
     public Animation boxOpenClip;
+
     public bool box;
+    public Text boxInstructions;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +38,15 @@ public class BoxInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && box == true)
         {
-            boxOpenClip.clip = testingClip;
-            boxOpenClip.Play();
+            SceneManager.LoadScene("Padlock");
+            Cursor.lockState = CursorLockMode.None;
+            //boxOpenClip.clip = testingClip;
+            //boxOpenClip.Play();
+
+            if (LockControl.isOpened == true)
+            {
+                Debug.Log("Padlock is unlocked now");
+            }
         }
     }
 
