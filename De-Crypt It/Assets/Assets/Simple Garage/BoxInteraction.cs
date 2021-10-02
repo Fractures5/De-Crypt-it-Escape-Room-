@@ -43,7 +43,7 @@ public class BoxInteraction : MonoBehaviour
             //boxOpenClip.clip = testingClip;
             //boxOpenClip.Play();
 
-            if (LockControl.isOpened == true)
+            if (LockControl.isPadlockOpened == true)
             {
                 Debug.Log("Padlock is unlocked now");
             }
