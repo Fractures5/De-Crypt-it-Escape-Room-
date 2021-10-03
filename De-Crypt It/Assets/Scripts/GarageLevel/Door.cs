@@ -29,16 +29,19 @@ public class Door : MonoBehaviour
             if (isRange == false)
             {
                 doorOpenInstructions.gameObject.SetActive(false);
+                doorCloseInstructions.gameObject.SetActive(false);
             }
 
             if (Key.active == false && isDoorOpened == false)
             {
                 doorOpenInstructions.gameObject.SetActive(true);
+                doorCloseInstructions.gameObject.SetActive(false);
             }
 
             if (Key.active == false && isDoorOpened == true)
             {
                 doorCloseInstructions.gameObject.SetActive(true);
+                doorOpenInstructions.gameObject.SetActive(false);
             }
         }
     }
@@ -60,10 +63,10 @@ public class Door : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && door == true && Key.active == false && isDoorOpened == false)
         {
             doorClip.clip = testingClip;
-            //doorClip ["WhiteDoorOpen"].speed = 1;
-            //doorClip ["WhiteDoorOpen"].time = doorClip ["WhiteDoorOpen"].length;
             doorClip.Play("DoorOpen");
             isDoorOpened = true;
+            doorOpenInstructions.gameObject.SetActive(false);
+            doorCloseInstructions.gameObject.SetActive(true);
         }
 
         else if (Input.GetKeyDown(KeyCode.E) && door == true && Key.active == false && isDoorOpened == true)
@@ -73,6 +76,8 @@ public class Door : MonoBehaviour
             doorClip ["DoorClose"].time = doorClip ["DoorClose"].length;
             doorClip.Play("DoorClose");
             isDoorOpened = false;
+            doorCloseInstructions.gameObject.SetActive(false);
+            doorOpenInstructions.gameObject.SetActive(true);
             
         }
         
