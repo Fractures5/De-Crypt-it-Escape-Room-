@@ -152,7 +152,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 4
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -210,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9252304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.039, y: 0.35004747, z: -16.67}
+  m_LocalPosition: {x: -4.039, y: 2.259, z: -16.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2210,9 +2210,10 @@ Animation:
   m_GameObject: {fileID: 1109841283}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e32fd7b62e1968c41812d8dcb3470995, type: 2}
+  m_Animation: {fileID: 7400000, guid: c1f7f6ba66e5a5c4a8e6c8b66012aa21, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: e32fd7b62e1968c41812d8dcb3470995, type: 2}
+  - {fileID: 7400000, guid: c1f7f6ba66e5a5c4a8e6c8b66012aa21, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -2246,6 +2247,7 @@ MonoBehaviour:
   testingClip: {fileID: 7400000, guid: e32fd7b62e1968c41812d8dcb3470995, type: 2}
   doorClip: {fileID: 0}
   door: 0
+  isDoorOpened: 0
 --- !u!65 &1109841287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2257,7 +2259,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4413025, y: 5.252938, z: 1.5309153}
+  m_Size: {x: 3.4413025, y: 5.69, z: 3.41}
   m_Center: {x: -0.59364265, y: 1.6125436, z: -0.26545763}
 --- !u!1 &1124745433 stripped
 GameObject:
@@ -3004,7 +3006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3681486765375764626, guid: 611c420aab0ee8843ae1a8df0eb4cd5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 181.06519
+      value: 217.422
       objectReference: {fileID: 0}
     - target: {fileID: 3681486765375764626, guid: 611c420aab0ee8843ae1a8df0eb4cd5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3150,6 +3152,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.206
       objectReference: {fileID: 0}
+    - target: {fileID: 5178501814670129849, guid: e6084503f826bbb428b1e677dc1a75d4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ea68a7f6198c41840b4110b5c4b0411f, type: 2}
     - target: {fileID: 5203174305749905922, guid: e6084503f826bbb428b1e677dc1a75d4, type: 3}
       propertyPath: m_IsActive
       value: 0
