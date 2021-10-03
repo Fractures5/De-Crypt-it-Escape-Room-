@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 
@@ -12,6 +13,9 @@ public class Door : MonoBehaviour
     public Animation doorClip;
     public bool door;
     public bool isDoorOpened = false;
+    public Text doorOpenInstructions;
+    public Text doorCloseInstructions;
+    public bool isRange = false;
 
     void Start(){
         doorClip = GetComponent<Animation>();
@@ -22,6 +26,20 @@ public class Door : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             door = true;
+            if (isRange == false)
+            {
+                doorOpenInstructions.gameObject.SetActive(false);
+            }
+
+            if (Key.active == false && isDoorOpened == false)
+            {
+                doorOpenInstructions.gameObject.SetActive(true);
+            }
+
+            if (Key.active == false && isDoorOpened == true)
+            {
+                doorCloseInstructions.gameObject.SetActive(true);
+            }
         }
     }
 
@@ -30,6 +48,9 @@ public class Door : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             door = false;
+            isRange = false;
+            doorOpenInstructions.gameObject.SetActive(false);
+            doorCloseInstructions.gameObject.SetActive(false);
         }
     }
 
