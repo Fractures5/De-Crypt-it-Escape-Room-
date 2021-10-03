@@ -15,6 +15,7 @@ public class Door : MonoBehaviour
     public bool isDoorOpened = false;
     public Text doorOpenInstructions;
     public Text doorCloseInstructions;
+    public Text doorLockedPrompt;
     public bool isRange = false;
 
     void Start(){
@@ -30,6 +31,7 @@ public class Door : MonoBehaviour
             {
                 doorOpenInstructions.gameObject.SetActive(false);
                 doorCloseInstructions.gameObject.SetActive(false);
+                doorLockedPrompt.gameObject.SetActive(false);
             }
 
             if (Key.active == false && isDoorOpened == false)
@@ -54,6 +56,7 @@ public class Door : MonoBehaviour
             isRange = false;
             doorOpenInstructions.gameObject.SetActive(false);
             doorCloseInstructions.gameObject.SetActive(false);
+            doorLockedPrompt.gameObject.SetActive(false);
         }
     }
 
@@ -79,6 +82,11 @@ public class Door : MonoBehaviour
             doorCloseInstructions.gameObject.SetActive(false);
             doorOpenInstructions.gameObject.SetActive(true);
             
+        }
+
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && Key.active == true)
+        {
+            doorLockedPrompt.gameObject.SetActive(true);
         }
         
     }
