@@ -17,6 +17,7 @@ public class BoxInteraction : MonoBehaviour
 
     public bool box;
     public Text boxInstructions;
+    public Text boxSearchInstructions;
 
     public static bool taskComplete = false;
 
@@ -36,6 +37,7 @@ public class BoxInteraction : MonoBehaviour
             if (isRange == false)
             {
                 boxInstructions.gameObject.SetActive(false);
+                boxSearchInstructions.gameObject.SetActive(false);
             }
 
             if(LockControl.isPadlockOpened == false)
@@ -43,6 +45,12 @@ public class BoxInteraction : MonoBehaviour
                 startcolor = GetComponent<Renderer>().material.color;
                 GetComponent<Renderer>().material.color = startcolor;
                 boxInstructions.gameObject.SetActive(true);
+            }
+
+            if(LockControl.isPadlockOpened == true)
+            {
+                Debug.Log("tfdfsdljkfdsl");
+                boxSearchInstructions.gameObject.SetActive(true);
             }
         }
     }
@@ -55,6 +63,7 @@ public class BoxInteraction : MonoBehaviour
             GetComponent<Renderer>().material.color = startcolor;
             isRange = false;
             boxInstructions.gameObject.SetActive(false);
+            boxSearchInstructions.gameObject.SetActive(false);
         }
     }
 

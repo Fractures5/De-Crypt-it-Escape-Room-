@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class LockControl : MonoBehaviour
 {
     private int[] result, correctCombination;
-    public static bool isPadlockOpened;
-    public static bool isPadlockClosed = false;
+    public static bool isPadlockOpened = false;
+    public static bool isPadlockClosed;
     public Image correctImage;
     private void Start()
     {
         result = new int[]{0,0,0,0};
         correctCombination = new int[] {6,7,8,4};
-        isPadlockOpened = false;
+        //isPadlockOpened = false;
         Rotate.Rotated += CheckResults;
     }
 
