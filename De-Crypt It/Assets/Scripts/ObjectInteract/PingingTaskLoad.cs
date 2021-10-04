@@ -20,9 +20,9 @@ public class PingingTaskLoad : MonoBehaviour
     // It is used to determine if the pinging task is completed or not by the user.
     public static bool taskComplete = false;
 
-    // GameObject variables of the tv puzzle menu and clue which is used to set the gameobject to be active or not.
-    //public GameObject tvPuzzleMenu;
-    //public GameObject tvPuzzleClue;
+    // GameObject variables of the keypad messages which is used to set the gameobject to be active or not.
+    public GameObject lockedKeypad;
+    public GameObject unlockedKeypad;
    
     // Update is called once per frame
     void Update()
@@ -38,12 +38,13 @@ public class PingingTaskLoad : MonoBehaviour
                 SceneManager.LoadScene("PingingTask");
             }
         }
-        /*else
+        else if (taskComplete == true)
         {
             // If the task is complete then....
-            tvPuzzleMenu.SetActive(false); // Disables the tv puzzle menu
-            tvPuzzleClue.SetActive(true); // Enables the tv clue
-        }*/
+            lockedKeypad.SetActive(false); // the locked keypad message is hidden
+            unlockedKeypad.SetActive(true); // the unlocked keypad message is now shown
+            LockedKeypad.keypadActive = true; // make the keypad status active
+        }
     }
 
     // This function is called when the user is close to the box collider of the gameobject in the computer monitor
