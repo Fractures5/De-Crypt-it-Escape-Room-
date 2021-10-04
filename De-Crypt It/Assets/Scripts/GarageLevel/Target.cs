@@ -11,22 +11,28 @@ public class Target : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<Renderer>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        /**if (Input.GetMouseButtonDown(0))
+        {
+            TheKey.active = false;
+            isKeyCollected = true;
+        }**/
     }
 
-    private void OnMouseEnter()
+    private void OnMouseOver()
     {
-        renderer.material.color = Color.red;
+        renderer.material.color = Color.green;
         if (Input.GetMouseButtonDown(0))
         {
             TheKey.active = false;
             isKeyCollected = true;
         }
+        
     }
 
     private void OnMouseExit()
