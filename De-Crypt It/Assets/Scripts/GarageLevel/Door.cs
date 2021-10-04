@@ -34,13 +34,13 @@ public class Door : MonoBehaviour
                 doorLockedPrompt.gameObject.SetActive(false);
             }
 
-            if (Key.active == false && isDoorOpened == false)
+            if (Target.isKeyCollected == true /**Key.active == false**/ && isDoorOpened == false)
             {
                 doorOpenInstructions.gameObject.SetActive(true);
                 doorCloseInstructions.gameObject.SetActive(false);
             }
 
-            if (Key.active == false && isDoorOpened == true)
+            if (Target.isKeyCollected == true /**Key.active == false**/ && isDoorOpened == true)
             {
                 doorCloseInstructions.gameObject.SetActive(true);
                 doorOpenInstructions.gameObject.SetActive(false);
@@ -63,7 +63,7 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && door == true && Key.active == false && isDoorOpened == false)
+        if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true /**Key.active == false**/ && isDoorOpened == false)
         {
             doorClip.clip = testingClip;
             doorClip.Play("DoorOpen");
@@ -72,7 +72,7 @@ public class Door : MonoBehaviour
             doorCloseInstructions.gameObject.SetActive(true);
         }
 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && Key.active == false && isDoorOpened == true)
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true /**Key.active == false**/ && isDoorOpened == true)
         {
             doorClip.clip = testingClip;
             doorClip ["DoorClose"].speed = -1;
@@ -84,7 +84,7 @@ public class Door : MonoBehaviour
             
         }
 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && Key.active == true)
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true /**Key.active == true**/)
         {
             doorLockedPrompt.gameObject.SetActive(true);
         }

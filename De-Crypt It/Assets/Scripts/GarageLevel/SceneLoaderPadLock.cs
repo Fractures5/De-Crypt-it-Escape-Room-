@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoaderPadLock : MonoBehaviour
 {
-
     public void LoadGarageLevel()
     {
         //Set is closed to true for sound effect and also change the scene
