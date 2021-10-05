@@ -59,6 +59,7 @@ public class PingInput : MonoBehaviour
             messageDisplay.GetComponent<Text>().text = "Ping successfu! - Door Keypad unlocked";
             StartCoroutine(pingPassCoroutine()); // invokes the coroutine function that will display the successful ping messages in small increments
             PingingTaskLoad.taskComplete = true; // sets the ping task to complete so once the user exits, they will be unable to enter it again since its completed.
+            DecoyPingTaskLoad.taskComplete = true; // sets the decoy ping task to complete so once the user exits, they will be unable to enter it again since its completed.
         }
         else // If the user input does not match the correct expected ping then the following is executed
         {
