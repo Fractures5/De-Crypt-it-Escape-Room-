@@ -7,6 +7,7 @@ public class LightSwitch : MonoBehaviour
 
     public GameObject secretRoomLight;
     public GameObject lightSwitch;
+    public GameObject clueInteractionField;
     public Color lightColor;
     public bool isRange;
     public static bool isOn = false;
@@ -32,6 +33,7 @@ public class LightSwitch : MonoBehaviour
             {
                 switchSound.Play();
                 secretRoomLight.SetActive(true);
+                clueInteractionField.SetActive(true);
                 isOn = true;
             }
             else if (isOn == true)
