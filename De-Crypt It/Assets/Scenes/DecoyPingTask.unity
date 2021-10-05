@@ -2475,7 +2475,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1947195080}
-        m_TargetAssemblyTypeName: PingInput, Assembly-CSharp
+        m_TargetAssemblyTypeName: DecoyPingInput, Assembly-CSharp
         m_MethodName: tryAgain
         m_Mode: 1
         m_Arguments:
@@ -3902,27 +3902,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1947195079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b5b06f5ca4b3f14898f6505e3677e52, type: 3}
+  m_Script: {fileID: 11500000, guid: e4c0618fe912df74495bf297ef1ace4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pingInput: 
-  correctPing: ping 192.168.20.1
   inputField: {fileID: 703943760}
   messageDisplay: {fileID: 1181705112}
-  pingPassedMsg1: {fileID: 0}
-  pingPassedMsg2: {fileID: 0}
-  pingPassedMsg3: {fileID: 0}
-  pingPassedMsg4: {fileID: 0}
-  pingPassedMsg5: {fileID: 0}
-  successfulMsg: {fileID: 0}
   pingFailedMsg1: {fileID: 1406188318}
   pingFailedMsg2: {fileID: 288122931}
   pingFailedMsg3: {fileID: 869263366}
-  pingFailedMsg4: {fileID: 0}
-  pingFailedMsg5: {fileID: 0}
   unsuccessfulMsg1: {fileID: 146059532}
   unsuccessfulMsg2: {fileID: 1157413407}
-  proceedBtn: {fileID: 0}
   tryAgainBtn: {fileID: 1333005110}
   returnBtn: {fileID: 2107362774}
 --- !u!4 &1947195081
@@ -4849,7 +4838,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1947195080}
-        m_TargetAssemblyTypeName: PingInput, Assembly-CSharp
+        m_TargetAssemblyTypeName: DecoyPingInput, Assembly-CSharp
         m_MethodName: returnBtnClick
         m_Mode: 1
         m_Arguments:
