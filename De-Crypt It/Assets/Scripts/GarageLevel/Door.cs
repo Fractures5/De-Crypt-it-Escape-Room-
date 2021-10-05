@@ -17,6 +17,19 @@ public class Door : MonoBehaviour
     public Text doorCloseInstructions;
     public Text doorLockedPrompt;
     public bool isRange = false;
+    public AudioSource DoorOpenSoundFX;
+    public AudioSource DoorCloseSoundFX;
+
+    public void PlayDoorOpenSoundFX()
+    {
+        DoorOpenSoundFX.Play();
+
+    }
+
+    public void PlayDoorCloseSoundFX()
+    {
+        DoorCloseSoundFX.Play();
+    }
 
     void Start(){
         doorClip = GetComponent<Animation>();
@@ -67,6 +80,7 @@ public class Door : MonoBehaviour
         {
             doorClip.clip = testingClip;
             doorClip.Play("DoorOpen");
+            PlayDoorOpenSoundFX();
             isDoorOpened = true;
             doorOpenInstructions.gameObject.SetActive(false);
             doorCloseInstructions.gameObject.SetActive(true);
@@ -78,6 +92,7 @@ public class Door : MonoBehaviour
             doorClip ["DoorClose"].speed = -1;
             doorClip ["DoorClose"].time = doorClip ["DoorClose"].length;
             doorClip.Play("DoorClose");
+            PlayDoorCloseSoundFX();
             isDoorOpened = false;
             doorCloseInstructions.gameObject.SetActive(false);
             doorOpenInstructions.gameObject.SetActive(true);
