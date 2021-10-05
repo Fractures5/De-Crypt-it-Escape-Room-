@@ -152,7 +152,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4
+  m_Intensity: 8
   m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -747,19 +747,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlashlightLight: {fileID: 690128454}
   clickSound: {fileID: 1869988452}
---- !u!114 &335720768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!20 &335720772 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20437472682476688, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+  m_PrefabInstance: {fileID: 794682717}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335720765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2479a692aba3e364282107367324ed09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  box: {fileID: 1549491104}
 --- !u!65 &335720773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4060,7 +4052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2479a692aba3e364282107367324ed09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box: {fileID: 1549491104}
+  camera: {fileID: 335720772}
 --- !u!1001 &1646528608
 PrefabInstance:
   m_ObjectHideFlags: 0
