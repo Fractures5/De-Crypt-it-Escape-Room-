@@ -11,6 +11,11 @@ public class PadLockDrop : MonoBehaviour
     void Start()
     {
         padlockFalling = GetComponent<Animation>();
+        if (LockControl.isPadlockOpened == true)
+        {
+            padlockFalling.clip = plDropping;
+            padlockFalling.Play("PadlockFall");
+        }
     }
 
     // Update is called once per frame
@@ -18,8 +23,8 @@ public class PadLockDrop : MonoBehaviour
     {
         if (LockControl.isPadlockOpened == true)
         {
-            padlockFalling.clip = plDropping;
-            padlockFalling.Play();
+            //padlockFalling.clip = plDropping;
+            //padlockFalling.Play("PadlockFall");
         }
         
     }
