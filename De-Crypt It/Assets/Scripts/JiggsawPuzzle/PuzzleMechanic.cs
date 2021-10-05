@@ -30,6 +30,7 @@ public class PuzzleMechanic : MonoBehaviour
         {
             isWin = true;
             WinText.SetActive(true);
+            JigsawPuzzle.taskComplete = true;
         }
     }
 }

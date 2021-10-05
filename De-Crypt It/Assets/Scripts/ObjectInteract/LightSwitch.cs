@@ -9,7 +9,8 @@ public class LightSwitch : MonoBehaviour
     public GameObject lightSwitch;
     public Color lightColor;
     public bool isRange;
-    public bool isOn = false;
+    public static bool isOn = false;
+    public AudioSource switchSound;
     void Start () 
     {
         secretRoomLight.SetActive(false);
@@ -17,15 +18,25 @@ public class LightSwitch : MonoBehaviour
     //This function checks if the player is within the range and is pressing the E button, program will switch scene
     void Update() 
     {
+        if(isOn == false)
+        {
+            secretRoomLight.SetActive(false);
+        }
+        if(isOn == true)
+        {
+            secretRoomLight.SetActive(true);
+        }
         if (isRange && Input.GetKeyDown("e")) 
         {
             if(isOn == false)
             {
+                switchSound.Play();
                 secretRoomLight.SetActive(true);
                 isOn = true;
             }
             else if (isOn == true)
             {
+                switchSound.Play();
                 secretRoomLight.SetActive(false);
                 isOn = false;
             }
