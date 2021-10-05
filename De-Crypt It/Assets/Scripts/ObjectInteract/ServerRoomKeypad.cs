@@ -26,7 +26,8 @@ public class ServerRoomKeypad : MonoBehaviour
 
     public GameObject lockedDoor;
     public GameObject unlockedDoor;
-    public GameObject keypad;
+    public GameObject activatedKeypadScreen;
+    public GameObject unlockedKeypadScreen;
 
     // Update is called once per frame
     void Update()
@@ -37,6 +38,8 @@ public class ServerRoomKeypad : MonoBehaviour
             {
                 Debug.Log("You have activated the keypad - door is now unlocked");
 
+                unlockedKeypadScreen.SetActive(false);
+                activatedKeypadScreen.SetActive(true);
                 lockedDoor.SetActive(false);
                 unlockedDoor.SetActive(true);
                 // sound affects will go here
