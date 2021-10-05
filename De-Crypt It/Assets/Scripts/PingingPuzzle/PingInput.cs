@@ -34,6 +34,8 @@ public class PingInput : MonoBehaviour
     public GameObject tryAgainBtn;
     public GameObject returnBtn;
 
+    public AudioSource pingSuccessfulFX;
+
     void Update()
     {
         // If the user presses "enter" then the "pingStatus" method will be invoked to determine what message and buttons are shown
@@ -89,6 +91,8 @@ public class PingInput : MonoBehaviour
         proceedBtn.SetActive(true); // Will enable and show the proceed button
         tryAgainBtn.SetActive(false); // Will hide the try again button
         returnBtn.SetActive(false); // Will hide the return button
+
+        pingSuccessfulFX.Play(0); // play the successful audio effect once the ping is complete
     }
 
     // This method when invoked after every few seconds as specified will set the gameobject for the unsuccesfull ping messages to true to show

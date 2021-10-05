@@ -24,6 +24,8 @@ public class ServerRoomKeypad : MonoBehaviour
 
     public static bool keypadActive = false;
 
+    public AudioSource activationFX;
+
     public GameObject lockedDoor;
     public GameObject unlockedDoor;
     public GameObject activatedKeypadScreen;
@@ -41,9 +43,11 @@ public class ServerRoomKeypad : MonoBehaviour
                 unlockedKeypadScreen.SetActive(false);
                 activatedKeypadScreen.SetActive(true);
                 lockedDoor.SetActive(false);
+
                 unlockedDoor.SetActive(true);
-                // sound affects will go here
                 unlockedText.gameObject.SetActive(false);
+
+                activationFX.Play(0);
                 ServerRoomKeypad.taskComplete = true;
             }
         }
