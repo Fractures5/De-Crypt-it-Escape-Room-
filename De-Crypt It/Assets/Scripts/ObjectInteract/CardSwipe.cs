@@ -10,13 +10,13 @@ public class CardSwipe : MonoBehaviour
     public Color startcolor;
 
     public Text interactionText;
+    public Text lockedText;
     public bool inRange = false;
     public static bool isComplete = false;
-    //public GameObject cardSwipeUI;
 
     void Update()
     {
-        if(isComplete==false)
+        if(isComplete==false && CardPickUp.cardCollected == true)
         {
             if (inRange == true && Input.GetKeyDown("e"))
             {
@@ -29,7 +29,7 @@ public class CardSwipe : MonoBehaviour
                 cardSwipeUI.SetActive(false);
                 //could add here to show a clue
             }*/
-        }
+        }  
     }
 
     // This function is called when the user is close to the box collider of the gameobject in the TV
@@ -44,7 +44,7 @@ public class CardSwipe : MonoBehaviour
             interactionText.gameObject.SetActive(false);
         }
         // If the task in not complete, object is highlighted, instructions text is show and the player within the range is updated
-        else
+        else if (CardPickUp.cardCollected == false)
         {
             if (other.CompareTag("Player"))
             {
@@ -52,8 +52,15 @@ public class CardSwipe : MonoBehaviour
                 startcolor = GetComponent<Renderer>().material.color;
                 GetComponent<Renderer>().material.color = Color.green;
                 inRange = true;
-                interactionText.gameObject.SetActive(true);
+                lockedText.gameObject.SetActive(true);
             }
+        }
+        else if (CardPickUp.cardCollected == true)
+        {
+                startcolor = GetComponent<Renderer>().material.color;
+                GetComponent<Renderer>().material.color = Color.green;
+                inRange = true;
+                interactionText.gameObject.SetActive(true);
         }
     }
 
@@ -62,12 +69,17 @@ public class CardSwipe : MonoBehaviour
     {
         // The color of the interactable gameobject in the TV is changed to the default color,
         // the status of the range is changed to false, and the instructions text is disabled so the user cant see it.
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player") && CardPickUp.cardCollected == true)
         {
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
             interactionText.gameObject.SetActive(false);
-
+        }
+        else if(other.CompareTag("Player"))
+        {
+            GetComponent<Renderer>().material.color = startcolor;
+            inRange = false;
+            lockedText.gameObject.SetActive(false);
         }
     }
 }
