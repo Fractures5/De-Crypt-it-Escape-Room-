@@ -20,11 +20,17 @@ public class Door : MonoBehaviour
     public bool isRange = false;
     public AudioSource DoorOpenSoundFX;
     public AudioSource DoorCloseSoundFX;
+    public AudioSource DoorLockedSoundFX;
+
+    public void PlayDoorLockedSoundFX()
+    {
+        DoorLockedSoundFX.Play();
+
+    }
 
     public void PlayDoorOpenSoundFX()
     {
         DoorOpenSoundFX.Play();
-
     }
 
     public void PlayDoorCloseSoundFX()
@@ -104,6 +110,7 @@ public class Door : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.E) && door == true && IncorrectKey.isWrongKeyCollected == true /**Key.active == false**/ && isDoorOpened == false)
         {
             doorIncorrectKeyIns.gameObject.SetActive(true);
+            PlayDoorLockedSoundFX();
         }
         
 
