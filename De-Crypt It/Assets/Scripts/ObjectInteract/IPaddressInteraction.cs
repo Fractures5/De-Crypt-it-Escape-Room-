@@ -17,33 +17,35 @@ public class IPaddressInteraction : MonoBehaviour
 
     // Static variable which is readable and modifiable by other scripts. 
     // It is used to determine if the pinging task is completed or not by the user.
-    public static bool taskComplete = false;
+    public static bool clueReceived = false;
    
+    public GameObject pingingCluePopup;
+
     // Update is called once per frame
     void Update()
     {
         // If the task is not complete and the user in range and interacts with the pinging puzzle 
         // game object by pressing "E", then the pingning puzzle scene will load.
-        if(taskComplete == false)
+        if(clueReceived == false)
         {
             if(inRange == true && Input.GetKeyDown("e"))
             {
-                ///
-                
+               pingingCluePopup.SetActive(true);
+               clueReceived = true;  
             }
         }
-        else if (taskComplete == true)
-        {
-            // If the task is complete then....
+        // else if (clueReceived == true)
+        // {
+        //     // If the task is complete then....
          
-        }
+        // }
     }
 
     // This function is called when the user is close to the box collider of the gameobject in the computer monitor
     void OnTriggerEnter(Collider other)
     {
         // If the task is complete, object is not higlighted, instructions is not shown and dont update the player within range
-        if(taskComplete == true)
+        if(clueReceived == true)
         {
             startcolor = GetComponent<Renderer>().material.color;
             GetComponent<Renderer>().material.color = startcolor;

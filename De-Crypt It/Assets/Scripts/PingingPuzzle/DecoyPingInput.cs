@@ -20,8 +20,19 @@ public class DecoyPingInput : MonoBehaviour
     public GameObject tryAgainBtn;
     public GameObject returnBtn;
 
+    public GameObject pingingCluePopup;
+
     void Update()
     {
+        if(IPaddressInteraction.clueReceived == true)
+        {
+            pingingCluePopup.SetActive(true);
+        }
+        else
+        {
+            pingingCluePopup.SetActive(false);
+        }
+
         // If the user presses "enter" then the "pingStatus" method will be invoked to reset the ping messages 
         // and start showing the fail messages in increments of few seconds.
         if(Input.GetKeyDown(KeyCode.Return))
