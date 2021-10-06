@@ -34,10 +34,21 @@ public class PingInput : MonoBehaviour
     public GameObject tryAgainBtn;
     public GameObject returnBtn;
 
+    public GameObject pingingCluePopup;
+
     public AudioSource pingSuccessfulFX;
 
     void Update()
     {
+        if(IPaddressInteraction.clueReceived == true)
+        {
+            pingingCluePopup.SetActive(true);
+        }
+        else
+        {
+            pingingCluePopup.SetActive(false);
+        }
+
         // If the user presses "enter" then the "pingStatus" method will be invoked to determine what message and buttons are shown
         if(Input.GetKeyDown(KeyCode.Return))
         {
