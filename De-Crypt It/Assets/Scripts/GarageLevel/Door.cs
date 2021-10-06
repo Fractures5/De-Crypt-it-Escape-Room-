@@ -15,6 +15,7 @@ public class Door : MonoBehaviour
     public bool isDoorOpened = false;
     public Text doorOpenInstructions;
     public Text doorCloseInstructions;
+    public Text doorIncorrectKeyIns;
     public Text doorLockedPrompt;
     public bool isRange = false;
     public AudioSource DoorOpenSoundFX;
@@ -70,6 +71,7 @@ public class Door : MonoBehaviour
             doorOpenInstructions.gameObject.SetActive(false);
             doorCloseInstructions.gameObject.SetActive(false);
             doorLockedPrompt.gameObject.SetActive(false);
+            doorIncorrectKeyIns.gameObject.SetActive(false);
         }
     }
 
@@ -98,6 +100,12 @@ public class Door : MonoBehaviour
             doorOpenInstructions.gameObject.SetActive(true);
             
         }
+
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && IncorrectKey.isWrongKeyCollected == true /**Key.active == false**/ && isDoorOpened == false)
+        {
+            doorIncorrectKeyIns.gameObject.SetActive(true);
+        }
+        
 
         else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true /**Key.active == true**/)
         {

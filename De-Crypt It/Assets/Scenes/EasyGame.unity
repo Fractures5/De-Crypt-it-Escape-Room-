@@ -2883,6 +2883,85 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8567812452415054033, guid: 8f9e4da5668113a4da8b4efea4a9499f, type: 3}
+--- !u!1 &911768532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911768533}
+  - component: {fileID: 911768535}
+  - component: {fileID: 911768534}
+  m_Layer: 5
+  m_Name: DoorIncorrectKey
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &911768533
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911768532}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2000024353}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000005722, y: 25.577}
+  m_SizeDelta: {x: 226.9564, y: 51.1532}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &911768534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911768532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You try to unlock the door but it wont budge.....
+--- !u!222 &911768535
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911768532}
+  m_CullTransparentMesh: 1
 --- !u!1 &926245651 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2502331570775691907, guid: e6084503f826bbb428b1e677dc1a75d4, type: 3}
@@ -3323,6 +3402,7 @@ MonoBehaviour:
   isDoorOpened: 0
   doorOpenInstructions: {fileID: 722636071}
   doorCloseInstructions: {fileID: 23176332}
+  doorIncorrectKeyIns: {fileID: 911768534}
   doorLockedPrompt: {fileID: 1879071666}
   isRange: 0
   DoorOpenSoundFX: {fileID: 402489398}
@@ -4577,6 +4657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   padlockFalling: {fileID: 0}
   plDropping: {fileID: 7400000, guid: 1273ca8b7cc1a4c4aae91c91beda06f3, type: 2}
+  hasClipPlayed: 0
 --- !u!1 &1834249322
 GameObject:
   m_ObjectHideFlags: 0
@@ -5181,6 +5262,7 @@ RectTransform:
   - {fileID: 23176331}
   - {fileID: 1879071665}
   - {fileID: 1094824414}
+  - {fileID: 911768533}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
