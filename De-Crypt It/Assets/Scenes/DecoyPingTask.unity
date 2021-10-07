@@ -290,7 +290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &146059533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -307,7 +307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.06337, y: -95}
+  m_AnchoredPosition: {x: -198.06337, y: -110.1}
   m_SizeDelta: {x: 100.9767, y: 26.5355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146059534
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ping Unsuccessful. The address entered is invalid!
+  m_text: Keypad door system cannot be unlocked.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -499,7 +499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &288122932
 RectTransform:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.06337, y: -45}
+  m_AnchoredPosition: {x: -198.06337, y: -60.10001}
   m_SizeDelta: {x: 100.9767, y: 26.5355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288122933
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This computer has restricted access right now.
+  m_text: This computer cannot ping right now.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -979,7 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19003202, g: 0.3591339, b: 0.6415094, a: 1}
+  m_Color: {r: 0.4433962, g: 0, b: 0.109524034, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1352,7 +1352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &869263367
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1369,7 +1369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.06337, y: -68}
+  m_AnchoredPosition: {x: -198.06337, y: -83.100006}
   m_SizeDelta: {x: 100.9767, y: 26.5355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869263368
@@ -1786,7 +1786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1157413408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1807,7 +1807,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Door Keypad System remains unactivated. Please Try Again!
+  m_text: Please try another computer.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1900,7 +1900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.06337, y: -119.3}
+  m_AnchoredPosition: {x: -198.06337, y: -134.40001}
   m_SizeDelta: {x: 100.9767, y: 26.5355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1176113469
@@ -2475,7 +2475,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1947195080}
-        m_TargetAssemblyTypeName: PingInput, Assembly-CSharp
+        m_TargetAssemblyTypeName: DecoyPingInput, Assembly-CSharp
         m_MethodName: tryAgain
         m_Mode: 1
         m_Arguments:
@@ -2619,7 +2619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1406188319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2636,7 +2636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.06337, y: -23.576248}
+  m_AnchoredPosition: {x: -198.06337, y: -36.30001}
   m_SizeDelta: {x: 100.9767, y: 26.5355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406188320
@@ -2659,7 +2659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This computer cannot ping right now.
+  m_text: Access is restricted.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2736,6 +2736,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406188318}
   m_CullTransparentMesh: 1
+--- !u!1 &1413034648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413034652}
+  - component: {fileID: 1413034651}
+  - component: {fileID: 1413034650}
+  - component: {fileID: 1413034649}
+  m_Layer: 5
+  m_Name: PingingCluePopUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1413034649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413034648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.048194792, g: 0.26415092, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: 1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1413034650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413034648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.35802484, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Clue: 192.-24.-148.-19'
+--- !u!222 &1413034651
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413034648}
+  m_CullTransparentMesh: 1
+--- !u!224 &1413034652
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413034648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1417928978}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -309.48483, y: 207.29999}
+  m_SizeDelta: {x: 171.9479, y: 19.6805}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1417928974
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,6 +2923,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 652814820}
+  - {fileID: 1413034652}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3902,29 +3998,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1947195079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b5b06f5ca4b3f14898f6505e3677e52, type: 3}
+  m_Script: {fileID: 11500000, guid: e4c0618fe912df74495bf297ef1ace4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pingInput: 
-  correctPing: ping 192.168.20.1
   inputField: {fileID: 703943760}
   messageDisplay: {fileID: 1181705112}
-  pingPassedMsg1: {fileID: 0}
-  pingPassedMsg2: {fileID: 0}
-  pingPassedMsg3: {fileID: 0}
-  pingPassedMsg4: {fileID: 0}
-  pingPassedMsg5: {fileID: 0}
-  successfulMsg: {fileID: 0}
   pingFailedMsg1: {fileID: 1406188318}
   pingFailedMsg2: {fileID: 288122931}
   pingFailedMsg3: {fileID: 869263366}
-  pingFailedMsg4: {fileID: 0}
-  pingFailedMsg5: {fileID: 0}
   unsuccessfulMsg1: {fileID: 146059532}
   unsuccessfulMsg2: {fileID: 1157413407}
-  proceedBtn: {fileID: 0}
   tryAgainBtn: {fileID: 1333005110}
   returnBtn: {fileID: 2107362774}
+  pingingCluePopup: {fileID: 1413034648}
 --- !u!4 &1947195081
 Transform:
   m_ObjectHideFlags: 0
@@ -4849,7 +4935,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1947195080}
-        m_TargetAssemblyTypeName: PingInput, Assembly-CSharp
+        m_TargetAssemblyTypeName: DecoyPingInput, Assembly-CSharp
         m_MethodName: returnBtnClick
         m_Mode: 1
         m_Arguments:

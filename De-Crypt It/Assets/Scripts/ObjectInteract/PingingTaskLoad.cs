@@ -43,7 +43,7 @@ public class PingingTaskLoad : MonoBehaviour
             // If the task is complete then....
             lockedKeypad.SetActive(false); // the locked keypad message is hidden
             unlockedKeypad.SetActive(true); // the unlocked keypad message is now shown
-            LockedKeypad.keypadActive = true; // make the keypad status active
+            ServerRoomKeypad.keypadActive = true; // make the keypad status active
         }
     }
 

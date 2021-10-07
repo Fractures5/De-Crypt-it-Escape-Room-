@@ -13,10 +13,13 @@ public class SwipeTask : MonoBehaviour
 
     public GameObject winScreen;
     public GameObject closeCardSwipe;
+    public GameObject card;
 
     private int currentSwipePointIndex = 0;
 
     private float countdown = 0;
+
+    public static bool isComplete = false;
 
     private void Update()
     {
@@ -33,6 +36,7 @@ public class SwipeTask : MonoBehaviour
     {
         if (wasSuccesful)
         {
+            isComplete = true;
             greenOn.SetActive(true);
             winScreen.SetActive(true);
             closeCardSwipe.SetActive(true);
