@@ -23,7 +23,12 @@ public class DecoyPingInput : MonoBehaviour
     public GameObject pingingCluePopup;
 
     public AudioSource pingUnsuccessfulFX;
+    public AudioSource interactionFX;
 
+    void Start()
+    {
+        interactionFX.Play(0);
+    }
     void Update()
     {
         if(IPaddressInteraction.clueReceived == true)

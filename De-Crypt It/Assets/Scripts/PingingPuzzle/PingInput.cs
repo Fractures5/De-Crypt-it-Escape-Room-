@@ -38,7 +38,13 @@ public class PingInput : MonoBehaviour
 
     public AudioSource pingSuccessfulFX;
     public AudioSource pingUnsuccessfulFX;
+    public AudioSource interactionFX;
+   
 
+    void Start()
+    {
+        interactionFX.Play(0);
+    }
     void Update()
     {
         if(IPaddressInteraction.clueReceived == true)

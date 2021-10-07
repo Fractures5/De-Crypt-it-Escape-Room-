@@ -19,6 +19,8 @@ public class SRLockedDoor : MonoBehaviour
     // It is used to determine if the quiz task is completed or not by the user.
     public static bool taskComplete = false;
 
+    // AudioSource variable for the locked door sound effect
+    public AudioSource doorLockedFX;
 
     // This function is called when the user is close to the box collider of door
     void OnTriggerEnter(Collider other)
@@ -30,6 +32,7 @@ public class SRLockedDoor : MonoBehaviour
                 GetComponent<Renderer>().material.color = Color.green;
                 inRange = true;
                 interactionText.gameObject.SetActive(true);
+                doorLockedFX.Play(0); // when user is in range of the locked door play locked door sound effect
             }
     }
 
