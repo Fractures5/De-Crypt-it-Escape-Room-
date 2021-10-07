@@ -109,15 +109,30 @@ public class Door : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.E) && door == true && IncorrectKey.isWrongKeyCollected == true /**Key.active == false**/ && isDoorOpened == false)
         {
-            doorIncorrectKeyIns.gameObject.SetActive(true);
+            //doorIncorrectKeyIns.gameObject.SetActive(true);
             PlayDoorLockedSoundFX();
+            StartCoroutine(doorStillLocked());
         }
         
 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true /**Key.active == true**/)
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == false && IncorrectKey.isWrongKeyCollected == false /**Key.active == true**/)
         {
-            doorLockedPrompt.gameObject.SetActive(true);
+            StartCoroutine(doorIsLocked());
         }
         
     }
+
+     IEnumerator doorStillLocked() //method to display to the player that the door is still locked after trying the incorrect keys
+     {
+        doorIncorrectKeyIns.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        doorIncorrectKeyIns.gameObject.SetActive(false);
+     }
+
+     IEnumerator doorIsLocked()
+     {
+        doorLockedPrompt.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        doorLockedPrompt.gameObject.SetActive(false);
+     }
 }
