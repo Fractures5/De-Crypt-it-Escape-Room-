@@ -37,7 +37,14 @@ public class PingInput : MonoBehaviour
     public GameObject pingingCluePopup;
 
     public AudioSource pingSuccessfulFX;
+    public AudioSource pingUnsuccessfulFX;
+    public AudioSource interactionFX;
+   
 
+    void Start()
+    {
+        interactionFX.Play(0);
+    }
     void Update()
     {
         if(IPaddressInteraction.clueReceived == true)
@@ -125,6 +132,8 @@ public class PingInput : MonoBehaviour
         unsuccessfulMsg1.SetActive(true);
         yield return new WaitForSeconds(1);
         unsuccessfulMsg2.SetActive(true);
+
+        pingUnsuccessfulFX.Play(0); // play the error audio effect once the ping is failed by the user input
     }
 
     // This function will be invoked when the try again button is clicked to reset the ping messages and the scene for the user to try again
