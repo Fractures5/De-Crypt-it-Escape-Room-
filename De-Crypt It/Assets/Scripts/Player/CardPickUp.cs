@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CardPickUp : MonoBehaviour
 {
@@ -41,7 +43,6 @@ public class CardPickUp : MonoBehaviour
                 Drop();
             }
         }
-        
     }
 
     private void CheckCard()
@@ -54,7 +55,6 @@ public class CardPickUp : MonoBehaviour
             {
                 canGrab = true;
                 wp = hit.transform.gameObject;
-                Debug.Log("Card has been picked up");
             }
         }
         else
