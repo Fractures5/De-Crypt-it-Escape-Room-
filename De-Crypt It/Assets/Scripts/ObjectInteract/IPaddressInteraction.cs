@@ -30,15 +30,11 @@ public class IPaddressInteraction : MonoBehaviour
         {
             if(inRange == true && Input.GetKeyDown("e"))
             {
+               interactionText.gameObject.SetActive(false);
                pingingCluePopup.SetActive(true);
                clueReceived = true;  
             }
         }
-        // else if (clueReceived == true)
-        // {
-        //     // If the task is complete then....
-         
-        // }
     }
 
     // This function is called when the user is close to the box collider of the gameobject in the computer monitor

@@ -22,6 +22,13 @@ public class DecoyPingInput : MonoBehaviour
 
     public GameObject pingingCluePopup;
 
+    public AudioSource pingUnsuccessfulFX;
+    public AudioSource interactionFX;
+
+    void Start()
+    {
+        interactionFX.Play(0);
+    }
     void Update()
     {
         if(IPaddressInteraction.clueReceived == true)
@@ -38,6 +45,7 @@ public class DecoyPingInput : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("Enter was pressed");
+            interactionFX.Play(0);
             pingStatus();
         }
     }
@@ -66,6 +74,9 @@ public class DecoyPingInput : MonoBehaviour
         unsuccessfulMsg1.SetActive(true);
         yield return new WaitForSeconds(1);
         unsuccessfulMsg2.SetActive(true);
+
+        pingUnsuccessfulFX.Play(0); // play the error audio effect once the ping is failed by the user input
+
     }
 
     // This function will be invoked when the try again button is clicked to reset the ping messages and the scene for the user to try again

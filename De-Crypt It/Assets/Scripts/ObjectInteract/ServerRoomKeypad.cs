@@ -18,6 +18,9 @@ public class ServerRoomKeypad : MonoBehaviour
     // Boolean which checks if the player is in the range of the locked door.
     public bool inRange = false;
 
+    // AudioSource variable for the locked keypad sound effect
+    public AudioSource keypadLockedFX;
+
     // Static variable which is readable and modifiable by other scripts. 
     // It is used to determine if the quiz task is completed or not by the user.
     public static bool taskComplete = false;
@@ -72,6 +75,7 @@ public class ServerRoomKeypad : MonoBehaviour
             GetComponent<Renderer>().material.color = Color.green;
             inRange = true;
             lockedText.gameObject.SetActive(true);
+            keypadLockedFX.Play(0); // Will play locked keypad sound effect when user approaches the lockey keypad
         }
         else if (other.CompareTag("Player") && keypadActive == true)
         {
@@ -90,17 +94,17 @@ public class ServerRoomKeypad : MonoBehaviour
     {
         // The color of the door is changed to the default color,
         // the status of the range is changed to false, and the instructions text is disabled so the user cant see it.
-        if(other.CompareTag("Player"))
-        {
-            GetComponent<Renderer>().material.color = startcolor;
-            inRange = false;
-            lockedText.gameObject.SetActive(false);
-        }
-        else if(other.CompareTag("Player") && keypadActive == true)
+        if(other.CompareTag("Player") && keypadActive == true)
         {
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
             unlockedText.gameObject.SetActive(false);
+        }
+        else if(other.CompareTag("Player"))
+        {
+            GetComponent<Renderer>().material.color = startcolor;
+            inRange = false;
+            lockedText.gameObject.SetActive(false);
         }
     }
 }
