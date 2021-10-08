@@ -67,7 +67,7 @@ public class Door : MonoBehaviour
                 doorLockedPrompt.gameObject.SetActive(false);
             }
 
-            if(isDoorOpened == false && Target.isKeyCollected == false && IncorrectKey.isWrongKeyCollected == false)
+            if(isDoorOpened == false && Target.isKeyCollected == false && IncorrectKey.isWrongKeyCollected == false) //if door is closed and NO keys have been collected
             {
                 doorCloseInstructions.gameObject.SetActive(false);
                 doorOpenInstructions.gameObject.SetActive(true);
@@ -75,33 +75,31 @@ public class Door : MonoBehaviour
             }
             //this if-block is correct ^
 
-            if(isDoorOpened == true)
+            if(isDoorOpened == true) //if door is opened
             {
                 doorOpenInstructions.gameObject.SetActive(false);
                 doorCloseInstructions.gameObject.SetActive(true);
             }
             //this if-block is correct ^
 
-            if (hasDoorBeenUnlocked == false && Target.isKeyCollected == true && isDoorOpened == false)
+            if (hasDoorBeenUnlocked == false && Target.isKeyCollected == true && isDoorOpened == false) //if door hasnt been unlocked and not opened but correct key is collected
             {
                 doorUnlockInstructions.gameObject.SetActive(true);
-                //doorOpenInstructions.gameObject.SetActive(true);
-                //doorCloseInstructions.gameObject.SetActive(false);
             }
 
-            if (hasDoorBeenUnlocked == true && Target.isKeyCollected == true && isDoorOpened == false)
+            if (hasDoorBeenUnlocked == true && Target.isKeyCollected == true && isDoorOpened == false) //if has been unlocked and correct key is collected and door has not been opened
             {
                 doorOpenInstructions.gameObject.SetActive(true);
                 doorCloseInstructions.gameObject.SetActive(false);
             }
 
-            if (hasDoorBeenUnlocked == true && Target.isKeyCollected == true && isDoorOpened == true)
+            if (hasDoorBeenUnlocked == true && Target.isKeyCollected == true && isDoorOpened == true) //if door has been unlocked and correct key is collected but door has been opened
             {
                 doorCloseInstructions.gameObject.SetActive(true);
                 doorOpenInstructions.gameObject.SetActive(false);
             }
 
-            if (hasDoorBeenUnlocked == false && IncorrectKey.isWrongKeyCollected == true && isDoorOpened == false)
+            if (hasDoorBeenUnlocked == false && IncorrectKey.isWrongKeyCollected == true && isDoorOpened == false) //if door has not been unlocked but wrong key is collected and door is not open
             {
                 doorUnlockInstructions.gameObject.SetActive(true);
             }
