@@ -60,6 +60,7 @@ public class PingInput : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("Enter was pressed");
+            interactionFX.Play(0);
             pingStatus();
         }
     }

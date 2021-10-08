@@ -94,17 +94,17 @@ public class ServerRoomKeypad : MonoBehaviour
     {
         // The color of the door is changed to the default color,
         // the status of the range is changed to false, and the instructions text is disabled so the user cant see it.
-        if(other.CompareTag("Player"))
-        {
-            GetComponent<Renderer>().material.color = startcolor;
-            inRange = false;
-            lockedText.gameObject.SetActive(false);
-        }
-        else if(other.CompareTag("Player") && keypadActive == true)
+        if(other.CompareTag("Player") && keypadActive == true)
         {
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
             unlockedText.gameObject.SetActive(false);
+        }
+        else if(other.CompareTag("Player"))
+        {
+            GetComponent<Renderer>().material.color = startcolor;
+            inRange = false;
+            lockedText.gameObject.SetActive(false);
         }
     }
 }
