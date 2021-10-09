@@ -158,12 +158,12 @@ public class Door : MonoBehaviour
             
         }
 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false)
+        else if (Input.GetKeyDown(KeyCode.U) && door == true && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false)
         {
+            doorUnlockInstructions.gameObject.SetActive(false);
             //doorIncorrectKeyIns.gameObject.SetActive(true);
             PlayDoorStillLockedSoundFX();
             StartCoroutine(doorStillLocked());
-            
         }
         
 
@@ -196,5 +196,6 @@ public class Door : MonoBehaviour
         doorUnlockedPrompt.gameObject.SetActive(true);
         yield return new WaitForSeconds(2);
         doorUnlockedPrompt.gameObject.SetActive(false);
+        doorOpenInstructions.gameObject.SetActive(true);
      }
 }
