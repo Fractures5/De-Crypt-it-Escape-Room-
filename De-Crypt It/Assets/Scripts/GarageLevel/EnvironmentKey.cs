@@ -21,11 +21,6 @@ public class EnvironmentKey : MonoBehaviour
         {
             theIncorrectKey.SetActive(false);
             hasWrongEnvKeyClltd = true;
-
-            /**if (!theIncorrectKey.activeSelf)
-            {
-                Debug.Log("Not active anymore");
-            }**/
         }
 
         if (!theIncorrectKey.activeSelf)

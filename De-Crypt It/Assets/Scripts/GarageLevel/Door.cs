@@ -67,7 +67,7 @@ public class Door : MonoBehaviour
                 doorLockedPrompt.gameObject.SetActive(false);
             }
 
-            if(isDoorOpened == false && Target.isKeyCollected == false && IncorrectKey.isWrongKeyCollected == false) //if door is closed and NO keys have been collected
+            if(isDoorOpened == false && Target.isKeyCollected == false && EnvironmentKey.hasWrongEnvKeyClltd == false) //if door is closed and NO keys have been collected
             {
                 doorCloseInstructions.gameObject.SetActive(false);
                 doorOpenInstructions.gameObject.SetActive(true);
@@ -99,11 +99,11 @@ public class Door : MonoBehaviour
                 doorOpenInstructions.gameObject.SetActive(false);
             }
 
-            if (hasDoorBeenUnlocked == false && IncorrectKey.isWrongKeyCollected == true && isDoorOpened == false) //if door has not been unlocked but wrong key is collected and door is not open
+            if (hasDoorBeenUnlocked == false && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false) //if door has not been unlocked but wrong key is collected and door is not open
             {
                 doorUnlockInstructions.gameObject.SetActive(true);
             }
-            if (hasDoorBeenUnlocked == true && IncorrectKey.isWrongKeyCollected == true && isDoorOpened == false)
+            if (hasDoorBeenUnlocked == true && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false)
             {
                 doorUnlockInstructions.gameObject.SetActive(false);
             }
@@ -158,7 +158,7 @@ public class Door : MonoBehaviour
             
         }
 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && IncorrectKey.isWrongKeyCollected == true && isDoorOpened == false)
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false)
         {
             //doorIncorrectKeyIns.gameObject.SetActive(true);
             PlayDoorStillLockedSoundFX();
@@ -167,7 +167,7 @@ public class Door : MonoBehaviour
         }
         
 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == false && IncorrectKey.isWrongKeyCollected == false)
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == false && EnvironmentKey.hasWrongEnvKeyClltd == false)
         {
             PlayDoorLockedSoundFX();
             StartCoroutine(doorIsLocked());
