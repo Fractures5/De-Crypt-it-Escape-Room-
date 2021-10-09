@@ -15,6 +15,9 @@ public class SwipeTask : MonoBehaviour
     public GameObject closeCardSwipe;
     public GameObject card;
 
+    public AudioSource winNoise;
+    public AudioSource loseNoise;
+
     private int currentSwipePointIndex = 0;
 
     private float countdown = 0;
@@ -37,6 +40,7 @@ public class SwipeTask : MonoBehaviour
         if (wasSuccesful)
         {
             isComplete = true;
+            winNoise.Play();
             greenOn.SetActive(true);
             winScreen.SetActive(true);
             closeCardSwipe.SetActive(true);
@@ -44,6 +48,7 @@ public class SwipeTask : MonoBehaviour
         }
         else
         {
+            loseNoise.Play();
             redOn.SetActive(true);
         }
 
