@@ -67,7 +67,7 @@ public class Door : MonoBehaviour
                 doorLockedPrompt.gameObject.SetActive(false);
             }
 
-            if(isDoorOpened == false && Target.isKeyCollected == false && IncorrectKey.isWrongKeyCollected == false) //if door is closed and NO keys have been collected
+            if(isDoorOpened == false && Target.isKeyCollected == false && EnvironmentKey.hasWrongEnvKeyClltd == false) //if door is closed and NO keys have been collected
             {
                 doorCloseInstructions.gameObject.SetActive(false);
                 doorOpenInstructions.gameObject.SetActive(true);
@@ -99,11 +99,11 @@ public class Door : MonoBehaviour
                 doorOpenInstructions.gameObject.SetActive(false);
             }
 
-            if (hasDoorBeenUnlocked == false && IncorrectKey.isWrongKeyCollected == true && isDoorOpened == false) //if door has not been unlocked but wrong key is collected and door is not open
+            if (hasDoorBeenUnlocked == false && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false) //if door has not been unlocked but wrong key is collected and door is not open
             {
                 doorUnlockInstructions.gameObject.SetActive(true);
             }
-            if (hasDoorBeenUnlocked == true && IncorrectKey.isWrongKeyCollected == true && isDoorOpened == false)
+            if (hasDoorBeenUnlocked == true && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false)
             {
                 doorUnlockInstructions.gameObject.SetActive(false);
             }
@@ -141,8 +141,9 @@ public class Door : MonoBehaviour
             doorClip.Play("DoorOpen");
             PlayDoorOpenSoundFX();
             isDoorOpened = true;
-            doorOpenInstructions.gameObject.SetActive(false);
-            doorCloseInstructions.gameObject.SetActive(true);
+            StartCoroutine(WaitForOpenAnimation(doorClip));
+            //doorOpenInstructions.gameObject.SetActive(false);
+            //doorCloseInstructions.gameObject.SetActive(true);
         }
 
         else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true && isDoorOpened == true)
@@ -153,21 +154,22 @@ public class Door : MonoBehaviour
             doorClip.Play("DoorClose");
             PlayDoorCloseSoundFX();
             isDoorOpened = false;
-            doorCloseInstructions.gameObject.SetActive(false);
-            doorOpenInstructions.gameObject.SetActive(true);
+            StartCoroutine(WaitForCloseAnimation(doorClip));
+            //doorCloseInstructions.gameObject.SetActive(false);
+            //doorOpenInstructions.gameObject.SetActive(true);
             
         }
 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && IncorrectKey.isWrongKeyCollected == true && isDoorOpened == false)
+        else if (Input.GetKeyDown(KeyCode.U) && door == true && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false)
         {
+            doorUnlockInstructions.gameObject.SetActive(false);
             //doorIncorrectKeyIns.gameObject.SetActive(true);
             PlayDoorStillLockedSoundFX();
             StartCoroutine(doorStillLocked());
-            
         }
         
 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == false && IncorrectKey.isWrongKeyCollected == false)
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == false && EnvironmentKey.hasWrongEnvKeyClltd == false)
         {
             PlayDoorLockedSoundFX();
             StartCoroutine(doorIsLocked());
@@ -196,5 +198,26 @@ public class Door : MonoBehaviour
         doorUnlockedPrompt.gameObject.SetActive(true);
         yield return new WaitForSeconds(2);
         doorUnlockedPrompt.gameObject.SetActive(false);
+        doorOpenInstructions.gameObject.SetActive(true);
      }
+
+    private IEnumerator WaitForOpenAnimation(Animation animation)
+    {
+        while (animation.isPlaying)
+        {
+            yield return null;
+        }
+        doorOpenInstructions.gameObject.SetActive(false);
+        doorCloseInstructions.gameObject.SetActive(true);
+    }
+
+    private IEnumerator WaitForCloseAnimation(Animation animation)
+    {
+        while (animation.isPlaying)
+        {
+            yield return null;
+        }
+        doorOpenInstructions.gameObject.SetActive(true);
+        doorCloseInstructions.gameObject.SetActive(false);
+    }
 }

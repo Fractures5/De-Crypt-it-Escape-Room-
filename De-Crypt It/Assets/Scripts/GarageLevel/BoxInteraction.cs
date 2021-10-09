@@ -77,10 +77,20 @@ public class BoxInteraction : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E) && box == true && LockControl.isPadlockOpened == true)
         {
-            Debug.Log("Padlock is unlocked now");
-            SceneManager.LoadScene("InsideGarageBox");
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            boxOpenClip.clip = testingClip;
+            boxOpenClip.Play("OpenBox");
+            StartCoroutine(WaitForAnimation(boxOpenClip));
         }
+    }
+    private IEnumerator WaitForAnimation(Animation animation)
+    {
+        while (animation.isPlaying)
+        {
+            yield return null;
+        }
+        Debug.Log("Animation completed");
+        SceneManager.LoadScene("InsideGarageBox");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
