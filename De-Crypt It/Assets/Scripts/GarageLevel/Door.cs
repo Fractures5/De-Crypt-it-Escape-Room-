@@ -141,8 +141,9 @@ public class Door : MonoBehaviour
             doorClip.Play("DoorOpen");
             PlayDoorOpenSoundFX();
             isDoorOpened = true;
-            doorOpenInstructions.gameObject.SetActive(false);
-            doorCloseInstructions.gameObject.SetActive(true);
+            StartCoroutine(WaitForOpenAnimation(doorClip));
+            //doorOpenInstructions.gameObject.SetActive(false);
+            //doorCloseInstructions.gameObject.SetActive(true);
         }
 
         else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true && isDoorOpened == true)
@@ -153,8 +154,9 @@ public class Door : MonoBehaviour
             doorClip.Play("DoorClose");
             PlayDoorCloseSoundFX();
             isDoorOpened = false;
-            doorCloseInstructions.gameObject.SetActive(false);
-            doorOpenInstructions.gameObject.SetActive(true);
+            StartCoroutine(WaitForCloseAnimation(doorClip));
+            //doorCloseInstructions.gameObject.SetActive(false);
+            //doorOpenInstructions.gameObject.SetActive(true);
             
         }
 
@@ -198,4 +200,24 @@ public class Door : MonoBehaviour
         doorUnlockedPrompt.gameObject.SetActive(false);
         doorOpenInstructions.gameObject.SetActive(true);
      }
+
+    private IEnumerator WaitForOpenAnimation(Animation animation)
+    {
+        while (animation.isPlaying)
+        {
+            yield return null;
+        }
+        doorOpenInstructions.gameObject.SetActive(false);
+        doorCloseInstructions.gameObject.SetActive(true);
+    }
+
+    private IEnumerator WaitForCloseAnimation(Animation animation)
+    {
+        while (animation.isPlaying)
+        {
+            yield return null;
+        }
+        doorOpenInstructions.gameObject.SetActive(true);
+        doorCloseInstructions.gameObject.SetActive(false);
+    }
 }
