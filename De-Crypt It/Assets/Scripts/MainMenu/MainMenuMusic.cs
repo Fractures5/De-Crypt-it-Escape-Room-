@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenuMusic : MonoBehaviour
 {
     //This script will handle the main menu music interaction
     public AudioSource AudioSource;
-
-    private float bgMusicVolume = 1f;
+    public GameObject bgMusicSlider;
+    public static float bgMusicVolume = 1f;
 
     void Start()
     {
@@ -18,6 +19,8 @@ public class MainMenuMusic : MonoBehaviour
     void Update()
     {
         AudioSource.volume = bgMusicVolume;
+        bgMusicSlider.GetComponent<Slider>().value = bgMusicVolume;
+
     }
     //Updates the volume if the player wishes to change the sound volume
     public void updateVolume(float volume)
