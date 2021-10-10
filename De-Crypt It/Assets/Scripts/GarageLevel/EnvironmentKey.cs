@@ -10,7 +10,15 @@ public class EnvironmentKey : MonoBehaviour
     public static bool hasWrongEnvKeyClltd;
     public bool isRange = false;
     public Text collectKeyInstruction;
+
+    public AudioSource collectKeySoundFX;
     // Start is called before the first frame update
+
+    public void PlayCollectKeySoundFX()
+    {
+        collectKeySoundFX.Play();
+
+    }
     void Start()
     {
         hasWrongEnvKeyClltd = false;
@@ -21,6 +29,7 @@ public class EnvironmentKey : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerNextToKey == true)
         {
+            PlayCollectKeySoundFX();
             theIncorrectKey.SetActive(false);
             hasWrongEnvKeyClltd = true;
             collectKeyInstruction.gameObject.SetActive(false);
