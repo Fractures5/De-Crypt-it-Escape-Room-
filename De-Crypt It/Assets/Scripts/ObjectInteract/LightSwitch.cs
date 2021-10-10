@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class LightSwitch : MonoBehaviour
 {
-
+    //This script will allow the interaction functionality of the light switch, it will allow the player to interact with the object by presisng E, 
+    //Once the player is within the range, it will show a text instruction and highkights the object
+    //Once the player interacts with the light switch, it will play a sound and turn on the lights
     public GameObject secretRoomLight;
     public GameObject lightSwitch;
     public GameObject clueInteractionField;
+    //Color useful for highlighting 
     public Color lightColor;
+    //Boolean variable to check the if the player is within range
     public bool isRange;
     public static bool isOn = false;
     public AudioSource switchSound;
@@ -27,8 +31,10 @@ public class LightSwitch : MonoBehaviour
         {
             secretRoomLight.SetActive(true);
         }
+
         if (isRange && Input.GetKeyDown("e")) 
         {
+            //If the light is turned off and the player is within the range and presses E, the lights will be turned on
             if(isOn == false)
             {
                 switchSound.Play();
@@ -36,6 +42,7 @@ public class LightSwitch : MonoBehaviour
                 clueInteractionField.SetActive(true);
                 isOn = true;
             }
+            //If the lights is turned on and the player is within range and presses E, then the lights will be turned off
             else if (isOn == true)
             {
                 switchSound.Play();

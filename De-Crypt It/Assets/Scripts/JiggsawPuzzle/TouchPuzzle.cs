@@ -6,7 +6,7 @@ public class TouchPuzzle : MonoBehaviour
 {
     public AudioSource clickSound;
 
-    //This class allows the images to rotate when pressed
+    //This class allows the images to rotate when pressed, it will then play a sound when the images are clicked
     public void OnMouseDown()
     {
         if(!PuzzleMechanic.isWin)
