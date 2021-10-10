@@ -25,16 +25,15 @@ public class NumberLoad : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         if(inRange == true)
         {
             // If the task is complete then....
             firstNumber.SetActive(true);
             
         }
-        if(inRange == false)
+        else if(inRange == false)
         {
-            //firstNumber.SetActive(false);
+            firstNumber.SetActive(false);
         }
     }
 
@@ -42,12 +41,12 @@ public class NumberLoad : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // If the task is complete, object is not higlighted, instructions is not shown and dont update the player within range
-        if(isvisible == true)
+        if (other.CompareTag("Ligh"))
         {
             startcolor = GetComponent<Renderer>().material.color;
             GetComponent<Renderer>().material.color = startcolor;
-            inRange = false;
-            //firstNumber.SetActive(true);
+            inRange = true;
+            firstNumber.SetActive(true);
         }
     }
 
@@ -60,10 +59,7 @@ public class NumberLoad : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
-            //firstNumber.SetActive(false);
-
-            
-
+            firstNumber.SetActive(false);
         }
     }
 }
