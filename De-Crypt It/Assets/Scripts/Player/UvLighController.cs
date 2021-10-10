@@ -9,6 +9,7 @@ public class UvLighController : MonoBehaviour
     //public static bool isOn = false;
     public AudioSource clickSound;
     // Start is called before the first frame update
+    public static bool lightState = false;
     void Start()
     {
         UvLight.gameObject.SetActive(UvLightActive);
@@ -17,7 +18,6 @@ public class UvLighController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UvLight.gameObject.SetActive(UvLightActive);
         if (Input.GetKeyDown(KeyCode.G))
         {
             if (UvLightActive == false) //checks if flashlight is not on

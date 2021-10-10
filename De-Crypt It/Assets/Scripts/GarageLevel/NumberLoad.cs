@@ -15,7 +15,7 @@ public class NumberLoad : MonoBehaviour
 
     // Static variable which is readable and modifiable by other scripts. 
     // It is used to determine if the quiz task is completed or not by the user.
-    public static bool isvisible = false;
+    //public static bool isvisible = false;
 
    
     public GameObject firstNumber;
@@ -29,10 +29,17 @@ public class NumberLoad : MonoBehaviour
         if(inRange == true)
         {
             // If the task is complete then....
-            firstNumber.SetActive(true);
+            //firstNumber.SetActive(true);
+            /*secondNumber.SetActive(true);
+            thirdNumber.SetActive(true);
+            fourthNumber.SetActive(true);
+            if(light == false)
+            {
+                firstnumber.SetActive(false);
+            }*/
             
         }
-        if(inRange == false)
+        else if(inRange == false)
         {
             //firstNumber.SetActive(false);
         }
@@ -42,11 +49,14 @@ public class NumberLoad : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // If the task is complete, object is not higlighted, instructions is not shown and dont update the player within range
-        if(isvisible == true)
+        if(other.CompareTag("Ligh"))
         {
-            startcolor = GetComponent<Renderer>().material.color;
-            GetComponent<Renderer>().material.color = startcolor;
-            inRange = false;
+            inRange = true;
+            
+            
+            firstNumber.SetActive(true);
+            
+            
             //firstNumber.SetActive(true);
         }
     }
@@ -58,8 +68,11 @@ public class NumberLoad : MonoBehaviour
         // the status of the range is changed to false, and the instructions text is disabled so the user cant see it.
         if(other.CompareTag("Ligh"))
         {
-            GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
+            
+            
+            firstNumber.SetActive(false);
+            
             //firstNumber.SetActive(false);
 
             

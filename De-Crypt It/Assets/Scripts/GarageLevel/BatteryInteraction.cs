@@ -15,6 +15,8 @@ public class BatteryInteraction : MonoBehaviour
         {
             Battery.active = false;
             isKeyCollected = true;
+            //if key colleceted then user can press G for using the light.
+            //add text to allow the user to know
         }
         
     }
