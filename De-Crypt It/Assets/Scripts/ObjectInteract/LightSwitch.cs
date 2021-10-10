@@ -47,6 +47,7 @@ public class LightSwitch : MonoBehaviour
             {
                 switchSound.Play();
                 secretRoomLight.SetActive(false);
+                clueInteractionField.SetActive(false);
                 isOn = false;
             }
         }
