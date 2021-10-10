@@ -9,8 +9,11 @@ public class ServerRoomKeypad : MonoBehaviour
     [SerializeField]
     public Color startcolor;
 
-    // Text variable that shows that the keypad is currently locked.
-    public Text lockedText;
+    // Text variable which pops up allowing the user to interact with the locked door
+    public Text lockedTextInteraction;
+
+    // Text variable which tells the user the keypad is locked.
+    public Text lockedKeypadMsg;
 
     // Text variable that shows that the keypad is currently unlocked and to press "E" to activate door.
     public Text unlockedText;
@@ -54,6 +57,17 @@ public class ServerRoomKeypad : MonoBehaviour
                 ServerRoomKeypad.taskComplete = true;
             }
         }
+        else if (keypadActive == false)
+        {
+            if(inRange == true && Input.GetKeyDown("e"))
+            {
+                Debug.Log("You have pressed E to try and use the keypad");
+                lockedTextInteraction.gameObject.SetActive(false);
+                keypadLockedFX.Play(0); // Will play locked keypad sound effect when user approaches the lockey keypad
+                StartCoroutine(keypadIsLocked());
+
+            }
+        }
     }
 
     // This function is called when the user is close to the box collider of the keypad
@@ -65,7 +79,7 @@ public class ServerRoomKeypad : MonoBehaviour
             startcolor = GetComponent<Renderer>().material.color;
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
-            lockedText.gameObject.SetActive(false);
+            lockedTextInteraction.gameObject.SetActive(false);
             unlockedText.gameObject.SetActive(false);
         }
         else if (other.CompareTag("Player") && keypadActive == false)
@@ -74,8 +88,7 @@ public class ServerRoomKeypad : MonoBehaviour
             startcolor = GetComponent<Renderer>().material.color;
             GetComponent<Renderer>().material.color = Color.green;
             inRange = true;
-            lockedText.gameObject.SetActive(true);
-            keypadLockedFX.Play(0); // Will play locked keypad sound effect when user approaches the lockey keypad
+            lockedTextInteraction.gameObject.SetActive(true);
         }
         else if (other.CompareTag("Player") && keypadActive == true)
         {
@@ -104,7 +117,14 @@ public class ServerRoomKeypad : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
-            lockedText.gameObject.SetActive(false);
+            lockedTextInteraction.gameObject.SetActive(false);
         }
+    }
+
+    IEnumerator keypadIsLocked()
+    {
+        lockedKeypadMsg.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        lockedKeypadMsg.gameObject.SetActive(false);
     }
 }
