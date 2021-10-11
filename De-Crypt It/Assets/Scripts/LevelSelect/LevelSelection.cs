@@ -106,6 +106,8 @@ public class LevelSelection : MonoBehaviour
         FuseboxLoad.taskComplete = false;
         KeyPadLoad.taskComplete = false;
         QuizLoad.taskComplete = false;
+        PasswordInput.loginSuccessful = false;
+        LoginStatusCheck.startQuizStatus = false;
         PhoneDecoy.taskComplete = false;
         ArcadeLoad.taskComplete = false;
         FlashlightController.FlashlightActive = false;
