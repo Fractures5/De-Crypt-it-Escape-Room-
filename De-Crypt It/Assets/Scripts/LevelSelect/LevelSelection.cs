@@ -25,13 +25,7 @@ public class LevelSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (selectedEasyButton == true || selectedMediumButton == true || selectedHardButton == true)
-        // {
-        //     confirmButton.interactable = true;
-        // }
-        // else{
-        //     confirmButton.interactable = false;
-        // }
+        
     }
 
     public void enableConfirmButton()
@@ -79,14 +73,18 @@ public class LevelSelection : MonoBehaviour
         Debug.Log("should switch scenes");
         if(selectedEasyButton == true)
         {
+            WinScreenTrigger.saveEasy = true;
             SceneManager.LoadScene("EasyGame");
         }
         else if(selectedMediumButton == true)
         {
+            restartMediumGameStatus();
+            WinScreenTrigger.saveMedium = true;
             SceneManager.LoadScene("MediumGame");
         }
         else if(selectedHardButton == true)
         {
+            WinScreenTrigger.saveHard = true;
             restartHardGameStatus();
             SceneManager.LoadScene("MainGame"); // Load the hard level difficulty game
         }
@@ -111,7 +109,29 @@ public class LevelSelection : MonoBehaviour
         PhoneDecoy.taskComplete = false;
         ArcadeLoad.taskComplete = false;
         FlashlightController.FlashlightActive = false;
-        TimerCountdown.timeLeft = 1800;
+        TimerCountdown.timeLeft = 3600;
     }    
-
+    void restartMediumGameStatus()
+    {
+        StorePlayerLocation.savedPosition = new Vector3(-3.412f,0.2201252f,-16.276f);
+        StorePlayerLocation.restartStatus = true;
+        TimerCountdown.timeLeft = 1800;
+        FlashlightController.FlashlightActive = false;
+        ServerRoomKeypad.taskComplete = false;
+        ServerRoomKeypad.keypadActive = false;
+        JigsawPuzzle.taskComplete = false;
+        CardSwipe.isComplete = false;
+        IPaddressInteraction.clueReceived = false;
+        DecoyPingTaskLoad.taskComplete = false;
+        PingingTaskLoad.taskComplete = false;
+        LightSwitch.isOn = false;
+        SRLockedDoor.taskComplete = false;
+        CardInteraction.cardPickUp = false;
+        GameObject[] allLights= GameObject.FindGameObjectsWithTag("SwitchLight");
+        //Getting audio source component
+        foreach (GameObject i in allLights)
+        { 
+            i.SetActive(false); 
+        } 
+    }
 }

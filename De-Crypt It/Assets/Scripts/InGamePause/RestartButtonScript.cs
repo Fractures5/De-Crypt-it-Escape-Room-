@@ -39,7 +39,7 @@ public class RestartButtonScript : MonoBehaviour
         PhoneDecoy.taskComplete = false;
         ArcadeLoad.taskComplete = false;
         FlashlightController.FlashlightActive = false;
-        TimerCountdown.timeLeft = 1800;
+        TimerCountdown.timeLeft = 3600;
 
     }
     private void YesClicked()
