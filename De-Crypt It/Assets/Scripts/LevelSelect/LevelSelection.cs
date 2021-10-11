@@ -116,6 +116,7 @@ public class LevelSelection : MonoBehaviour
         StorePlayerLocation.savedPosition = new Vector3(-3.412f,0.2201252f,-16.276f);
         StorePlayerLocation.restartStatus = true;
         TimerCountdown.timeLeft = 1800;
+        //TimerCountdown.timeLeft = 120;
         FlashlightController.FlashlightActive = false;
         ServerRoomKeypad.taskComplete = false;
         ServerRoomKeypad.keypadActive = false;

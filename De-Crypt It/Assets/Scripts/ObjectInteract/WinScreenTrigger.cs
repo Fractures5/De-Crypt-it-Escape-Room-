@@ -47,6 +47,23 @@ public class WinScreenTrigger : MonoBehaviour
 
         overallTimeLeft = minutesLeft.ToString() + secondsLeft.ToString();
 
+        if(secondsLeft < 10 && minutesLeft < 10)
+        {
+            overallTimeLeft = "0" + minutesLeft.ToString() + "0" + secondsLeft.ToString();
+            Debug.Log("both ran");
+        }
+        else if(secondsLeft < 10)
+        {
+            
+            overallTimeLeft = minutesLeft.ToString() + "0" + secondsLeft.ToString();
+            Debug.Log("Mseconds ran");
+        }
+        else if(minutesLeft < 10)
+        {
+            overallTimeLeft = "0" + minutesLeft.ToString() + secondsLeft.ToString();
+            Debug.Log("Minutes ran");
+        }
+
         HighScores.trackuserName = playernameInput;
         HighScores.trackuserScore = int.Parse(overallTimeLeft);
     }
@@ -58,7 +75,25 @@ public class WinScreenTrigger : MonoBehaviour
         minutesLeft = Mathf.FloorToInt(timeLeft / 60F);
         secondsLeft = Mathf.FloorToInt(timeLeft - minutesLeft * 60);
 
+
         overallTimeLeft = minutesLeft.ToString() + secondsLeft.ToString();
+
+        if(secondsLeft < 10 && minutesLeft < 10)
+        {
+            overallTimeLeft = "0" + minutesLeft.ToString() + "0" + secondsLeft.ToString();
+            Debug.Log("both ran");
+        }
+        else if(secondsLeft < 10)
+        {
+            
+            overallTimeLeft = minutesLeft.ToString() + "0" + secondsLeft.ToString();
+            Debug.Log("Mseconds ran");
+        }
+        else if(minutesLeft < 10)
+        {
+            overallTimeLeft = "0" + minutesLeft.ToString() + secondsLeft.ToString();
+            Debug.Log("Minutes ran");
+        }
 
         HighScoresMedium.trackuserName = playernameInput;
         HighScoresMedium.trackuserScore = int.Parse(overallTimeLeft);
@@ -72,6 +107,23 @@ public class WinScreenTrigger : MonoBehaviour
         secondsLeft = Mathf.FloorToInt(timeLeft - minutesLeft * 60);
 
         overallTimeLeft = minutesLeft.ToString() + secondsLeft.ToString();
+
+        if(secondsLeft < 10 && minutesLeft < 10)
+        {
+            overallTimeLeft = "0" + minutesLeft.ToString() + "0" + secondsLeft.ToString();
+            Debug.Log("both ran");
+        }
+        else if(secondsLeft < 10)
+        {
+            
+            overallTimeLeft = minutesLeft.ToString() + "0" + secondsLeft.ToString();
+            Debug.Log("Mseconds ran");
+        }
+        else if(minutesLeft < 10)
+        {
+            overallTimeLeft = "0" + minutesLeft.ToString() + secondsLeft.ToString();
+            Debug.Log("Minutes ran");
+        }
 
         HighScoresEasy.trackuserName = playernameInput;
         HighScoresEasy.trackuserScore = int.Parse(overallTimeLeft);
