@@ -6,7 +6,7 @@ public class BatteryInteraction : MonoBehaviour
 {
     //private Renderer renderer;
     public GameObject Battery;
-    public static bool isKeyCollected;
+    public static bool isBatteryCollected = false;
     
     private void OnMouseOver()
     {
@@ -14,7 +14,7 @@ public class BatteryInteraction : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Battery.active = false;
-            isKeyCollected = true;
+            isBatteryCollected = true;
             //if key colleceted then user can press G for using the light.
             //add text to allow the user to know
         }
