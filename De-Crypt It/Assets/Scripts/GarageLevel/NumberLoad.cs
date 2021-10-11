@@ -8,7 +8,7 @@ public class NumberLoad : MonoBehaviour
 {
     // Keeps track of the object color
     [SerializeField]
-    public Color startcolor;
+    //public Color startcolor;
 
     // Boolean which checks if the player is in the range of the tv object
     public bool inRange = false;
@@ -29,11 +29,13 @@ public class NumberLoad : MonoBehaviour
         {
             // If the task is complete then....
             firstNumber.SetActive(true);
+            //Debug.Log("Image should be displayed");
             
         }
-        else if(inRange == false)
+        if(inRange == false)
         {
             firstNumber.SetActive(false);
+            //Debug.Log("Image should be invisible");
         }
     }
 
@@ -43,10 +45,11 @@ public class NumberLoad : MonoBehaviour
         // If the task is complete, object is not higlighted, instructions is not shown and dont update the player within range
         if (other.CompareTag("Ligh"))
         {
-            startcolor = GetComponent<Renderer>().material.color;
-            GetComponent<Renderer>().material.color = startcolor;
+            //startcolor = GetComponent<Renderer>().material.color;
+            //GetComponent<Renderer>().material.color = startcolor;
             inRange = true;
-            firstNumber.SetActive(true);
+            Debug.Log("TESTTTTTTTTTTTTTTTTTTTTTTT");
+            //firstNumber.SetActive(true);
         }
     }
 
@@ -57,9 +60,10 @@ public class NumberLoad : MonoBehaviour
         // the status of the range is changed to false, and the instructions text is disabled so the user cant see it.
         if(other.CompareTag("Ligh"))
         {
-            GetComponent<Renderer>().material.color = startcolor;
+            //GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
-            firstNumber.SetActive(false);
+            Debug.Log("TTTTTTTTTTTESTTTTTTTTTT");
+            //firstNumber.SetActive(false);
         }
     }
 }
