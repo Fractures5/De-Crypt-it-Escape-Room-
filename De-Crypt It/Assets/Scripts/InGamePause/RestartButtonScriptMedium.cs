@@ -31,6 +31,7 @@ public class RestartButtonScriptMedium : MonoBehaviour
         ServerRoomKeypad.keypadActive = false;
         JigsawPuzzle.taskComplete = false;
         CardSwipe.isComplete = false;
+        SwipeTask.isComplete = false;
         IPaddressInteraction.clueReceived = false;
         DecoyPingTaskLoad.taskComplete = false;
         PingingTaskLoad.taskComplete = false;
@@ -50,7 +51,7 @@ public class RestartButtonScriptMedium : MonoBehaviour
         Debug.Log("Yes Clicked");
         Debug.Log("You chose to restart the game");
         restartStatus();
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(12);
         Time.timeScale = 1;
     }
 

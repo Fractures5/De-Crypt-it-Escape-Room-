@@ -121,6 +121,7 @@ public class LevelSelection : MonoBehaviour
         ServerRoomKeypad.keypadActive = false;
         JigsawPuzzle.taskComplete = false;
         CardSwipe.isComplete = false;
+        SwipeTask.isComplete = false;
         IPaddressInteraction.clueReceived = false;
         DecoyPingTaskLoad.taskComplete = false;
         PingingTaskLoad.taskComplete = false;

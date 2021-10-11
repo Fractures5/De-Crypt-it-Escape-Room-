@@ -9,7 +9,9 @@ public class CardInteraction : MonoBehaviour
     [SerializeField]
     public Color startcolor;
     public Text interactionText;
+    public Text cardInstructions;
     public bool inRange = false;
+    public GameObject card;
     public static bool cardPickUp = false;
 
     void Update()
@@ -17,7 +19,15 @@ public class CardInteraction : MonoBehaviour
         if (inRange == true && Input.GetKeyDown(KeyCode.E))
         {
             interactionText.gameObject.SetActive(false);
+            cardInstructions.gameObject.SetActive(true);
             cardPickUp = true;
+            card.gameObject.SetActive(false);
+        }
+
+        if (SwipeTask.isComplete == true)
+        {
+            card.gameObject.SetActive(false);
+            cardInstructions.gameObject.SetActive(false);
         }
     }
 
@@ -29,6 +39,7 @@ public class CardInteraction : MonoBehaviour
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
             interactionText.gameObject.SetActive(false);
+            cardInstructions.gameObject.SetActive(true);
         }
         else
         {
@@ -38,6 +49,7 @@ public class CardInteraction : MonoBehaviour
                 GetComponent<Renderer>().material.color = Color.green;
                 inRange = true;
                 interactionText.gameObject.SetActive(true);
+                cardInstructions.gameObject.SetActive(false);
             }
         }
     }
@@ -49,6 +61,7 @@ public class CardInteraction : MonoBehaviour
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
             interactionText.gameObject.SetActive(false);
+            cardInstructions.gameObject.SetActive(false);
         }
     }
 }
