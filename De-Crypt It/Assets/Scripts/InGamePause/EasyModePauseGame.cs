@@ -49,8 +49,7 @@ public class EasyModePauseGame : MonoBehaviour
             Camera.GetComponent<FlashlightController>().enabled = false;
             Camera.GetComponent<UvLightController>().enabled = false;
             Camera.GetComponent<Zoom>().enabled = false;
-
-
+            playerAudio.gameObject.SetActive(false);
         } 
         //enables the script when the player has left the pause menu
         else
