@@ -375,6 +375,8 @@ GameObject:
   m_Component:
   - component: {fileID: 872912434}
   - component: {fileID: 872912435}
+  - component: {fileID: 872912438}
+  - component: {fileID: 872912437}
   - component: {fileID: 872912436}
   m_Layer: 0
   m_Name: GameObject
@@ -411,6 +413,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &872912436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872912433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a51b206abd580a44850e5e643e87282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &872912437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872912433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9140760e89b744d85c36b7dca51954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &872912438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -744,8 +770,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 872912436}
+      - m_Target: {fileID: 872912438}
         m_TargetAssemblyTypeName: HighScores, Assembly-CSharp
+        m_MethodName: sendScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 872912437}
+        m_TargetAssemblyTypeName: HighScoresEasy, Assembly-CSharp
+        m_MethodName: sendScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 872912436}
+        m_TargetAssemblyTypeName: HighScoresMedium, Assembly-CSharp
         m_MethodName: sendScore
         m_Mode: 1
         m_Arguments:

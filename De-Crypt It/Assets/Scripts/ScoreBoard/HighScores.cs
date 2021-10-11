@@ -27,6 +27,7 @@ public class HighScores : MonoBehaviour
     public void sendScore()
     {
         UploadScore(trackuserName, trackuserScore);
+        WinScreenTrigger.saveHard = false;
     }
     IEnumerator DatabaseUpload(string userame, int score) //Called when sending new score to Website
     {
