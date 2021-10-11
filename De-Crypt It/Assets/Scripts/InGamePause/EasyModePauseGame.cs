@@ -59,6 +59,7 @@ public class EasyModePauseGame : MonoBehaviour
             pauseMenuCanvas.gameObject.SetActive(false);
             Time.timeScale = 1;
             Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             Capsule.SetActive(true);
             Camera.GetComponent<FirstPersonLook>().enabled = true; //Getting script for flashlight and enables
             Camera.GetComponent<FlashlightController>().enabled = true;
