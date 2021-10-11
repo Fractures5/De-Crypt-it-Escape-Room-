@@ -12,8 +12,7 @@ public class LockControl : MonoBehaviour
     private void Start()
     {
         result = new int[]{0,0,0,0};
-        correctCombination = new int[] {3,9,1,0};
-        //isPadlockOpened = false;
+        correctCombination = new int[] {3,9,1,5};
         Rotate.Rotated += CheckResults;
     }
 
