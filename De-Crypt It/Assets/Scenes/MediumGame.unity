@@ -11401,7 +11401,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3f74aa87173824749bbc389fd9a01d24, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -20330,6 +20330,7 @@ MonoBehaviour:
   unlockedText: {fileID: 391479506}
   inRange: 0
   keypadLockedFX: {fileID: 1610717559}
+  playFXonce: 0
   activationFX: {fileID: 1336495788}
   lockedDoor: {fileID: 1269732508}
   unlockedDoor: {fileID: 2037157548}
@@ -41983,6 +41984,20 @@ MonoBehaviour:
   Flashlight: {fileID: 2745235}
   Camera: {fileID: 40583079}
   playerAudio: {fileID: 534939013}
+  lockedDoor: {fileID: 392724537}
+  unlockedDoor: {fileID: 299683685}
+  keypad: {fileID: 943238475}
+  card: {fileID: 1732989318}
+  jigsawPuzzle: {fileID: 202352347}
+  decoyPingTask: {fileID: 1180153003}
+  pingTask: {fileID: 412139029}
+  cardSwipe: {fileID: 630206072}
+  lightSwitch: {fileID: 589385331}
+  lightsPoster: {fileID: 1780791136}
+  clockPoster: {fileID: 1519658735}
+  portalPoster: {fileID: 1305846480}
+  globePoster: {fileID: 815832596}
+  clueInteraction: {fileID: 816078632}
 --- !u!4 &2075721183
 Transform:
   m_ObjectHideFlags: 0
