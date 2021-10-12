@@ -73,6 +73,7 @@ public class LevelSelection : MonoBehaviour
         Debug.Log("should switch scenes");
         if(selectedEasyButton == true)
         {
+            restartEasyGameStatus();
             WinScreenTrigger.saveEasy = true;
             SceneManager.LoadScene("EasyGame");
         }
@@ -135,5 +136,13 @@ public class LevelSelection : MonoBehaviour
         { 
             i.SetActive(false); 
         } 
+    }
+
+    void restartEasyGameStatus()
+    {
+        StorePlayerLocation.savedPosition = new Vector3(-3.412f,0.2201252f,-16.276f);
+        StorePlayerLocation.restartStatus = true;
+        TimerCountdown.timeLeft = 900;
+        FlashlightController.FlashlightActive = false;
     }
 }
