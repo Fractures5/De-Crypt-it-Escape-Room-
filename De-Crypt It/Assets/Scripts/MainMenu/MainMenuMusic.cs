@@ -8,7 +8,7 @@ public class MainMenuMusic : MonoBehaviour
     //This script will handle the main menu music interaction
     public AudioSource AudioSource;
     public GameObject bgMusicSlider;
-    private float bgMusicVolume = 1f;
+    public static float bgMusicVolume = 1f;
 
     void Start()
     {
@@ -20,6 +20,7 @@ public class MainMenuMusic : MonoBehaviour
     {
         AudioSource.volume = bgMusicVolume;
         bgMusicSlider.GetComponent<Slider>().value = bgMusicVolume;
+
     }
     //Updates the volume if the player wishes to change the sound volume
     public void updateVolume(float volume)
