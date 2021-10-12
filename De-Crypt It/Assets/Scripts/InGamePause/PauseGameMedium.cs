@@ -12,6 +12,8 @@ public class PauseGameMedium : MonoBehaviour
     public GameObject playerAudio;
     public static bool isFlashlightOn = false;
     
+    //Assets in the server room
+
     // Update is called once per frame
     void Update()
     {
@@ -90,6 +92,5 @@ public class PauseGameMedium : MonoBehaviour
             FlashlightController.FlashlightActive = isFlashlightOn;
             playerAudio.gameObject.SetActive(true);
         }
-        
     }
 }
