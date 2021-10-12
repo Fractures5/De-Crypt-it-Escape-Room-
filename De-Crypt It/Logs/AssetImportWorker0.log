@@ -15,11 +15,11 @@ D:/De-Crypt-it-Escape-Room-1/De-Crypt It
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60584
+60826
 Successfully changed project path to: D:/De-Crypt-it-Escape-Room-1/De-Crypt It
 D:/De-Crypt-it-Escape-Room-1/De-Crypt It
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 42.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 41.19 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -35,100 +35,100 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000960 seconds.
+Registered in 0.000940 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 43.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.768 seconds
+- Completed reload, in  0.738 seconds
 Domain Reload Profiling:
-	ReloadAssembly (769ms)
-		BeginReloadAssembly (42ms)
+	ReloadAssembly (738ms)
+		BeginReloadAssembly (40ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (360ms)
-			LoadAssemblies (41ms)
+		EndReloadAssembly (344ms)
+			LoadAssemblies (40ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (128ms)
+			SetupTypeCache (122ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (151ms)
+			SetupLoadedEditorAssemblies (144ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (46ms)
+				RefreshPlugins (43ms)
 				BeforeProcessingInitializeOnLoad (6ms)
-				ProcessInitializeOnLoadAttributes (70ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				ProcessInitializeOnLoadAttributes (68ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002724 seconds.
+Registered in 0.002110 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000017D6D5BED60 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781251260 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000017D72C8C0A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781727FE0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-0000017D6D89C030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780AA8230 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-0000017D72C8C0A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7808F6020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-0000017D719E4020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BE38CF0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-0000017D72C8C0A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78064E020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000017D71DFE020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780AA8230 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-0000017D72C8C0A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7806D0230 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-0000017D72C8C0A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7806D0230 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-0000017D72C8C0A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78114AE20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-0000017D725FAA30 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780B6D020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-0000017D71C6C010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78114AE20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-0000017D725FAA30 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7816AF050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-0000017D71E24230 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.780 seconds
+- Completed reload, in  0.808 seconds
 Domain Reload Profiling:
-	ReloadAssembly (781ms)
+	ReloadAssembly (808ms)
 		BeginReloadAssembly (118ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (615ms)
-			LoadAssemblies (65ms)
+		EndReloadAssembly (644ms)
+			LoadAssemblies (63ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (215ms)
+			SetupTypeCache (230ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (224ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (228ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (39ms)
-				ProcessInitializeOnLoadAttributes (175ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (178ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -137,15 +137,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1596 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 80.3 MB.
 System memory in use after: 80.3 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2041.
-Total: 2.033400 ms (FindLiveObjects: 0.192400 ms CreateObjectMapping: 0.037400 ms MarkObjects: 1.677100 ms  DeleteObjects: 0.125600 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2043.
+Total: 1.851000 ms (FindLiveObjects: 0.197700 ms CreateObjectMapping: 0.036500 ms MarkObjects: 1.511400 ms  DeleteObjects: 0.104300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -159,1029 +159,85 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+  path: Assets/Scenes/MainGame.unity
+  artifactKey: Guid(562dce9d34770b7489912f948d2574e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame.unity using Guid(562dce9d34770b7489912f948d2574e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c659c730c06c41aa01eae6eb45214f3b') in 0.015432 seconds 
+  Import took 0.018226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.577268 seconds.
+  path: Assets/Scenes/EasyGame.unity
+  artifactKey: Guid(eff4bc0a4009c4440aa4894edc6de6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/EasyGame.unity using Guid(eff4bc0a4009c4440aa4894edc6de6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58456c00962f5513451ae8474b95022') in 0.005712 seconds 
+  Import took 0.008322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.998829 seconds.
   path: Assets/Scenes/MarblePuzzle.unity
   artifactKey: Guid(11b62011a6c1593429620e6a5039aafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MarblePuzzle.unity using Guid(11b62011a6c1593429620e6a5039aafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242399815a96e9e59cd4adc5786d071b') in 0.017300 seconds 
-  Import took 0.019866 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 303.826831 seconds.
-  path: Assets/Scripts/Marble/DeathPosition.cs
-  artifactKey: Guid(28c68bb6d5da01447b0c7a1ebb14fe5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/DeathPosition.cs using Guid(28c68bb6d5da01447b0c7a1ebb14fe5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3ef2b0d8668a52dfb833e952fb8f53') in 0.027023 seconds 
-  Import took 0.029842 seconds .
+Start importing Assets/Scenes/MarblePuzzle.unity using Guid(11b62011a6c1593429620e6a5039aafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9240002d816992153f1dbaeec6ef748f') in 0.016925 seconds 
+  Import took 0.019523 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002975 seconds.
+Registered in 0.002088 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002A780E4FD00 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000017D6D741D60 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A784842020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000017D71A7A010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7807D0020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-0000017D731C2020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781240010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-0000017D6D301010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78818D050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-0000017D725BF010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A784842020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-0000017D6D894020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780B19020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000017D7232D020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781240010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-0000017D719BC9E0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780924230 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-0000017D6D87A9B0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A784842020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-0000017D71A7A010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7807D0020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-0000017D731C2020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78818D050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-0000017D75A11040 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7807D0020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-0000017D73B08010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7855BB010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-0000017D72C81690 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.768 seconds
+- Completed reload, in  0.707 seconds
 Domain Reload Profiling:
-	ReloadAssembly (768ms)
-		BeginReloadAssembly (84ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (636ms)
-			LoadAssemblies (62ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (218ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (245ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (39ms)
-				ProcessInitializeOnLoadAttributes (195ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1575 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.7 MB.
-System memory in use after: 78.8 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2045.
-Total: 2.055500 ms (FindLiveObjects: 0.340300 ms CreateObjectMapping: 0.051900 ms MarkObjects: 1.569400 ms  DeleteObjects: 0.092400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 96.835673 seconds.
-  path: Assets/Scripts/Marble/DeathPosition.cs
-  artifactKey: Guid(28c68bb6d5da01447b0c7a1ebb14fe5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/DeathPosition.cs using Guid(28c68bb6d5da01447b0c7a1ebb14fe5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04ccbce35072924a79ee9efaee7cce4') in 0.004639 seconds 
-  Import took 0.024338 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002250 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A7853D5EB0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780E42020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A784E9F010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BBF1010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781FEF420 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780E42020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7805FA020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BBF1010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97C29FA30 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780E42020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BF1CDB0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BFBEA60 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781A5D010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7885FE070 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.722 seconds
-Domain Reload Profiling:
-	ReloadAssembly (722ms)
-		BeginReloadAssembly (92ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (583ms)
-			LoadAssemblies (62ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (218ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (199ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (33ms)
-				ProcessInitializeOnLoadAttributes (157ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1575 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.8 MB.
-System memory in use after: 78.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2048.
-Total: 1.878800 ms (FindLiveObjects: 0.183700 ms CreateObjectMapping: 0.041800 ms MarkObjects: 1.563200 ms  DeleteObjects: 0.089500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 35.552540 seconds.
-  path: Assets/Scripts/Marble/DeathPosition.cs
-  artifactKey: Guid(28c68bb6d5da01447b0c7a1ebb14fe5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/DeathPosition.cs using Guid(28c68bb6d5da01447b0c7a1ebb14fe5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba86585aab3053c580d543e20a471ab') in 0.003844 seconds 
-  Import took 0.020454 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002149 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7885DE050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78089A020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A784EE5050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78B105EB0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7885DE050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781D49010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A784EE5050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BC0EFA0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7885DE050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78089A020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78089A020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7855BB010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.783 seconds
-Domain Reload Profiling:
-	ReloadAssembly (783ms)
-		BeginReloadAssembly (95ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (640ms)
-			LoadAssemblies (64ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (264ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (203ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (34ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1575 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.8 MB.
-System memory in use after: 78.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2051.
-Total: 1.998000 ms (FindLiveObjects: 0.171200 ms CreateObjectMapping: 0.033300 ms MarkObjects: 1.704800 ms  DeleteObjects: 0.087800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 93.778034 seconds.
-  path: Assets/Scripts/Marble/GameManager.cs
-  artifactKey: Guid(4eaad66b2539c4e4aa59485dd15d17a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/GameManager.cs using Guid(4eaad66b2539c4e4aa59485dd15d17a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ff2b71ab8cedbd5c4df1d32b141244') in 0.007488 seconds 
-  Import took 0.030576 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002861 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97C092040 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7822DA010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78AE95010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781E52D30 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97C092040 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781D49010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78AE95010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78064E020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97C092040 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780DCB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7849E2D60 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781FB1020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78B129020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.726 seconds
-Domain Reload Profiling:
-	ReloadAssembly (726ms)
-		BeginReloadAssembly (90ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (589ms)
-			LoadAssemblies (69ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (210ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (208ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (34ms)
-				ProcessInitializeOnLoadAttributes (163ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1575 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.8 MB.
-System memory in use after: 78.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2054.
-Total: 2.019500 ms (FindLiveObjects: 0.189000 ms CreateObjectMapping: 0.041100 ms MarkObjects: 1.699100 ms  DeleteObjects: 0.089300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 31.871856 seconds.
-  path: Assets/Scripts/Marble/GameManager.cs
-  artifactKey: Guid(4eaad66b2539c4e4aa59485dd15d17a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/GameManager.cs using Guid(4eaad66b2539c4e4aa59485dd15d17a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213d267d0357e0d39201970d8a70b87f') in 0.004032 seconds 
-  Import took 0.006738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 72.165547 seconds.
-  path: Assets/Scripts/Marble/CheckPoint.cs
-  artifactKey: Guid(4fbefda6f22b99144aedc46192b258e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/CheckPoint.cs using Guid(4fbefda6f22b99144aedc46192b258e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d9ac8e791c168d99c8488f508d0f7d') in 0.005389 seconds 
-  Import took 0.008345 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002395 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A7885EBD80 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78089A020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78AE95010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A782030C70 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781D49010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78AE95010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78064E020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78089A020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78B081010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781FB1020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D528020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.785 seconds
-Domain Reload Profiling:
-	ReloadAssembly (785ms)
-		BeginReloadAssembly (83ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (655ms)
-			LoadAssemblies (64ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (226ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (250ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (192ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.8 MB.
-System memory in use after: 78.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2058.
-Total: 1.810300 ms (FindLiveObjects: 0.143900 ms CreateObjectMapping: 0.036400 ms MarkObjects: 1.548000 ms  DeleteObjects: 0.080600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002245 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A78B113BF0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BEC3010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781E76020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A26BE030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781D49010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781E76020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781251260 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BEC3010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97C170010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780CD5020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A782399010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.702 seconds
-Domain Reload Profiling:
-	ReloadAssembly (702ms)
-		BeginReloadAssembly (78ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (578ms)
-			LoadAssemblies (62ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (205ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (203ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (34ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.8 MB.
-System memory in use after: 78.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2061.
-Total: 2.072000 ms (FindLiveObjects: 0.199200 ms CreateObjectMapping: 0.033600 ms MarkObjects: 1.748700 ms  DeleteObjects: 0.089800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 157.658076 seconds.
-  path: Assets/Scripts/Marble/CheckPoint.cs
-  artifactKey: Guid(4fbefda6f22b99144aedc46192b258e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/CheckPoint.cs using Guid(4fbefda6f22b99144aedc46192b258e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c61ea3d80e96d75d87db2f9a00e130') in 0.005610 seconds 
-  Import took 0.011633 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002189 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A78B113BF0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7885DE050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781E76020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6723010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781D49010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781E76020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781251260 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7885DE050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78094A020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A782027AC0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A27DE020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.696 seconds
-Domain Reload Profiling:
-	ReloadAssembly (697ms)
-		BeginReloadAssembly (80ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (570ms)
-			LoadAssemblies (61ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (202ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (201ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (33ms)
-				ProcessInitializeOnLoadAttributes (158ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.9 MB.
-System memory in use after: 78.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2064.
-Total: 1.921700 ms (FindLiveObjects: 0.184500 ms CreateObjectMapping: 0.035100 ms MarkObjects: 1.611900 ms  DeleteObjects: 0.089100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002368 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780E42020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78497D010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97C19FEC0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781D49010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78497D010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781251260 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7811B8010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780E42020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78094A020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97BE27020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A788519470 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.756 seconds
-Domain Reload Profiling:
-	ReloadAssembly (757ms)
-		BeginReloadAssembly (88ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (619ms)
-			LoadAssemblies (65ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (216ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (225ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (174ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.9 MB.
-System memory in use after: 78.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2067.
-Total: 2.171500 ms (FindLiveObjects: 0.233200 ms CreateObjectMapping: 0.033800 ms MarkObjects: 1.809900 ms  DeleteObjects: 0.092900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 362.709662 seconds.
-  path: Assets/flag/2000px-Black_Dragon_Flag.svg.png
-  artifactKey: Guid(ad53efd1d50b20d4a843200f7c05a9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/flag/2000px-Black_Dragon_Flag.svg.png using Guid(ad53efd1d50b20d4a843200f7c05a9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0bf28958409326dfbac4addc7790011') in 0.143596 seconds 
-  Import took 0.146562 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/flag/flag_med.fbx
-  artifactKey: Guid(8a2ecdc9357d87d429af6f58cafb5839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/flag/flag_med.fbx using Guid(8a2ecdc9357d87d429af6f58cafb5839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60692f0730bb92c3714c475aed94c06') in 0.132173 seconds 
-  Import took 0.134491 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/flag/flag_med.prefab
-  artifactKey: Guid(df8b2e05e6bc70e4eb740280ce078f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/flag/flag_med.prefab using Guid(df8b2e05e6bc70e4eb740280ce078f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5a4f23e357149dfccdeefd0943c259') in 0.013078 seconds 
-  Import took 0.025444 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.168658 seconds.
-  path: Assets/Assets/flag
-  artifactKey: Guid(94e23c0cc6479604181a3bd544da7b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/flag using Guid(94e23c0cc6479604181a3bd544da7b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56cccaa90ff4a0d7924bbd16e7c4e0b8') in 0.005220 seconds 
-  Import took 0.014014 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002189 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A78B45FC80 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9AA69E030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A472A020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D300020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7823FB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7806D7450 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785D90CA0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A784E74070 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78CB78010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A55B2DF0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78CF85110 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7887FE400 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781A5D010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78863A1F0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.723 seconds
-Domain Reload Profiling:
-	ReloadAssembly (724ms)
-		BeginReloadAssembly (85ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (592ms)
-			LoadAssemblies (66ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (214ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (204ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (34ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.2 MB.
-System memory in use after: 82.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2083.
-Total: 2.105500 ms (FindLiveObjects: 0.183400 ms CreateObjectMapping: 0.032400 ms MarkObjects: 1.792700 ms  DeleteObjects: 0.096300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 316.140178 seconds.
-  path: Assets/Scripts/Marble/RestartOnCollision.cs
-  artifactKey: Guid(d7e81ecb31e06e24493fbaaef02766cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/RestartOnCollision.cs using Guid(d7e81ecb31e06e24493fbaaef02766cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e02c433a33854d5a25da3269c88d7a') in 0.008198 seconds 
-  Import took 0.020008 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002261 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9AA69E030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A36CA170 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A786DEB5C0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7823FB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7806D7450 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785D90CA0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A786DEB5C0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78CB78010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A55B2DF0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78CF85110 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7887FE400 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7807D0020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78863A1F0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.696 seconds
-Domain Reload Profiling:
-	ReloadAssembly (696ms)
-		BeginReloadAssembly (83ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (567ms)
-			LoadAssemblies (61ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (199ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (203ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (34ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.2 MB.
-System memory in use after: 82.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2086.
-Total: 2.141500 ms (FindLiveObjects: 0.213400 ms CreateObjectMapping: 0.035900 ms MarkObjects: 1.801400 ms  DeleteObjects: 0.089700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 237.890218 seconds.
-  path: Assets/Materials/Puzzles
-  artifactKey: Guid(f1382c999ab5d9a4397b3f1900ec8e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Puzzles using Guid(f1382c999ab5d9a4397b3f1900ec8e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561c92f767f23f735c783ec1a2780edb') in 0.007701 seconds 
-  Import took 0.010550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.050066 seconds.
-  path: Assets/Materials/Puzzles/ArcadeRiddle.mat
-  artifactKey: Guid(2ec137f12c21e8f498108b2954af3539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Puzzles/ArcadeRiddle.mat using Guid(2ec137f12c21e8f498108b2954af3539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71964c40d8de9b4022013b3d7d430ad9') in 0.087902 seconds 
-  Import took 0.117048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002800 seconds.
-  path: Assets/Materials/Puzzles/ArcadeRiddle.mat
-  artifactKey: Guid(2ec137f12c21e8f498108b2954af3539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Puzzles/ArcadeRiddle.mat using Guid(2ec137f12c21e8f498108b2954af3539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71964c40d8de9b4022013b3d7d430ad9') in 0.012441 seconds 
-  Import took 0.015250 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002282 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780E4FDC0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78A1F2030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D300020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7823FB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7809CC010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A159F010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A8582050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785AC5A40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97FCAA020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7887FE400 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A781A5D010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78863A1F0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.708 seconds
-Domain Reload Profiling:
-	ReloadAssembly (708ms)
-		BeginReloadAssembly (86ms)
+	ReloadAssembly (707ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (577ms)
-			LoadAssemblies (65ms)
+		EndReloadAssembly (571ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (203ms)
+			SetupTypeCache (204ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (204ms)
+			SetupLoadedEditorAssemblies (203ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (34ms)
+				BeforeProcessingInitializeOnLoad (33ms)
 				ProcessInitializeOnLoadAttributes (159ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (2ms)
@@ -1189,182 +245,14 @@ Domain Reload Profiling:
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.4 MB.
-System memory in use after: 82.5 MB.
+System memory in use before: 78.8 MB.
+System memory in use after: 78.9 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2123.
-Total: 2.091600 ms (FindLiveObjects: 0.179200 ms CreateObjectMapping: 0.040000 ms MarkObjects: 1.772800 ms  DeleteObjects: 0.098600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002216 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A94B30D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A787E67100 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7823FB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A159F010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D9A5640 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A46B9010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7887FE400 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7809D4020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A786411010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.739 seconds
-Domain Reload Profiling:
-	ReloadAssembly (739ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (597ms)
-			LoadAssemblies (64ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (210ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (214ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (36ms)
-				ProcessInitializeOnLoadAttributes (167ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.4 MB.
-System memory in use after: 82.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2126.
-Total: 2.349900 ms (FindLiveObjects: 0.231100 ms CreateObjectMapping: 0.039100 ms MarkObjects: 1.993400 ms  DeleteObjects: 0.084800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002385 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785DEFA40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A786411010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7823FB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A159F010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A786411010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785DEFA40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7847DFF60 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780E42020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A67E9020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.710 seconds
-Domain Reload Profiling:
-	ReloadAssembly (711ms)
-		BeginReloadAssembly (82ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (582ms)
-			LoadAssemblies (64ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (206ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (35ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.4 MB.
-System memory in use after: 82.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2129.
-Total: 2.072800 ms (FindLiveObjects: 0.236000 ms CreateObjectMapping: 0.033900 ms MarkObjects: 1.704900 ms  DeleteObjects: 0.097200 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2046.
+Total: 1.855400 ms (FindLiveObjects: 0.175700 ms CreateObjectMapping: 0.033200 ms MarkObjects: 1.559400 ms  DeleteObjects: 0.086400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1378,71 +266,195 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1183.273119 seconds.
-  path: Assets/Scripts/Marble/RestartLevel.cs
-  artifactKey: Guid(a449acfb55b35cf4ba27e692a6862e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Marble/RestartLevel.cs using Guid(a449acfb55b35cf4ba27e692a6862e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8136a985be5e0c76d0713109e653d7') in 0.004150 seconds 
-  Import took 0.006993 seconds .
+  Time since last request: 236.674596 seconds.
+  path: Assets/Materials/Puzzles/FuseBoxBody.mat
+  artifactKey: Guid(97a844bacc58ccb41ae860ce7dcd2e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Puzzles/FuseBoxBody.mat using Guid(97a844bacc58ccb41ae860ce7dcd2e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf13304993a2708754456001735d2c3') in 0.147636 seconds 
+  Import took 0.150498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Materials/Puzzles/Marble_HoneyComb.mat
+  artifactKey: Guid(59a99364925136840b3345de1fec0a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Puzzles/Marble_HoneyComb.mat using Guid(59a99364925136840b3345de1fec0a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d50c9db3df94b5cff7d90bbb0f25ae') in 0.019913 seconds 
+  Import took 0.022120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Materials/Puzzles/FuseBoxBody.mat
+  artifactKey: Guid(97a844bacc58ccb41ae860ce7dcd2e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Puzzles/FuseBoxBody.mat using Guid(97a844bacc58ccb41ae860ce7dcd2e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf13304993a2708754456001735d2c3') in 0.010181 seconds 
+  Import took 0.012595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.205097 seconds.
+  path: Assets/Materials/Puzzles/New Material.mat
+  artifactKey: Guid(cbf5913796a26ca40a4c3a55e1846a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Puzzles/New Material.mat using Guid(cbf5913796a26ca40a4c3a55e1846a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f521dff0e00b5def369d803e946e0347') in 0.009250 seconds 
+  Import took 0.011831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.898098 seconds.
+  path: Assets/Materials/Puzzles/DirstyPaper.png
+  artifactKey: Guid(e73d3f266b8a3af4bbf2617e5b3f3d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Puzzles/DirstyPaper.png using Guid(e73d3f266b8a3af4bbf2617e5b3f3d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723070413b543f5f3bbc775bf3f5c330') in 0.032933 seconds 
+  Import took 0.035467 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002495 seconds.
+Registered in 0.002291 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002A9A67F2E50 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000017D78034410 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000017D726FF020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785DEFA40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-0000017D767356A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A786411010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-0000017D75E8D300 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A73B92D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-0000017D7805DA00 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-0000017D764821A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A159F010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000017D762E4380 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A786411010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-0000017D764AA960 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-0000017D760A5F60 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-0000017D76409370 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785DEFA40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-0000017D76E7C020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A465DB20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-0000017D761B4AC0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78DB4E440 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-0000017D763C4D60 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A4AC33B0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-0000017D76062BC0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.766 seconds
+- Completed reload, in  0.701 seconds
 Domain Reload Profiling:
-	ReloadAssembly (766ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (701ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (568ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (201ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (203ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (33ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.1 MB.
+System memory in use after: 82.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2090.
+Total: 1.989400 ms (FindLiveObjects: 0.174300 ms CreateObjectMapping: 0.032900 ms MarkObjects: 1.680400 ms  DeleteObjects: 0.101200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 137.382250 seconds.
+  path: Assets/Materials/Puzzles/DirstyPaper(1).png
+  artifactKey: Guid(ae5cbd4552ceb7746a9f24e54bada2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Puzzles/DirstyPaper(1).png using Guid(ae5cbd4552ceb7746a9f24e54bada2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89e5ea802296b5ebdc2fbba02c13b4c') in 0.036620 seconds 
+  Import took 0.039607 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002429 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017D76500BA0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D79C2FF90 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D7A817030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D7607EB10 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D773A1F50 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D78CDB3F0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D75EB0AF0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D6D714860 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D75F15FB0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D7939AA30 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D7938F850 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D78C27F90 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D6D70F010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D76CBA7B0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.767 seconds
+Domain Reload Profiling:
+	ReloadAssembly (767ms)
+		BeginReloadAssembly (96ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (618ms)
-			LoadAssemblies (65ms)
+		EndReloadAssembly (622ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (216ms)
+			SetupTypeCache (222ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (229ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (222ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (173ms)
+				BeforeProcessingInitializeOnLoad (39ms)
+				ProcessInitializeOnLoadAttributes (172ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -1452,11 +464,11 @@ Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.4 MB.
-System memory in use after: 82.5 MB.
+System memory in use before: 82.2 MB.
+System memory in use after: 82.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2132.
-Total: 2.109000 ms (FindLiveObjects: 0.182000 ms CreateObjectMapping: 0.035000 ms MarkObjects: 1.798000 ms  DeleteObjects: 0.093000 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2093.
+Total: 1.979500 ms (FindLiveObjects: 0.210700 ms CreateObjectMapping: 0.033900 ms MarkObjects: 1.648300 ms  DeleteObjects: 0.085500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1471,62 +483,146 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002558 seconds.
+Registered in 0.002517 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002A78641AE40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000017D719C6810 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000017D76E82150 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A90D8090 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-0000017D7848C030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97F003050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-0000017D7A89D0D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A93FA020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-0000017D77306FD0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-0000017D76E82150 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A1C55010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000017D75EB0AF0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7899FC720 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-0000017D77BC7020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-0000017D762E3E70 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D0CB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-0000017D76E82150 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785DEFA40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-0000017D77269C80 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A465DB20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-0000017D6D4AD010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780E42020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-0000017D7616A640 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A73B92D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-0000017D768642F0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.720 seconds
+- Completed reload, in  0.763 seconds
 Domain Reload Profiling:
-	ReloadAssembly (720ms)
-		BeginReloadAssembly (86ms)
+	ReloadAssembly (764ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (586ms)
-			LoadAssemblies (64ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (616ms)
+			LoadAssemblies (69ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (206ms)
+			SetupTypeCache (218ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (209ms)
+			SetupLoadedEditorAssemblies (218ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.2 MB.
+System memory in use after: 82.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2096.
+Total: 2.274400 ms (FindLiveObjects: 0.299100 ms CreateObjectMapping: 0.045600 ms MarkObjects: 1.836800 ms  DeleteObjects: 0.090600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002169 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017D71FC4E50 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D718AB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D7565E040 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D7A89D0D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D79D0AA80 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D718AB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D75EB0AF0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D7627B2B0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D79CB1E60 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D718AB020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D760BEFC0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D754D0010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D77103B40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017D78C27F90 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.718 seconds
+Domain Reload Profiling:
+	ReloadAssembly (719ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (582ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (207ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (206ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (34ms)
-				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadAttributes (162ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -1536,379 +632,11 @@ Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.4 MB.
-System memory in use after: 82.5 MB.
+System memory in use before: 82.2 MB.
+System memory in use after: 82.3 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2135.
-Total: 1.971200 ms (FindLiveObjects: 0.192400 ms CreateObjectMapping: 0.034700 ms MarkObjects: 1.653100 ms  DeleteObjects: 0.090100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002307 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A852E010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78B9C4010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A50EA010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7862FBF70 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A852E010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A1C55010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A50EA010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A852E010 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785DEFA40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A465DB20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780E42020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A73B92D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.733 seconds
-Domain Reload Profiling:
-	ReloadAssembly (733ms)
-		BeginReloadAssembly (90ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (595ms)
-			LoadAssemblies (63ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (210ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (212ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (35ms)
-				ProcessInitializeOnLoadAttributes (166ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.4 MB.
-System memory in use after: 82.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2138.
-Total: 1.976600 ms (FindLiveObjects: 0.166800 ms CreateObjectMapping: 0.034300 ms MarkObjects: 1.678800 ms  DeleteObjects: 0.095800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1361.083313 seconds.
-  path: Assets/Audio/Marble
-  artifactKey: Guid(35e468b309504c44caa51e17ead8cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Marble using Guid(35e468b309504c44caa51e17ead8cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751505d316b00bd5547264a75755e4ae') in 0.008146 seconds 
-  Import took 0.010981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.060822 seconds.
-  path: Assets/Audio/Marble/bensound-dubstep.mp3
-  artifactKey: Guid(e50ab062963f15244a6de41f24303051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Marble/bensound-dubstep.mp3 using Guid(e50ab062963f15244a6de41f24303051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51a4178620eb295a1b784c240b212fa') in 0.014862 seconds 
-  Import took 0.032914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Audio/Marble/GameHit.wav
-  artifactKey: Guid(deea3f322e9ebce4d98e62c205e6bd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Marble/GameHit.wav using Guid(deea3f322e9ebce4d98e62c205e6bd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5745c177dcfe372c863096329ae5b355') in 0.144572 seconds 
-  Import took 0.146916 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002472 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A784D6ADC0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A67F5260 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A692D0D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A5E4C070 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A3EBC040 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780B99050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7860DDA00 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D300020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7899FC720 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785E6D530 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A8560F80 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78B0A9030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78863A1F0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.731 seconds
-Domain Reload Profiling:
-	ReloadAssembly (732ms)
-		BeginReloadAssembly (91ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (592ms)
-			LoadAssemblies (66ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (210ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (35ms)
-				ProcessInitializeOnLoadAttributes (165ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.5 MB.
-System memory in use after: 82.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2144.
-Total: 2.076800 ms (FindLiveObjects: 0.191300 ms CreateObjectMapping: 0.035900 ms MarkObjects: 1.761200 ms  DeleteObjects: 0.087300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 79.180597 seconds.
-  path: Assets/Audio/Marble/bensound-dubstep 1.mp3
-  artifactKey: Guid(2abd27a87009b3048b815ba1cc944cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Marble/bensound-dubstep 1.mp3 using Guid(2abd27a87009b3048b815ba1cc944cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29faf2424647db569c1441ec8babb7e0') in 0.057961 seconds 
-  Import took 0.061035 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002322 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A78B45D1A0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A67F5260 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A692D0D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A5E4C070 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A3EBC040 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780B99050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7863A6A90 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D300020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7899FC720 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97FD38ED0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7887FE400 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78B0A9030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A4B45990 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.750 seconds
-Domain Reload Profiling:
-	ReloadAssembly (751ms)
-		BeginReloadAssembly (101ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (600ms)
-			LoadAssemblies (74ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (214ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (37ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.5 MB.
-System memory in use after: 82.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2148.
-Total: 2.329500 ms (FindLiveObjects: 0.183800 ms CreateObjectMapping: 0.037700 ms MarkObjects: 1.987300 ms  DeleteObjects: 0.119300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002226 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002A780419050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A67F5260 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A692D0D0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A785AC5A40 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A3EBC040 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A780B99050 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7863A6A90 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78D300020 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A6F5DC20 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7899FC720 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A97FD38ED0 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A7887FE400 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A78B0A9030 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002A9A4B45990 doesn't match image D:\De-Crypt-it-Escape-Room-1\De-Crypt It\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.728 seconds
-Domain Reload Profiling:
-	ReloadAssembly (729ms)
-		BeginReloadAssembly (85ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (597ms)
-			LoadAssemblies (65ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (211ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (211ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (35ms)
-				ProcessInitializeOnLoadAttributes (166ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1576 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.5 MB.
-System memory in use after: 82.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2151.
-Total: 2.041600 ms (FindLiveObjects: 0.204800 ms CreateObjectMapping: 0.043500 ms MarkObjects: 1.705700 ms  DeleteObjects: 0.086500 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2099.
+Total: 1.850600 ms (FindLiveObjects: 0.196400 ms CreateObjectMapping: 0.037200 ms MarkObjects: 1.542000 ms  DeleteObjects: 0.073900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
