@@ -809,6 +809,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1067103543}
+        m_TargetAssemblyTypeName: LoginStatusCheck, Assembly-CSharp
+        m_MethodName: startClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &201615934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3877,6 +3889,52 @@ MonoBehaviour:
   buttonClickFx: {fileID: 1050965163}
   hoverOverFx: {fileID: 8300000, guid: 5cb78239621a7624eb15cc61c378a462, type: 3}
   clickFx: {fileID: 8300000, guid: cb932bf1f65d32b429be5f510d274043, type: 3}
+--- !u!1 &1067103542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1067103544}
+  - component: {fileID: 1067103543}
+  m_Layer: 0
+  m_Name: UpdateLoginStatus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1067103543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067103542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bb6a3f0a033e64eb2d1a40455d5db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quizUI: {fileID: 1506294570}
+  startQuizButton: {fileID: 201615932}
+  quizMenu: {fileID: 1040725907}
+--- !u!4 &1067103544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067103542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.099987, y: 0.9347262, z: -14.334797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1108203201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,62 +5793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Qna:
-  - Question: What date is highlighted in the calendar?
-    Answers:
-    - November 19th 2020
-    - September 9th 2021
-    - November 19th 2021
-    - August 25th 2021
-    CorrectAnswer: 3
-  - Question: How many total chess pieces are on the table?
-    Answers:
-    - 16
-    - 15
-    - 14
-    - 17
-    CorrectAnswer: 1
-  - Question: What is the number of buttons in the arcade?
-    Answers:
-    - 8
-    - 6
-    - 14
-    - 12
-    CorrectAnswer: 4
-  - Question: Who is the author of the book found in house?
-    Answers:
-    - James White
-    - Enrico Serrano
-    - Smith Anderson
-    - Leslie Lola
-    CorrectAnswer: 2
-  - Question: What was the second message on the note on the fridge?
-    Answers:
-    - we should conduct daily standup meeting
-    - c's get degrees
-    - '"dont cry just try" hmm very good quote'
-    - i like eating hsp
-    CorrectAnswer: 4
-  - Question: What is the name of the book found in the house?
-    Answers:
-    - The Last Cat
-    - The Last Lion
-    - The Last Dog
-    - The Last Lamb
-    CorrectAnswer: 3
-  - Question: What is the last four numbers of the phone number provided in the brochure?
-    Answers:
-    - 9999
-    - 1919
-    - 1234
-    - 9921
-    CorrectAnswer: 1
-  - Question: Who is the Artist which made the painting in the house?
-    Answers:
-    - Duffy Kid
-    - Rick Roll
-    - Steffano Folio
-    - Leandro Silva
-    CorrectAnswer: 3
   - Question: What is the number of black and white tiles in the bathroom?
     Answers:
     - 66
@@ -5798,12 +5800,19 @@ MonoBehaviour:
     - 54
     - 63
     CorrectAnswer: 4
-  - Question: What is the 4 digit number the table instructions manual points to?
+  - Question: What is the last four numbers of the phone number provided in the brochure?
     Answers:
-    - 2971
-    - 1729
-    - 9271
-    - 2021
+    - 9999
+    - 1919
+    - 1234
+    - 9921
+    CorrectAnswer: 1
+  - Question: Who is the author of the book found in house?
+    Answers:
+    - James White
+    - Enrico Serrano
+    - Smith Anderson
+    - Leslie Lola
     CorrectAnswer: 2
   answerOptions:
   - {fileID: 829484631}

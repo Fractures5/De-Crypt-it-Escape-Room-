@@ -11,6 +11,8 @@ public class PasswordInput : MonoBehaviour
     public GameObject inputField;
     public GameObject messageDisplay;
     public GameObject startQuizButton;
+    public static bool loginSuccessful = false;
+
     //This function checks if the player inputs the correct password, depending on that it will present the player an option to start the game if correct and error message if wrong
     public void StoreName()
     {
@@ -20,6 +22,7 @@ public class PasswordInput : MonoBehaviour
         {
             messageDisplay.GetComponent<Text>().text = "Successful! " +passwordInput+ " is correct.";
             startQuizButton.SetActive(true);
+            loginSuccessful = true;
         }
         else
         {
