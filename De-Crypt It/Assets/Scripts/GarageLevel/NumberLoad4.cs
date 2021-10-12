@@ -13,22 +13,22 @@ public class NumberLoad4 : MonoBehaviour
     // Boolean which checks if the player is in the range of the tv object
     public bool inRange = false;
 
-    // Static variable which is readable and modifiable by other scripts. 
-    // It is used to determine if the quiz task is completed or not by the user.
-    public static bool isvisible = false;
-
     public GameObject fourthNumber;
 
     // Update is called once per frame
     void Update()
     {
         
-        if(inRange == true)
+        if(inRange == true && UvLightController.UvLightActive == true)
         {
             // If the task is complete then....
             fourthNumber.SetActive(true);
         }
-        
+        if(UvLightController.UvLightActive == false)
+        {
+            // If the task is complete then....
+            fourthNumber.SetActive(false);
+        }
 
     }
 
@@ -38,20 +38,18 @@ public class NumberLoad4 : MonoBehaviour
         // If the task is complete, object is not higlighted, instructions is not shown and dont update the player within range
         if (other.CompareTag("Light"))
         {
-            startcolor = GetComponent<Renderer>().material.color;
-            GetComponent<Renderer>().material.color = startcolor;
             inRange = true;
+            //firstNumber.SetActive(true);
         }
     }
 
     
-    /*void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Light"))
+        if(other.CompareTag("HiddenNumber"))
         {
-            GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
-            firstNumber.SetActive(false);
+            //firstNumber.SetActive(false);
         }
-    }*/
+    }
 }

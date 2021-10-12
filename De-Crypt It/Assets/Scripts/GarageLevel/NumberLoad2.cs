@@ -46,10 +46,10 @@ public class NumberLoad2 : MonoBehaviour
     
     void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Light"))
+        if(other.CompareTag("HiddenNumber"))
         {
             inRange = false;
-            secondNumber.SetActive(false);
+            //firstNumber.SetActive(false);
         }
     }
 }
