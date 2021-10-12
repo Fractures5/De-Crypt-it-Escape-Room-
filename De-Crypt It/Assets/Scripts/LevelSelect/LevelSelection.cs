@@ -25,7 +25,7 @@ public class LevelSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void enableConfirmButton()
@@ -70,6 +70,9 @@ public class LevelSelection : MonoBehaviour
 
     public void loadSelectedLevel()
     {
+        WinScreenTrigger.saveEasy = false;
+        WinScreenTrigger.saveMedium = false;
+        WinScreenTrigger.saveHard = false;
         Debug.Log("should switch scenes");
         if(selectedEasyButton == true)
         {
