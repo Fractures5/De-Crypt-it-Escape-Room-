@@ -30,6 +30,8 @@ public class ServerRoomKeypad : MonoBehaviour
 
     public static bool keypadActive = false;
 
+    public bool playFXonce = false;
+
     public AudioSource activationFX;
 
     public GameObject lockedDoor;
@@ -53,9 +55,15 @@ public class ServerRoomKeypad : MonoBehaviour
                 unlockedDoor.SetActive(true);
                 unlockedText.gameObject.SetActive(false);
 
-                activationFX.Play(0);
+                if (playFXonce == false)
+                {
+                    activationFX.Play(0);
+                    playFXonce = true;
+                }
+
                 ServerRoomKeypad.taskComplete = true;
             }
+
         }
         else if (keypadActive == false)
         {
@@ -63,7 +71,7 @@ public class ServerRoomKeypad : MonoBehaviour
             {
                 Debug.Log("You have pressed E to try and use the keypad");
                 lockedTextInteraction.gameObject.SetActive(false);
-                keypadLockedFX.Play(0); // Will play locked keypad sound effect when user approaches the lockey keypad
+                keypadLockedFX.Play(0); // Will play locked keypad sound effect when user approaches the locked keypad
                 StartCoroutine(keypadIsLocked());
 
             }
@@ -112,6 +120,7 @@ public class ServerRoomKeypad : MonoBehaviour
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;
             unlockedText.gameObject.SetActive(false);
+            
         }
         else if(other.CompareTag("Player"))
         {
