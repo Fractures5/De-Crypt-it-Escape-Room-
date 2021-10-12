@@ -16,13 +16,13 @@ public class CardSwipe : MonoBehaviour
 
     void Update()
     {
-        if(isComplete==false && CardPickUp.cardCollected == true)
+        if(isComplete==false && CardInteraction.cardPickUp == true)
         {
             if (inRange == true && Input.GetKeyDown("e"))
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                SceneManager.LoadScene(15);
+                SceneManager.LoadScene("CardSwipe");
             }
             /*else
             {
@@ -44,7 +44,7 @@ public class CardSwipe : MonoBehaviour
             interactionText.gameObject.SetActive(false);
         }
         // If the task in not complete, object is highlighted, instructions text is show and the player within the range is updated
-        else if (CardPickUp.cardCollected == false)
+        else if (CardInteraction.cardPickUp == false)
         {
             if (other.CompareTag("Player"))
             {
@@ -55,7 +55,7 @@ public class CardSwipe : MonoBehaviour
                 lockedText.gameObject.SetActive(true);
             }
         }
-        else if (CardPickUp.cardCollected == true)
+        else if (CardInteraction.cardPickUp == true)
         {
                 startcolor = GetComponent<Renderer>().material.color;
                 GetComponent<Renderer>().material.color = Color.green;
@@ -69,7 +69,7 @@ public class CardSwipe : MonoBehaviour
     {
         // The color of the interactable gameobject in the TV is changed to the default color,
         // the status of the range is changed to false, and the instructions text is disabled so the user cant see it.
-        if (other.CompareTag("Player") && CardPickUp.cardCollected == true)
+        if (other.CompareTag("Player") && CardInteraction.cardPickUp == true)
         {
             GetComponent<Renderer>().material.color = startcolor;
             inRange = false;

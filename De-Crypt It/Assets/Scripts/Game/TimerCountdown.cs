@@ -8,7 +8,7 @@ public class TimerCountdown : MonoBehaviour
 {
     //This script will define the timer provided in the in game
     public GameObject textDisplay;
-    public static int timeLeft = 1800;
+    public static int timeLeft = 3600;
     public static bool timeTaken = false;
     public static int minutes;
     public static int seconds;

@@ -13,7 +13,7 @@ public class SwipeTask : MonoBehaviour
 
     public GameObject winScreen;
     public GameObject closeCardSwipe;
-    public GameObject card;
+    //public GameObject card;
 
     public AudioSource winNoise;
     public AudioSource loseNoise;
