@@ -2147,7 +2147,11 @@ MonoBehaviour:
   pauseMenu: {fileID: 859512934}
   firstPersonController: {fileID: 1683952071}
   firstPersonCamera: {fileID: 668566669}
+  Capsule: {fileID: 1352323456}
   showMessage: {fileID: 919688975}
+  Flashlight: {fileID: 862389760}
+  UVLight: {fileID: 1596246874}
+  playerAudio: {fileID: 2026194220}
 --- !u!4 &1146110610
 Transform:
   m_ObjectHideFlags: 0
@@ -2626,6 +2630,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331682685}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1352323456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1130725078037024, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+  m_PrefabInstance: {fileID: 1742431345}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1432757829
 GameObject:
   m_ObjectHideFlags: 0
@@ -2803,8 +2812,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0133667, y: 1, z: 1.0044787}
-  m_Center: {x: 0.0010070801, y: 0, z: -0.0020138025}
+  m_Size: {x: 1.1744915, y: 1, z: 1.0044787}
+  m_Center: {x: -0.0795542, y: 0, z: -0.0020138025}
 --- !u!23 &1517760906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3464,6 +3473,11 @@ Transform:
   m_Father: {fileID: 878210700}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2026194220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 687180947, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+  m_PrefabInstance: {fileID: 1742431345}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2049938848
 GameObject:
   m_ObjectHideFlags: 0
