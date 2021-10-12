@@ -4410,20 +4410,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlashlightLight: {fileID: 690128454}
   clickSound: {fileID: 1869988452}
---- !u!114 &335720768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335720765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6090d1348984cc34eaf09d2275a1613b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UvLight: {fileID: 2128197106}
-  clickSound: {fileID: 1869988452}
 --- !u!20 &335720772 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 20437472682476688, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
@@ -4442,6 +4428,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &335720775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335720765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac5269baf568f73409c27460badd2030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UvLight: {fileID: 2128197106}
+  clickSound: {fileID: 1869988452}
 --- !u!1 &347552528
 GameObject:
   m_ObjectHideFlags: 0
@@ -5653,6 +5653,7 @@ GameObject:
   - component: {fileID: 490791714}
   - component: {fileID: 490791713}
   - component: {fileID: 490791712}
+  - component: {fileID: 490791716}
   m_Layer: 0
   m_Name: number1
   m_TagString: Untagged
@@ -5737,6 +5738,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!114 &490791716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490791711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef56d50473e597c4ebd70c6496248350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startcolor: {r: 0, g: 0, b: 0, a: 0}
+  inRange: 0
+  firstNumber: {fileID: 490791711}
 --- !u!1 &498828324
 GameObject:
   m_ObjectHideFlags: 0
@@ -13779,11 +13795,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef56d50473e597c4ebd70c6496248350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startcolor: {r: 0, g: 0, b: 0, a: 0}
   inRange: 1
   firstNumber: {fileID: 1305166437}
-  secondNumber: {fileID: 0}
-  thirdNumber: {fileID: 0}
-  fourthNumber: {fileID: 0}
 --- !u!65 &1305166443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17883,7 +17897,7 @@ GameObject:
   - component: {fileID: 1893197342}
   - component: {fileID: 1893197341}
   - component: {fileID: 1893197340}
-  - component: {fileID: 1893197343}
+  - component: {fileID: 1893197345}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: Untagged
@@ -17930,26 +17944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuitConfirmationWindow: {fileID: 517593143}
---- !u!114 &1893197343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893197339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0abd0669ace9b2246ab0bd37f711b244, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuCanvas: {fileID: 60494539}
-  crosshairCanvas: {fileID: 2000024349}
-  Capsule: {fileID: 794682718}
-  Flashlight: {fileID: 690128454}
-  Camera: {fileID: 335720765}
-  playerAudio: {fileID: 873489943}
-  uvLight: {fileID: 2128197106}
-  GarageBox: {fileID: 1549491104}
 --- !u!4 &1893197344
 Transform:
   m_ObjectHideFlags: 0
@@ -17964,6 +17958,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1893197345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893197339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12eec6239cfba94d8dfecc5ed88e502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuCanvas: {fileID: 60494539}
+  crosshairCanvas: {fileID: 2000024349}
+  Capsule: {fileID: 794682718}
+  Flashlight: {fileID: 690128454}
+  Camera: {fileID: 335720765}
+  playerAudio: {fileID: 873489943}
+  uvLight: {fileID: 2128197106}
+  GarageBox: {fileID: 1549491104}
 --- !u!1 &1896518107
 GameObject:
   m_ObjectHideFlags: 0
@@ -18725,7 +18739,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1893197343}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EasyModePauseGame, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 1
@@ -20334,9 +20348,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2128197107}
   - component: {fileID: 2128197109}
-  - component: {fileID: 2128197110}
   - component: {fileID: 2128197108}
   - component: {fileID: 2128197111}
+  - component: {fileID: 2128197114}
+  - component: {fileID: 2128197113}
+  - component: {fileID: 2128197112}
+  - component: {fileID: 2128197110}
   m_Layer: 0
   m_Name: UvLight
   m_TagString: Ligh
@@ -20367,7 +20384,7 @@ BoxCollider:
   m_GameObject: {fileID: 2128197106}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 9.933521}
   m_Center: {x: 0.0000009972372, y: 0, z: 2.8843808}
@@ -20445,11 +20462,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef56d50473e597c4ebd70c6496248350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inRange: 1
-  firstNumber: {fileID: 1305166437}
-  secondNumber: {fileID: 0}
-  thirdNumber: {fileID: 0}
-  fourthNumber: {fileID: 0}
+  startcolor: {r: 0, g: 0, b: 0, a: 0}
+  inRange: 0
+  firstNumber: {fileID: 1456179929}
 --- !u!65 &2128197111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20463,3 +20478,48 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2128197112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128197106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3497420328a612b43b9e0600a1dae060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startcolor: {r: 0, g: 0, b: 0, a: 0}
+  inRange: 0
+  fourthNumber: {fileID: 30718336}
+--- !u!114 &2128197113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128197106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bebd39af63a722044b504cfe9802e1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startcolor: {r: 0, g: 0, b: 0, a: 0}
+  inRange: 0
+  thirdNumber: {fileID: 1942658593}
+--- !u!114 &2128197114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128197106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb0f06e680a1fa4980a97dc849ab279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startcolor: {r: 0, g: 0, b: 0, a: 0}
+  inRange: 0
+  secondNumber: {fileID: 490791711}
