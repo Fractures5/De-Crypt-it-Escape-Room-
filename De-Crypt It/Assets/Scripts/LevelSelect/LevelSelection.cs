@@ -25,7 +25,7 @@ public class LevelSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void enableConfirmButton()
@@ -70,6 +70,9 @@ public class LevelSelection : MonoBehaviour
 
     public void loadSelectedLevel()
     {
+        WinScreenTrigger.saveEasy = false;
+        WinScreenTrigger.saveMedium = false;
+        WinScreenTrigger.saveHard = false;
         Debug.Log("should switch scenes");
         if(selectedEasyButton == true)
         {
@@ -143,13 +146,6 @@ public class LevelSelection : MonoBehaviour
         StorePlayerLocation.savedPosition = new Vector3(-3.412f,0.2201252f,-16.276f);
         StorePlayerLocation.restartStatus = true;
         TimerCountdown.timeLeft = 900;
-        PadLockDrop.hasClipPlayed = false;
-        PadLockDrop.hasEnumeratorRan = false;
-        BatteryInteraction.isBatteryCollected = false;
-        EnvironmentKey.hasWrongEnvKeyClltd = false;
-        Target.isKeyCollected = false;
-        LockControl.isPadlockOpened = false;
         FlashlightController.FlashlightActive = false;
-        UvLightController.UvLightActive = false;
     }
 }

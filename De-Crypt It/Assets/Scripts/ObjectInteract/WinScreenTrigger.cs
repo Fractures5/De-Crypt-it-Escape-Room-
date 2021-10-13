@@ -23,17 +23,17 @@ public class WinScreenTrigger : MonoBehaviour
         if(saveEasy == true)
         {
             easyTimer();
-            
+            //saveEasy = false;
         }
         else if(saveHard == true)
         {
             hardtimer();
-            
+            //saveHard = false;
         }
         else if(saveMedium == true)
         {
             mediumTimer();
-            
+            //saveMedium = false;
         }
         SceneManager.LoadScene("WinScreen");
     }
