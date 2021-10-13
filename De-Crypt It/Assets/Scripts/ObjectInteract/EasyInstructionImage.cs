@@ -43,7 +43,6 @@ public class EasyInstructionImage : MonoBehaviour
                 instructions.gameObject.SetActive(true);
                 isOpen = false;
             }
-
         }
     }
     //Check if the player is within the collider range of the object
