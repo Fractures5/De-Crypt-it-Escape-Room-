@@ -6,20 +6,30 @@ using UnityEngine.UI;
 public class BatteryInteraction : MonoBehaviour
 {
     //private Renderer renderer;
+    
     public GameObject Battery;
+    public GameObject glass;
     public static bool isBatteryCollected = false;
     public Text batteryInteraction;
+    public Text uvLightTogglePrompt;
     public bool isRange = false;
 
+    public bool hasUVLightEnumeratorRan = false;
     public bool battery;
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && battery == true)
         {
-            Battery.active = false;
             isBatteryCollected = true;
             batteryInteraction.gameObject.SetActive(false);
+            StartCoroutine(showUVLightToggle());
+            //Battery.SetActive(false);
+        }
+
+        if (hasUVLightEnumeratorRan == true)
+        {
+            gameObject.SetActive(false);
+            Battery.SetActive(false);
         }
     }
 
@@ -45,6 +55,18 @@ public class BatteryInteraction : MonoBehaviour
             batteryInteraction.gameObject.SetActive(false);
         }
 
+    }
+
+    IEnumerator showUVLightToggle()
+    {
+        GetComponent<Renderer>().enabled = false;
+        glass.SetActive(false);
+        //GetComponentInChildren<Renderer>().enabled = false;
+        yield return new WaitForSeconds(1);
+        uvLightTogglePrompt.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        uvLightTogglePrompt.gameObject.SetActive(false);
+        hasUVLightEnumeratorRan = true;
     }
     /*private void OnMouseOver()
     {
