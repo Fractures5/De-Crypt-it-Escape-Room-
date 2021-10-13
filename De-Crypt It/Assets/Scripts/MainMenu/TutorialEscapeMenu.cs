@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// This script will handle the interactions and process for when the tutorial mode is paused
 public class TutorialEscapeMenu : MonoBehaviour
 {
+    // bool to check if tutorial is paused
     public bool isPaused = false;
 
+    // Declare gameobjects for the player movement, interaction, message and menu UI
     public GameObject pauseMenu;
     public GameObject firstPersonController;
     public GameObject firstPersonCamera;
@@ -16,6 +19,7 @@ public class TutorialEscapeMenu : MonoBehaviour
     public GameObject UVLight;
     public GameObject playerAudio;
 
+    // Declare static bools to use in determining whether the lights should be off or on when pausing
     public static bool isFlashlightOn = false;
     public static bool isUVlightOn = false;
 
