@@ -935,7 +935,7 @@ Transform:
   - {fileID: 1373995608}
   - {fileID: 1356657892}
   m_Father: {fileID: 1176113470}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288122931
 GameObject:
@@ -1432,7 +1432,7 @@ RectTransform:
   m_LocalScale: {x: 0.8537501, y: 0.8537501, z: 0.8537501}
   m_Children: []
   m_Father: {fileID: 1176113470}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1610,6 +1610,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613393396}
+  m_CullTransparentMesh: 1
+--- !u!1 &616155643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 616155644}
+  - component: {fileID: 616155646}
+  - component: {fileID: 616155645}
+  m_Layer: 5
+  m_Name: UserInputUneditable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &616155644
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616155643}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1254.8306}
+  m_LocalScale: {x: 0.85375005, y: 0.85375005, z: 0.85375005}
+  m_Children: []
+  m_Father: {fileID: 1176113470}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -21.109344, y: 0.12861633}
+  m_SizeDelta: {x: 484.1717, y: 18.739532}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &616155645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616155643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &616155646
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616155643}
   m_CullTransparentMesh: 1
 --- !u!1 &652814819
 GameObject:
@@ -2654,6 +2733,7 @@ Transform:
   - {fileID: 2044888545}
   - {fileID: 1181705115}
   - {fileID: 2101961759}
+  - {fileID: 616155644}
   - {fileID: 235706285}
   - {fileID: 1949200316}
   - {fileID: 582315446}
@@ -5844,6 +5924,7 @@ MonoBehaviour:
   pingInput: 
   correctPing: ping 192.168.20.1
   inputField: {fileID: 703943760}
+  userInputUneditable: {fileID: 616155643}
   messageDisplay: {fileID: 1181705112}
   pingPassedMsg1: {fileID: 2041830230}
   pingPassedMsg2: {fileID: 2103655539}
@@ -5865,6 +5946,8 @@ MonoBehaviour:
   pingSuccessfulFX: {fileID: 1581409590}
   pingUnsuccessfulFX: {fileID: 1242852466}
   interactionFX: {fileID: 177947574}
+  initialEnter: 1
+  userCanEnter: 0
 --- !u!4 &1947195081
 Transform:
   m_ObjectHideFlags: 0
@@ -5914,7 +5997,7 @@ Transform:
   - {fileID: 146059533}
   - {fileID: 1157413410}
   m_Father: {fileID: 1176113470}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1959847032
 GameObject:
@@ -6393,7 +6476,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -30.098297, w: 2.4609098}
+  m_margin: {x: 0, y: 0, z: 24.91515, w: 2.4609098}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
