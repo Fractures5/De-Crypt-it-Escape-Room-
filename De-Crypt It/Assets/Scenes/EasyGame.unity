@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 30718341}
   m_Layer: 0
   m_Name: number3
-  m_TagString: Untagged
+  m_TagString: HiddenNumber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1935,6 +1935,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Battery: {fileID: 136293179}
+  batteryInteraction: {fileID: 588778979}
+  isRange: 0
+  battery: 0
 --- !u!4 &136293183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5991391873743446988, guid: 9b8eb3977e316df4a844588b024c4e67, type: 3}
@@ -1948,11 +1951,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136293179}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25080007, y: 0.9474002, z: 0.2574001}
-  m_Center: {x: -0.000000042352077, y: 0.4737001, z: 0.0000000051082893}
+  m_Size: {x: 6.9933963, y: 3.6604226, z: 9.265094}
+  m_Center: {x: 0.8584075, y: 0.27952787, z: 0.78857774}
 --- !u!1 &166999252
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,7 +5676,7 @@ GameObject:
   - component: {fileID: 490791717}
   m_Layer: 0
   m_Name: number1
-  m_TagString: Untagged
+  m_TagString: HiddenNumber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6729,6 +6732,85 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7186693424180881052, guid: 8f9e4da5668113a4da8b4efea4a9499f, type: 3}
+--- !u!1 &588778977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 588778978}
+  - component: {fileID: 588778980}
+  - component: {fileID: 588778979}
+  m_Layer: 5
+  m_Name: PickUpBatteryInteraction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &588778978
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588778977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2000024353}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015259, y: 13.677}
+  m_SizeDelta: {x: 308.0594, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &588778979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588778977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press "E" To Collect The Battery
+--- !u!222 &588778980
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588778977}
+  m_CullTransparentMesh: 1
 --- !u!1 &598009085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3145245456787009486, guid: e6084503f826bbb428b1e677dc1a75d4, type: 3}
@@ -14881,7 +14963,7 @@ GameObject:
   - component: {fileID: 1456179934}
   m_Layer: 0
   m_Name: number9
-  m_TagString: Untagged
+  m_TagString: HiddenNumber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18624,7 +18706,7 @@ GameObject:
   - component: {fileID: 1942658598}
   m_Layer: 0
   m_Name: number 5
-  m_TagString: Untagged
+  m_TagString: HiddenNumber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19240,6 +19322,7 @@ RectTransform:
   - {fileID: 1896518108}
   - {fileID: 1812792350}
   - {fileID: 240852032}
+  - {fileID: 588778978}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20677,7 +20760,7 @@ GameObject:
   - component: {fileID: 2128197110}
   m_Layer: 0
   m_Name: UvLight
-  m_TagString: Ligh
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
