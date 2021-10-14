@@ -4414,11 +4414,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlashlightLight: {fileID: 690128454}
   clickSound: {fileID: 1869988452}
---- !u!20 &335720772 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 20437472682476688, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
-  m_PrefabInstance: {fileID: 794682717}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &335720773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16070,7 +16065,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2479a692aba3e364282107367324ed09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 335720772}
+  Camera: {fileID: 335720765}
+  Capsule: {fileID: 794682718}
+  Rotation: 0
 --- !u!1001 &1646528608
 PrefabInstance:
   m_ObjectHideFlags: 0
