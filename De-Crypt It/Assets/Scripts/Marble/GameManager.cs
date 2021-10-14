@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
- void EndGame(){
+    public static GameManager Instance;
+    public Transform lastCheckPoint;
+    private void Awake()
+    {
+        Instance = this;
+    }
+}
+/* void EndGame(){
      Debug.Log("Game Over");
  }
-}
+*/

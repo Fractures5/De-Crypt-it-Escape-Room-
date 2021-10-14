@@ -7,8 +7,12 @@ using UnityEngine.SceneManagement;
 // This script controls the input and the text output and button functionality for the decoy pinging task
 public class DecoyPingInput : MonoBehaviour
 {
+    // string variable used to store user input
+    public string pingInput;
+
     // The following are GameObjects in the decoy pinging task puzzle scene
     public GameObject inputField;
+    public GameObject userInputUneditable;
     public GameObject messageDisplay;
 
     public GameObject pingFailedMsg1;
@@ -19,11 +23,15 @@ public class DecoyPingInput : MonoBehaviour
 
     public GameObject tryAgainBtn;
     public GameObject returnBtn;
-
     public GameObject pingingCluePopup;
 
+    // Sound effect game objects for the ping task
     public AudioSource pingUnsuccessfulFX;
     public AudioSource interactionFX;
+
+    // boolean variable used to determine when enter can be recognised by the script
+    public bool initialEnter = true;
+    public bool userCanEnter = false;
 
     void Start()
     {
@@ -42,9 +50,15 @@ public class DecoyPingInput : MonoBehaviour
 
         // If the user presses "enter" then the "pingStatus" method will be invoked to reset the ping messages 
         // and start showing the fail messages in increments of few seconds.
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Return) && (initialEnter == true || userCanEnter == true))
         {
+            userCanEnter = false; // sets boolean to false so user cannot press enter
+            initialEnter = false; // sets boolean to false so user cannot press enter
+
             Debug.Log("Enter was pressed");
+            userInputUneditable.SetActive(true); // hides user input text
+            inputField.SetActive(false); // shows uneditable user input text
+
             interactionFX.Play(0);
             pingStatus();
         }
@@ -55,6 +69,8 @@ public class DecoyPingInput : MonoBehaviour
     // coroutine method where the failed ping messages will be shown in the terminal every few seconds as specified.
     public void pingStatus()
     {
+        pingInput = inputField.GetComponent<Text>().text; // initliases user input into the variable
+        userInputUneditable.GetComponent<Text>().text = pingInput; // stores user input into a text variable which will be displayed and is uneditable
         resetPingMessages(); // hides all ping messages gameObjects that may be currently set to true
         StartCoroutine(pingFailedCoroutine()); // invokes the coroutine function that will display the unsuccessful ping messages in small increments of time
     }
@@ -76,7 +92,9 @@ public class DecoyPingInput : MonoBehaviour
         unsuccessfulMsg2.SetActive(true);
 
         pingUnsuccessfulFX.Play(0); // play the error audio effect once the ping is failed by the user input
-
+        userInputUneditable.SetActive(false); // hides the uneditable user input text.
+        inputField.SetActive(true); // shows the orginal user input text.
+        userCanEnter = true; // sets boolean to true so user can now press enter for their new ping.
     }
 
     // This function will be invoked when the try again button is clicked to reset the ping messages and the scene for the user to try again

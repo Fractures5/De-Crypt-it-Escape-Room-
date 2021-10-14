@@ -49,7 +49,6 @@ public class BoxInteraction : MonoBehaviour
 
             if(LockControl.isPadlockOpened == true)
             {
-                Debug.Log("tfdfsdljkfdsl");
                 boxSearchInstructions.gameObject.SetActive(true);
             }
         }

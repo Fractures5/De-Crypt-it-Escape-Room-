@@ -17,25 +17,27 @@ public class WinScreenTrigger : MonoBehaviour
     public static bool saveHard = false;
 
     //This script will load if the player model interacts with the object collision outside the house (will load winning scene)
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
-
-        if(saveEasy == true)
+        if (other.CompareTag("Player"))
         {
-            easyTimer();
-            //saveEasy = false;
+            if(saveEasy == true)
+            {
+                easyTimer();
+                //saveEasy = false;
+            }
+            else if(saveHard == true)
+            {
+                hardtimer();
+                //saveHard = false;
+            }
+            else if(saveMedium == true)
+            {
+                mediumTimer();
+                //saveMedium = false;
+            }
+            SceneManager.LoadScene("WinScreen");
         }
-        else if(saveHard == true)
-        {
-            hardtimer();
-            //saveHard = false;
-        }
-        else if(saveMedium == true)
-        {
-            mediumTimer();
-            //saveMedium = false;
-        }
-        SceneManager.LoadScene("WinScreen");
     }
     //this is for hard mode
     public void hardtimer()

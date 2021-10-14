@@ -146,6 +146,13 @@ public class LevelSelection : MonoBehaviour
         StorePlayerLocation.savedPosition = new Vector3(-3.412f,0.2201252f,-16.276f);
         StorePlayerLocation.restartStatus = true;
         TimerCountdown.timeLeft = 900;
+        PadLockDrop.hasClipPlayed = false;
+        PadLockDrop.hasEnumeratorRan = false;
+        BatteryInteraction.isBatteryCollected = false;
+        EnvironmentKey.hasWrongEnvKeyClltd = false;
+        Target.isKeyCollected = false;
+        LockControl.isPadlockOpened = false;
         FlashlightController.FlashlightActive = false;
+        UvLightController.UvLightActive = false;
     }
 }
