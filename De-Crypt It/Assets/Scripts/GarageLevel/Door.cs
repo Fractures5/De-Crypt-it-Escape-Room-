@@ -21,6 +21,8 @@ public class Door : MonoBehaviour
     public Text doorIncorrectKeyIns;
     public Text doorLockedPrompt;
 
+    public Text multipleKeySuccess;
+
     public Text doorUnlockedPrompt;
     
     public bool isRange = false;
@@ -59,7 +61,7 @@ public class Door : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             door = true;
-            if (isRange == false)
+            if (isRange == false/* && door == false*/)
             {
                 doorOpenInstructions.gameObject.SetActive(false);
                 doorCloseInstructions.gameObject.SetActive(false);
@@ -127,14 +129,22 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hasDoorBeenUnlocked == false && Input.GetKeyDown(KeyCode.U) && door == true && Target.isKeyCollected)
+        if (Input.GetKeyDown(KeyCode.U) && door == true && Target.isKeyCollected == true && EnvironmentKey.hasWrongEnvKeyClltd == true)
+        {
+            hasDoorBeenUnlocked = true;
+            StartCoroutine(displayMultipleKeySuccess());
+            doorUnlockInstructions.gameObject.SetActive(false);
+            //doorIncorrectKeyIns.gameObject.SetActive(false);
+            //StartCoroutine(displayUnlockSuccessful());
+        }
+        else if (Input.GetKeyDown(KeyCode.U) && door == true && Target.isKeyCollected == true)
         {
             hasDoorBeenUnlocked = true;
             doorUnlockInstructions.gameObject.SetActive(false);
             StartCoroutine(displayUnlockSuccessful());
             //doorOpenInstructions.gameObject.SetActive(true);
         }
-        if (hasDoorBeenUnlocked == true && Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true && isDoorOpened == false)
+        else if (hasDoorBeenUnlocked == true && Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true && isDoorOpened == false)
         {
             doorUnlockInstructions.gameObject.SetActive(false);
             doorClip.clip = testingClip;
@@ -200,6 +210,14 @@ public class Door : MonoBehaviour
         doorUnlockedPrompt.gameObject.SetActive(false);
         doorOpenInstructions.gameObject.SetActive(true);
      }
+
+    IEnumerator displayMultipleKeySuccess()
+    {
+        multipleKeySuccess.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        multipleKeySuccess.gameObject.SetActive(false);
+        doorOpenInstructions.gameObject.SetActive(true);
+    }
 
     private IEnumerator WaitForOpenAnimation(Animation animation)
     {
