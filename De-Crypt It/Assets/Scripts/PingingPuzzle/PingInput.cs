@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 // This script will check if the player has pinged correctly to unlock the keypad to unlock the door and escape.
 public class PingInput : MonoBehaviour
 {
-    // Variables used for storing user input and the correct ping input
+    // Variables used for storing user input and the correct ping input.
     public string pingInput;
     public string correctPing = "ping 192.168.20.1";
     
-    // The following are GameObjects in the pinging task puzzle scene
+    // The following are GameObjects in the pinging task puzzle scene.
     public GameObject inputField;
     public GameObject userInputUneditable;
     public GameObject messageDisplay;
@@ -46,34 +46,37 @@ public class PingInput : MonoBehaviour
     public bool initialEnter = true;
     public bool userCanEnter = false;
    
-
+    // When pinging task is loaded, the enter button sound effect is played.
     void Start()
     {
         interactionFX.Play(0);
     }
+
     void Update()
     {
+        // When the user has received the clue, it will be shown on the ping task scene UI.
         if(IPaddressInteraction.clueReceived == true)
         {
             pingingCluePopup.SetActive(true);
         }
-        else
+        else // When the user hasnt received the clue, the clue wont be shown in the ping task scene UI.
         {
             pingingCluePopup.SetActive(false);
         }
 
-        // If the user presses "enter" then the "pingStatus" method will be invoked to determine what message and buttons are shown
+        // If the user presses "enter" then the "pingStatus" method will be invoked to determine what message and buttons are shown.
         if(Input.GetKeyDown(KeyCode.Return) && (initialEnter == true || userCanEnter == true))
         {
-            userCanEnter = false; // sets boolean to false so user cannot press enter
-            initialEnter = false; // sets boolean to false so user cannot press enter
+            // sets boolean to false so user cannot press enter.
+            userCanEnter = false;
+            initialEnter = false; 
             Debug.Log("Enter was pressed");
 
-            userInputUneditable.SetActive(true); // hides user input text
-            inputField.SetActive(false); // shows uneditable user input text
+            userInputUneditable.SetActive(true); // shows uneditable user input text.
+            inputField.SetActive(false); // hides user input text.
             
-            interactionFX.Play(0); // plays the sounds effect for when enter is pressed
-            pingStatus(); // invokes the pingStatus method to determine if the ping is correct or not
+            interactionFX.Play(0); // plays the sounds effect for when enter is pressed.
+            pingStatus(); // invokes the pingStatus method to determine if the ping is correct or not.
         }
     }
     
@@ -83,22 +86,22 @@ public class PingInput : MonoBehaviour
     public void pingStatus()
     {
 
-        pingInput = inputField.GetComponent<Text>().text; // initliases user input into the variable
-        userInputUneditable.GetComponent<Text>().text = pingInput; // stores user input into a text variable which will be displayed and is uneditable
-        resetPingMessages(); // hides all ping messages gameObjects that may be currently set to true
+        pingInput = inputField.GetComponent<Text>().text; // initliases user input into the variable.
+        userInputUneditable.GetComponent<Text>().text = pingInput; // stores user input into a text variable which will be displayed and is uneditable.
+        resetPingMessages(); // hides all ping messages gameObjects that may be currently set to true.
         
 
-        if (pingInput == correctPing) // If the user input matches the correct exepcted ping then the following is executed
+        if (pingInput == correctPing) // If the user input matches the correct exepcted ping then the following is executed.
         {
             messageDisplay.GetComponent<Text>().text = "Ping successfu! - Door Keypad unlocked";
-            StartCoroutine(pingPassCoroutine()); // invokes the coroutine function that will display the successful ping messages in small increments
+            StartCoroutine(pingPassCoroutine()); // invokes the coroutine function that will display the successful ping messages in small time increments.
             PingingTaskLoad.taskComplete = true; // sets the ping task to complete so once the user exits, they will be unable to enter it again since its completed.
             DecoyPingTaskLoad.taskComplete = true; // sets the decoy ping task to complete so once the user exits, they will be unable to enter it again since its completed.
         }
         else // If the user input does not match the correct expected ping then the following is executed
         {
             messageDisplay.GetComponent<Text>().text = "Ping unsuccessful - try again!";
-            StartCoroutine(pingFailedCoroutine()); // invokes the coroutine function that will display the unsuccessful ping messages in small increments
+            StartCoroutine(pingFailedCoroutine()); // invokes the coroutine function that will display the unsuccessful ping messages in small time increments.
         }
     }
 
@@ -154,7 +157,7 @@ public class PingInput : MonoBehaviour
 
     }
 
-    // This function will be invoked when the try again button is clicked to reset the ping messages and the scene for the user to try again
+    // This function will be invoked when the try again button is clicked to reset the ping messages and the scene for the user to try again.
     public void tryAgain()
     {
         resetPingMessages();
