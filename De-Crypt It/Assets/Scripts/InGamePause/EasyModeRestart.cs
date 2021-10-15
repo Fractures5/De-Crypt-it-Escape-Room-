@@ -29,7 +29,8 @@ public class EasyModeRestart : MonoBehaviour
         PadLockDrop.hasClipPlayed = false;
         PadLockDrop.hasEnumeratorRan = false;
         BatteryInteraction.isBatteryCollected = false;
-        EnvironmentKey.hasWrongEnvKeyClltd = false;
+        //EnvironmentKey.hasWrongEnvKeyClltd = false;
+        EnvironmentKeyRed.hasWrongEnvKeyClltd = false;
         Target.isKeyCollected = false;
         LockControl.isPadlockOpened = false;
         FlashlightController.FlashlightActive = false;
