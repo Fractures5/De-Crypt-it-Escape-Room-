@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class PasswordInput : MonoBehaviour
 {
     public string passwordInput;
-    public string correctPassword = "COMP602";
+    public string correctPasswordUpCase = "COMP602";
+    public string correctPasswordLowCase = "comp602";
     public GameObject inputField;
     public GameObject messageDisplay;
     public GameObject startQuizButton;
@@ -18,7 +19,7 @@ public class PasswordInput : MonoBehaviour
     {
         passwordInput = inputField.GetComponent<Text>().text;
 
-        if (passwordInput == correctPassword)
+        if (passwordInput == correctPasswordUpCase || passwordInput == correctPasswordLowCase)
         {
             messageDisplay.GetComponent<Text>().text = "Successful! " +passwordInput+ " is correct.";
             startQuizButton.SetActive(true);
