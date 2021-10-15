@@ -14,8 +14,13 @@ public class CardSwipe : MonoBehaviour
     public bool inRange = false;
     public static bool isComplete = false;
 
+    public GameObject cardSwipeIncomplete;
+    public GameObject cardSwipeComplete;
+
     void Update()
     {
+        cardSwipeIncomplete.SetActive(true);
+
         if(isComplete==false && CardInteraction.cardPickUp == true)
         {
             if (inRange == true && Input.GetKeyDown("e"))
@@ -24,12 +29,12 @@ public class CardSwipe : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene("CardSwipe");
             }
-            /*else
-            {
-                cardSwipeUI.SetActive(false);
-                //could add here to show a clue
-            }*/
-        }  
+        }
+        else if (isComplete == true)
+        {
+            cardSwipeIncomplete.SetActive(false);
+            cardSwipeComplete.SetActive(true);
+        } 
     }
 
     // This function is called when the user is close to the box collider of the gameobject in the TV
