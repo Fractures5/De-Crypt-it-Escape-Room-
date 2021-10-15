@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnvironmentKey : MonoBehaviour
+public class EnvironmentKeyBlue : MonoBehaviour
 {
     public GameObject theIncorrectKey;
     public bool playerNextToKey = false;
