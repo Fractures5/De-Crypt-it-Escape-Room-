@@ -7,7 +7,7 @@ public class EnvironmentKey : MonoBehaviour
 {
     public GameObject theIncorrectKey;
     public bool playerNextToKey = false;
-    public static bool hasWrongEnvKeyClltd;
+    public static bool hasWrongEnvKeyClltd = false;
     public bool isRange = false;
     public Text collectKeyInstruction;
 
@@ -21,7 +21,10 @@ public class EnvironmentKey : MonoBehaviour
     }
     void Start()
     {
-        hasWrongEnvKeyClltd = false;
+        if (hasWrongEnvKeyClltd == true)
+        {
+            theIncorrectKey.SetActive(false);
+        }
     }
 
     // Update is called once per frame
