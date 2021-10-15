@@ -16,6 +16,15 @@ public class BatteryInteraction : MonoBehaviour
 
     public bool hasUVLightEnumeratorRan = false;
     public bool battery;
+
+    void Start()
+    {
+        if (isBatteryCollected == true)
+        {
+            Battery.SetActive(false);
+        }
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && battery == true)
