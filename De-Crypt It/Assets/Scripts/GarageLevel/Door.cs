@@ -30,6 +30,13 @@ public class Door : MonoBehaviour
     public AudioSource DoorCloseSoundFX;
     public AudioSource DoorLockedSoundFX;
     public AudioSource DoorStillLockedSoundFX;
+    public AudioSource DoorCorrectKeyUnlockSoundFX;
+
+    public void PlayDoorCorrectKeyUnlockSoundFX()
+    {
+        DoorCorrectKeyUnlockSoundFX.Play();
+
+    }
 
     public void PlayDoorStillLockedSoundFX()
     {
@@ -134,6 +141,7 @@ public class Door : MonoBehaviour
             hasDoorBeenUnlocked = true;
             StartCoroutine(displayMultipleKeySuccess());
             doorUnlockInstructions.gameObject.SetActive(false);
+            PlayDoorCorrectKeyUnlockSoundFX();
             //doorIncorrectKeyIns.gameObject.SetActive(false);
             //StartCoroutine(displayUnlockSuccessful());
         }
@@ -142,6 +150,7 @@ public class Door : MonoBehaviour
             hasDoorBeenUnlocked = true;
             doorUnlockInstructions.gameObject.SetActive(false);
             StartCoroutine(displayUnlockSuccessful());
+            PlayDoorCorrectKeyUnlockSoundFX();
             //doorOpenInstructions.gameObject.SetActive(true);
         }
         else if (hasDoorBeenUnlocked == true && Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == true && isDoorOpened == false)
