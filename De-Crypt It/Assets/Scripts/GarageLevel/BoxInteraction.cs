@@ -6,10 +6,6 @@ using UnityEngine.UI;
 
 public class BoxInteraction : MonoBehaviour
 {
-
-    [SerializeField]
-    public Color startcolor;
-
     public bool isRange = false;
 
     public AnimationClip testingClip;
@@ -42,8 +38,6 @@ public class BoxInteraction : MonoBehaviour
 
             if(LockControl.isPadlockOpened == false)
             {
-                startcolor = GetComponent<Renderer>().material.color;
-                GetComponent<Renderer>().material.color = startcolor;
                 boxInstructions.gameObject.SetActive(true);
             }
 
@@ -59,7 +53,6 @@ public class BoxInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             box = false;
-            GetComponent<Renderer>().material.color = startcolor;
             isRange = false;
             boxInstructions.gameObject.SetActive(false);
             boxSearchInstructions.gameObject.SetActive(false);
@@ -81,14 +74,20 @@ public class BoxInteraction : MonoBehaviour
             StartCoroutine(WaitForAnimation(boxOpenClip));
         }
     }
+
+    //This IEnumerator function will be invoked when the player wishes to search the box after unlocking the padlock.
     private IEnumerator WaitForAnimation(Animation animation)
     {
+        //While the animation clip is running
         while (animation.isPlaying)
         {
             yield return null;
         }
+        //Animation has completed and the following code will be executed.
         Debug.Log("Animation completed");
+        //InsideGarageBox Scene will be loaded
         SceneManager.LoadScene("InsideGarageBox");
+        //Cursor will be visible and unlocked
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }

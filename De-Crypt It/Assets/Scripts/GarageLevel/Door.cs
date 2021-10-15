@@ -32,35 +32,41 @@ public class Door : MonoBehaviour
     public AudioSource DoorStillLockedSoundFX;
     public AudioSource DoorCorrectKeyUnlockSoundFX;
 
-    //This function is invoked
+    //This function is invoked when the correct key is used to unlock the door, playing an unlock sound effect.
     public void PlayDoorCorrectKeyUnlockSoundFX()
     {
         DoorCorrectKeyUnlockSoundFX.Play();
 
     }
 
+    //This function is invoked when an incorrect key is used to unlock the door, playing a locked sound effect.
     public void PlayDoorStillLockedSoundFX()
     {
         DoorStillLockedSoundFX.Play();
 
     }
+
+    //This function is invoked when no key has been collected and the player attempts to open the door, playing a locked sound effect.
     public void PlayDoorLockedSoundFX()
     {
         DoorLockedSoundFX.Play();
 
     }
 
+    //This function is invoked when the door has been unlocked and the door is opened, playing an opening sound effect.
     public void PlayDoorOpenSoundFX()
     {
         DoorOpenSoundFX.Play();
     }
 
+    //This function is invoked when the door has been unlocked and the door is opened, playing an opening sound effect.
     public void PlayDoorCloseSoundFX()
     {
         DoorCloseSoundFX.Play();
     }
 
     void Start(){
+        //Gets the animation component attached to the game object and saves into doorClip
         doorClip = GetComponent<Animation>();
     }
 
