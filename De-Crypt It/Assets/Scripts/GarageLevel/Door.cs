@@ -32,6 +32,7 @@ public class Door : MonoBehaviour
     public AudioSource DoorStillLockedSoundFX;
     public AudioSource DoorCorrectKeyUnlockSoundFX;
 
+    //This function is invoked
     public void PlayDoorCorrectKeyUnlockSoundFX()
     {
         DoorCorrectKeyUnlockSoundFX.Play();
