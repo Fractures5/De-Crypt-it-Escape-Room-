@@ -39,6 +39,11 @@ public class EnvironmentKey : MonoBehaviour
         {
             Debug.Log("Not active anymore");
         }
+
+        if (hasWrongEnvKeyClltd == true)
+        {
+            theIncorrectKey.SetActive(false);
+        }
     }
 
     void OnTriggerExit(Collider other)

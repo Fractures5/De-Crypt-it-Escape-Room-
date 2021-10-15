@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// The script will manage will interaction between the player and the pinging task puzzle in the server room.
 public class PingingTaskLoad : MonoBehaviour
 {
     // Keeps track of the object color
@@ -13,7 +14,7 @@ public class PingingTaskLoad : MonoBehaviour
     // Text variable that gives instructions to the player on how to interact with the pinging task through interacting with the monitor
     public Text interactionText;
 
-    // Boolean which checks if the player is in the range of the tv object
+    // Boolean which checks if the player is in the range of the computer monitor object.
     public bool inRange = false;
 
     // Static variable which is readable and modifiable by other scripts. 
@@ -38,12 +39,12 @@ public class PingingTaskLoad : MonoBehaviour
                 SceneManager.LoadScene("PingingTask");
             }
         }
-        else if (taskComplete == true)
+        else if (taskComplete == true) // if the pinging puzzle is completed the user cannot interact with the puzzle anymore
         {
             // If the task is complete then....
             lockedKeypad.SetActive(false); // the locked keypad message is hidden
             unlockedKeypad.SetActive(true); // the unlocked keypad message is now shown
-            ServerRoomKeypad.keypadActive = true; // make the keypad status active
+            ServerRoomKeypad.keypadActive = true; // make the keypad status active and interactable
         }
     }
 
@@ -58,7 +59,7 @@ public class PingingTaskLoad : MonoBehaviour
             inRange = false;
             interactionText.gameObject.SetActive(false);
         }
-        // If the task in not complete, object is highlighted, instructions text is show and the player within the range is updated
+        // If the task in not complete, object is highlighted, instructions text is shown and the player within the range is updated
         else
         {
             if (other.CompareTag("Player"))
@@ -72,7 +73,7 @@ public class PingingTaskLoad : MonoBehaviour
         }
     }
 
-    // This function is called when the user is exiting the box collider of the gameobject in interactable computer monitor screen
+    // This function is called when the user is exiting the box collider of the gameobject of the interactable computer monitor screen
     void OnTriggerExit(Collider other)
     {
         // The color of the interactable computer monitor screen is changed to the default color,

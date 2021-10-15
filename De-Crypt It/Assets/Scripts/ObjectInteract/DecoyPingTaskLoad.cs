@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// The script will manage will interaction between the player and the decoy pinging task in the server room
 public class DecoyPingTaskLoad : MonoBehaviour
 {
     // Keeps track of the object color
@@ -13,7 +14,7 @@ public class DecoyPingTaskLoad : MonoBehaviour
     // Text variable that gives instructions to the player on how to interact with the pinging task through interacting with the monitor
     public Text interactionText;
 
-    // Boolean which checks if the player is in the range of the tv object
+    // Boolean which checks if the player is in the range of the computer monitor object
     public bool inRange = false;
 
     // Static variable which is readable and modifiable by other scripts. 
@@ -24,7 +25,7 @@ public class DecoyPingTaskLoad : MonoBehaviour
     void Update()
     {
         // If the task is not complete and the user in range and interacts with the pinging puzzle 
-        // game object by pressing "E", then the pingning puzzle scene will load.
+        // game object by pressing "E", then the pinging puzzle scene will load.
         if(taskComplete == false)
         {
             if(inRange == true && Input.GetKeyDown("e"))
@@ -47,7 +48,7 @@ public class DecoyPingTaskLoad : MonoBehaviour
             inRange = false;
             interactionText.gameObject.SetActive(false);
         }
-        // If the task in not complete, object is highlighted, instructions text is show and the player within the range is updated
+        // If the task in not complete, object is highlighted, instructions text is shown and the player within the range is updated
         else
         {
             if (other.CompareTag("Player"))
@@ -61,7 +62,7 @@ public class DecoyPingTaskLoad : MonoBehaviour
         }
     }
 
-    // This function is called when the user is exiting the box collider of the gameobject in interactable computer monitor screen
+    // This function is called when the user is exiting the box collider of the gameobject of the interactable computer monitor screen
     void OnTriggerExit(Collider other)
     {
         // The color of the interactable computer monitor screen is changed to the default color,

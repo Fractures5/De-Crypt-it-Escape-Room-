@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class LightSwitch : MonoBehaviour
 {
     //This script will allow the interaction functionality of the light switch, it will allow the player to interact with the object by presisng E, 
@@ -16,6 +16,7 @@ public class LightSwitch : MonoBehaviour
     public bool isRange;
     public static bool isOn = false;
     public AudioSource switchSound;
+    public Text instructions;
     void Start () 
     {
         secretRoomLight.SetActive(false);
@@ -60,6 +61,7 @@ public class LightSwitch : MonoBehaviour
             lightColor = lightSwitch.GetComponent<Renderer>().material.color;
             lightSwitch.GetComponent<Renderer> ().material.color = Color.green;
             isRange = true;
+            instructions.gameObject.SetActive(true);
         }
     }
 
@@ -70,6 +72,7 @@ public class LightSwitch : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = lightColor;
             isRange = false;
+            instructions.gameObject.SetActive(false);
         }
     }
 }

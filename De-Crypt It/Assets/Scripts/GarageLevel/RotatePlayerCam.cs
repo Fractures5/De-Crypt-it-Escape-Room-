@@ -4,19 +4,36 @@ using UnityEngine;
 
 public class RotatePlayerCam : MonoBehaviour
 {
-    public Camera camera;
+    public GameObject Camera;
+    public GameObject Capsule;
+    //public Camera camera;
+
+    public float Rotation;
     void Start()
     {
-
     }
     void Update()
     {
-        if (LockControl.isPadlockOpened == true)
+        if (LockControl.isPadlockOpened == true && LockControl.turnTowardsBox == true && EasyModePauseGame.isGamePaused == false)
         {
             transform.Rotate(0, 180, 0);
-            camera.transform.Rotate(40, 0, 0);
-
+            Camera.transform.Rotate(40, 0, 0);
+            StartCoroutine(WaitForSeconds());
         }
+
+        if (EasyModePauseGame.isGamePaused == true && LockControl.turnTowardsBox == false)
+        {
+            Camera.GetComponent<FirstPersonLook>().enabled = false;
+            Capsule.SetActive(false);
+        }
+    }
+
+    IEnumerator WaitForSeconds()
+    {
+        yield return new WaitForSeconds(1);
+        LockControl.turnTowardsBox = false;
+
+    }
         //if (LockControl.isPadlockOpened == true)
         //{
             //transform.rotation = Quaternion.Euler(0, 90, 0);
@@ -28,5 +45,4 @@ public class RotatePlayerCam : MonoBehaviour
         //transform.rotation = Quaternion.AngleAxis(30, Vector3.up);
         //Vector3 newRotation = new Vector3(90, 90, 90);
         //transform.eulerAngles = newRotation;
-    }
 }

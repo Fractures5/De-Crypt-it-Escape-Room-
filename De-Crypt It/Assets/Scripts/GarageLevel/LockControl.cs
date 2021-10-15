@@ -8,11 +8,12 @@ public class LockControl : MonoBehaviour
     private int[] result, correctCombination;
     public static bool isPadlockOpened = false;
     public static bool isPadlockClosed;
+    public static bool turnTowardsBox;
     public Image correctImage;
     private void Start()
     {
         result = new int[]{0,0,0,0};
-        correctCombination = new int[] {3,9,1,5};
+        correctCombination = new int[] {5,1,9,3};
         Rotate.Rotated += CheckResults;
     }
 
@@ -43,6 +44,7 @@ public class LockControl : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y + 0.3f, transform.position.z);
             StartCoroutine(correctCoroutine());
             isPadlockOpened = true;
+            turnTowardsBox = true;
             Debug.Log("Padlock is unlocked now");
         }
 
