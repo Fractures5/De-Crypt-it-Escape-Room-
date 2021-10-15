@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//This script will check if the player has entered the correct password to enter the quiz puzzle and deal with the outcome.
 public class PasswordInput : MonoBehaviour
 {
-    //This script will check if the player has entered the correct password to enter the quiz puzzle and deal with the outcome
     public string passwordInput;
     public string correctPassword = "COMP602";
     public GameObject inputField;

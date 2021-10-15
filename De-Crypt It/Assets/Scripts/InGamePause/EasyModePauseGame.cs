@@ -20,6 +20,8 @@ public class EasyModePauseGame : MonoBehaviour
 
     public static bool isUVLighton = false;
 
+    public static bool isGamePaused = false;
+
 
     // Update is called once per frame
     void Update()
@@ -50,6 +52,7 @@ public class EasyModePauseGame : MonoBehaviour
             Camera.GetComponent<UvLightController>().enabled = false;
             Camera.GetComponent<Zoom>().enabled = false;
             playerAudio.gameObject.SetActive(false);
+            isGamePaused = true;
         } 
         //enables the script when the player has left the pause menu
         else
@@ -65,11 +68,10 @@ public class EasyModePauseGame : MonoBehaviour
             Camera.GetComponent<UvLightController>().enabled = true;
             Camera.GetComponent<Zoom>().enabled = true;
 
-
-
             FlashlightController.FlashlightActive = isFlashlightOn;
             UvLightController.UvLightActive = isUVLighton;
             playerAudio.gameObject.SetActive(true);
+            isGamePaused = false;
         }
         
     }

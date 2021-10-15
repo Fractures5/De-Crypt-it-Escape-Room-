@@ -23,10 +23,10 @@ public class TutorialInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If the player is in range and presses E, then they are shown the parchment with the instructions
+        //If the player is in range and presses E, then they are shown the parchment with the instructions.
         if (isRange == true && Input.GetKeyDown("e"))
         {
-            //If the object is not shown, show it
+            //If the paper object is not shown, show it.
             if(isParchmentOpen == false)
             {
                 playPickup.Play(0);
@@ -35,7 +35,7 @@ public class TutorialInteraction : MonoBehaviour
                 isParchmentOpen = true;
 
             }
-            //If the object is shown, then dont show it
+            //If the paper object is shown, then dont show it.
             else if (isParchmentOpen == true)
             {
                 playPickup.Play(0);
@@ -46,22 +46,24 @@ public class TutorialInteraction : MonoBehaviour
         }
     }
 
-    //When player enters the collision range for the paper, then they are able to interact with the paper
+    // When player enters the collision range for the paper, then they are able to interact with the paper.
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            //Highlights the interactable object and changes the is range status to true
+            // Highlights the interactable object and changes the is range status to true.
+            // Shows the interaction text to the player.
             startcolor = GetComponent<Renderer>().material.color;
             GetComponent<Renderer>().material.color = Color.green;
             interactionText.gameObject.SetActive(true);
             isRange = true;
         }
     }
-    //If the player leaves the collision range of the paper, the paper display will then be closed
+    // If the player leaves the collision range of the paper, the paper display will then be closed.
     void OnTriggerExit(Collider other)
     {
-        //Changes the interactable object color to default and changes is range status to false
+        // Changes the interactable object color to thr default and changes is range status to false.
+        // Interaction text is also hidden.
         if (other.CompareTag("Player"))
         {
             GetComponent<Renderer>().material.color = startcolor;
