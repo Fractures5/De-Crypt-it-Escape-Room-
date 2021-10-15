@@ -5,7 +5,7 @@ using NUnit.Framework;
 
 public class QuizPasswordTest
 {
-   [Test]
+   /*[Test]
    public void QuizPasswordInput_PassUppercaseTest()
    {
 
@@ -78,6 +78,6 @@ public class QuizPasswordTest
       }
 
       Assert.AreEqual(expectedPasswordUpCase, passwordInput); 
-   }
+   }*/
    
 }

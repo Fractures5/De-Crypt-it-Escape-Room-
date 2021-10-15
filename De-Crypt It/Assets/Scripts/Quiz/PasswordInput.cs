@@ -18,16 +18,31 @@ public class PasswordInput : MonoBehaviour
     public void StoreName()
     {
         passwordInput = inputField.GetComponent<Text>().text;
+        checkPassword(passwordInput);
 
-        if (passwordInput == correctPasswordUpCase || passwordInput == correctPasswordLowCase)
+        if (loginSuccessful == true)
         {
             messageDisplay.GetComponent<Text>().text = "Successful! " +passwordInput+ " is correct.";
             startQuizButton.SetActive(true);
-            loginSuccessful = true;
         }
         else
         {
             messageDisplay.GetComponent<Text>().text = "Unsuccessful! " +passwordInput+ " is incorrect.";
         }
     }
+
+    public bool checkPassword(string passwordInput)
+    {
+        if (passwordInput == correctPasswordUpCase || passwordInput == correctPasswordLowCase)
+        {   
+            loginSuccessful = true;
+            return loginSuccessful;
+        }
+        else
+        {
+            loginSuccessful = false;
+            return loginSuccessful;
+        } 
+    }
+
 }
