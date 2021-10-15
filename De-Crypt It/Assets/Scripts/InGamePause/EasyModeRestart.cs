@@ -37,6 +37,7 @@ public class EasyModeRestart : MonoBehaviour
         LockControl.isPadlockOpened = false;
         FlashlightController.FlashlightActive = false;
         UvLightController.UvLightActive = false;
+        BatteryInteraction.isBatteryCollected = false;
         
         TimerCountdown.timeLeft = 3600;
 
