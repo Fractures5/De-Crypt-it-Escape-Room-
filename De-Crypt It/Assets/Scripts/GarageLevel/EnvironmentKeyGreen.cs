@@ -54,7 +54,7 @@ public class EnvironmentKeyGreen : MonoBehaviour
             collectKeyInstruction.gameObject.SetActive(false);
         }
     }
-    //if the player controller enters  the collider of the key then this function will be invoked
+    //if the player controller enters the collider of the key then this function will be invoked
     void OnTriggerEnter(Collider other)
     {
         //if the player controller enter the collider of the key, show the collect key interaction text from showing up
