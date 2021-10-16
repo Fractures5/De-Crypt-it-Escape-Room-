@@ -4,133 +4,49 @@ using UnityEngine;
 using NUnit.Framework;
 public class LeaderboardTest : MonoBehaviour
 {
+    
     [Test]
-    public void LeaderboardTestPass()
+    public static void calculateTimeLeftPass()
     {
+        //The expected time to come out after the calculate time method it is set in string as we are casting it to int when saving it into leaderboard
+        //This is done as an int variable, would sometimes cut the 0 at the front eg. 02 becomes 2.
         string expectedTime = "3000";
+        //Result time is the overall time left after the calculatetimeleft method is ran, the information stored here is by calculating the 
+        //time left remaining and putting them into the corresponding minutes and seconds left. eg. 1800 becomes 30minutes and 00 seconds
+        string resulltTime = "";
 
-        int minutesLeft;
-        int secondsLeft;
-        int timeLeft;
-        string overallTimeLeft;
+        WinScreenTrigger calculateTimeLeftTest = new WinScreenTrigger();
 
-        timeLeft = 1800;
-        //Performs calculation to get the minutes left and seconds left using the time left in the time script
-        minutesLeft = Mathf.FloorToInt(timeLeft / 60F);
-        secondsLeft = Mathf.FloorToInt(timeLeft - minutesLeft * 60);
+        //Setting up the time left, 1800, could be any value and this will format it to their corresponding minutes:seconds
+        calculateTimeLeftTest.calculateTimeLeft(1800);
 
-        //Accesses the winning screen to show the player result
-        ShowEndResult.recordMinutesLeft = minutesLeft.ToString();
-        ShowEndResult.recordSecondsLeft = secondsLeft.ToString();
+        //Accessing the overalltimeleft variable in the winscreen trigger class
+        resulltTime = calculateTimeLeftTest.overallTimeLeft;
 
-        overallTimeLeft = minutesLeft.ToString() + secondsLeft.ToString();
-
-        //Checks if the result has 0 infront, since integer takes the 0 at the front, we are using .tostring to add 0
-        //This is needed as we want to format inconsistent integer produced by the data
-        if(secondsLeft < 10 && minutesLeft < 10)
-        {
-            overallTimeLeft = "0" + minutesLeft.ToString() + "0" + secondsLeft.ToString();
-            ShowEndResult.recordMinutesLeft = "0" + minutesLeft.ToString();
-            ShowEndResult.recordSecondsLeft = "0" + secondsLeft.ToString();
-        }
-        else if(secondsLeft < 10)
-        {
-            overallTimeLeft = minutesLeft.ToString() + "0" + secondsLeft.ToString();
-            ShowEndResult.recordSecondsLeft = "0" + secondsLeft.ToString();
-        }
-        else if(minutesLeft < 10)
-        {
-            overallTimeLeft = "0" + minutesLeft.ToString() + secondsLeft.ToString();
-            ShowEndResult.recordMinutesLeft = "0" + minutesLeft.ToString();
-        }
-        //Checks if the expected minute is the same as the minutes left
-        Assert.AreEqual(expectedTime, overallTimeLeft);
+        //Checking to see if both values are equal
+        Assert.AreEqual(expectedTime, resulltTime);
     }
 
     [Test]
-    public void LeaderboardTestWithAddedZeroPass()
+    public static void calculateTimeLeftFail()
     {
-        string expectedTime = "0200";
+        //The expected time to come out after the calculate time method it is set in string as we are casting it to int when saving it into leaderboard
+        //This is done as an int variable, would sometimes cut the 0 at the front eg. 02 becomes 2.
+        string expectedTime = "2548";
+        //Result time is the overall time left after the calculatetimeleft method is ran, the information stored here is by calculating the 
+        //time left remaining and putting them into the corresponding minutes and seconds left. eg. 1800 becomes 30minutes and 00 seconds
+        string resulltTime = "";
 
-        int minutesLeft;
-        int secondsLeft;
-        int timeLeft;
-        string overallTimeLeft;
+        WinScreenTrigger calculateTimeLeftTest = new WinScreenTrigger();
 
-        timeLeft = 120;
-        //Performs calculation to get the minutes left and seconds left using the time left in the time script
-        minutesLeft = Mathf.FloorToInt(timeLeft / 60F);
-        secondsLeft = Mathf.FloorToInt(timeLeft - minutesLeft * 60);
+        //Setting up the time left, 1800, could be any value and this will format it to their corresponding minutes:seconds
+        calculateTimeLeftTest.calculateTimeLeft(1800);
 
-        //Accesses the winning screen to show the player result
-        ShowEndResult.recordMinutesLeft = minutesLeft.ToString();
-        ShowEndResult.recordSecondsLeft = secondsLeft.ToString();
+        //Accessing the overalltimeleft variable in the winscreen trigger class
+        resulltTime = calculateTimeLeftTest.overallTimeLeft;
 
-        overallTimeLeft = minutesLeft.ToString() + secondsLeft.ToString();
-
-        //Checks if the result has 0 infront, since integer takes the 0 at the front, we are using .tostring to add 0
-        //This is needed as we want to format inconsistent integer produced by the data
-        if(secondsLeft < 10 && minutesLeft < 10)
-        {
-            overallTimeLeft = "0" + minutesLeft.ToString() + "0" + secondsLeft.ToString();
-            ShowEndResult.recordMinutesLeft = "0" + minutesLeft.ToString();
-            ShowEndResult.recordSecondsLeft = "0" + secondsLeft.ToString();
-        }
-        else if(secondsLeft < 10)
-        {
-            overallTimeLeft = minutesLeft.ToString() + "0" + secondsLeft.ToString();
-            ShowEndResult.recordSecondsLeft = "0" + secondsLeft.ToString();
-        }
-        else if(minutesLeft < 10)
-        {
-            overallTimeLeft = "0" + minutesLeft.ToString() + secondsLeft.ToString();
-            ShowEndResult.recordMinutesLeft = "0" + minutesLeft.ToString();
-        }
-        //Checks if the expected minute is the same as the minutes left
-        Assert.AreEqual(expectedTime, overallTimeLeft);
+        //Checking to see if both values are equal
+        Assert.AreEqual(expectedTime, resulltTime);
     }
-
-    [Test]
-    public void LeaderboardTestFail()
-    {
-        string expectedTime = "2900";
-
-        int minutesLeft;
-        int secondsLeft;
-        int timeLeft;
-        string overallTimeLeft;
-
-        timeLeft = 1800;
-        //Performs calculation to get the minutes left and seconds left using the time left in the time script
-        minutesLeft = Mathf.FloorToInt(timeLeft / 60F);
-        secondsLeft = Mathf.FloorToInt(timeLeft - minutesLeft * 60);
-
-        //Accesses the winning screen to show the player result
-        ShowEndResult.recordMinutesLeft = minutesLeft.ToString();
-        ShowEndResult.recordSecondsLeft = secondsLeft.ToString();
-
-        overallTimeLeft = minutesLeft.ToString() + secondsLeft.ToString();
-
-        //Checks if the result has 0 infront, since integer takes the 0 at the front, we are using .tostring to add 0
-        //This is needed as we want to format inconsistent integer produced by the data
-        if(secondsLeft < 10 && minutesLeft < 10)
-        {
-            overallTimeLeft = "0" + minutesLeft.ToString() + "0" + secondsLeft.ToString();
-            ShowEndResult.recordMinutesLeft = "0" + minutesLeft.ToString();
-            ShowEndResult.recordSecondsLeft = "0" + secondsLeft.ToString();
-        }
-        else if(secondsLeft < 10)
-        {
-            overallTimeLeft = minutesLeft.ToString() + "0" + secondsLeft.ToString();
-            ShowEndResult.recordSecondsLeft = "0" + secondsLeft.ToString();
-        }
-        else if(minutesLeft < 10)
-        {
-            overallTimeLeft = "0" + minutesLeft.ToString() + secondsLeft.ToString();
-            ShowEndResult.recordMinutesLeft = "0" + minutesLeft.ToString();
-        }
-        //Checks if the expected minute is the same as the minutes left
-        Assert.AreEqual(expectedTime, overallTimeLeft);
-    }
-
+    
 }
