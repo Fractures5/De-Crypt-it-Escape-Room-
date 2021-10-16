@@ -55,6 +55,7 @@ public class LockControl : MonoBehaviour
         correctImage.gameObject.SetActive(true);
         yield return new WaitForSeconds(4);
         correctImage.gameObject.SetActive(false);
+        turnTowardsBox = true;
     }
 
     private void OnDestroy()

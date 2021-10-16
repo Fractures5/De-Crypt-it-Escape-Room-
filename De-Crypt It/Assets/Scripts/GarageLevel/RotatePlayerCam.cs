@@ -8,13 +8,15 @@ public class RotatePlayerCam : MonoBehaviour
     public GameObject Capsule;
     //public Camera camera;
 
+    public bool hasPlayerTurned = false;
+
     public float Rotation;
     void Start()
     {
     }
     void Update()
     {
-        if (LockControl.isPadlockOpened == true && LockControl.turnTowardsBox == true && EasyModePauseGame.isGamePaused == false)
+        if (LockControl.isPadlockOpened == true && /*LockControl.turnTowardsBox == true &&*/ EasyModePauseGame.isGamePaused == false /*&& hasPlayerTurned == false*/)
         {
             transform.Rotate(0, 180, 0);
             Camera.transform.Rotate(40, 0, 0);
@@ -23,15 +25,21 @@ public class RotatePlayerCam : MonoBehaviour
 
         if (EasyModePauseGame.isGamePaused == true && LockControl.turnTowardsBox == false)
         {
-            Camera.GetComponent<FirstPersonLook>().enabled = false;
+            //Camera.GetComponent<FirstPersonLook>().enabled = false;
             Capsule.SetActive(false);
+        }
+
+        if (hasPlayerTurned = true)
+        {
+            LockControl.turnTowardsBox = false;
         }
     }
 
     IEnumerator WaitForSeconds()
     {
-        yield return new WaitForSeconds(1);
-        LockControl.turnTowardsBox = false;
+        yield return new WaitForSeconds(5);
+        //LockControl.turnTowardsBox = false;
+        //hasPlayerTurned = true;
 
     }
         //if (LockControl.isPadlockOpened == true)
