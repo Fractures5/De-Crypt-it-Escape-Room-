@@ -12,24 +12,37 @@ public class NumberLoad : MonoBehaviour
 
     // Boolean which checks if the player is in the range of the tv object
     public bool inRange = false;
+    public static bool firstNumberActive = false;
 
     public GameObject firstNumber;
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
-        if(inRange == true && UvLightController.UvLightActive == true)
+        if (inRange == true && UvLightController.UvLightActive == true)
         {
-            // If the task is complete then....
-            firstNumber.SetActive(true);
+            turnNumberActive();
         }
-        if(UvLightController.UvLightActive == false)
+        if (UvLightController.UvLightActive == false)
         {
-            // If the task is complete then....
-            firstNumber.SetActive(false);
+            turnNumberNotActive();
         }
+    }
 
+    public bool turnNumberActive()
+    {
+        // If the task is complete then....
+        firstNumber?.gameObject.SetActive(true);
+        return true;
+        //firstNumberActive = true;
+    }
+
+    public bool turnNumberNotActive()
+    {
+        // If the task is complete then....
+        firstNumber?.gameObject.SetActive(false);
+        //firstNumberActive = false;
+        return false;
     }
 
     // This function is called when the user is close to the box collider of the gameobject in the TV
@@ -41,15 +54,5 @@ public class NumberLoad : MonoBehaviour
             inRange = true;
             //firstNumber.SetActive(true);
         }
-    }
-
-    
-    void OnTriggerExit(Collider other)
-    {
-        // if(other.CompareTag(""))
-        // {
-        //     inRange = false;
-        //     //firstNumber.SetActive(false);
-        // }
     }
 }
