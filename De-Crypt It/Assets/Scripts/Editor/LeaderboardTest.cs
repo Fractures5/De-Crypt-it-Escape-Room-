@@ -10,7 +10,7 @@ public class LeaderboardTest : MonoBehaviour
     {
         //The expected time to come out after the calculate time method it is set in string as we are casting it to int when saving it into leaderboard
         //This is done as an int variable, would sometimes cut the 0 at the front eg. 02 becomes 2.
-        string expectedTime = "3000";
+        int expectedTime = 3000;
         //Result time is the overall time left after the calculatetimeleft method is ran, the information stored here is by calculating the 
         //time left remaining and putting them into the corresponding minutes and seconds left. eg. 1800 becomes 30minutes and 00 seconds
         string resulltTime = "";
@@ -24,7 +24,7 @@ public class LeaderboardTest : MonoBehaviour
         resulltTime = calculateTimeLeftTest.overallTimeLeft;
 
         //Checking to see if both values are equal
-        Assert.AreEqual(expectedTime, resulltTime);
+        Assert.AreEqual(expectedTime, int.Parse(resulltTime));
     }
 
     [Test]
@@ -32,7 +32,7 @@ public class LeaderboardTest : MonoBehaviour
     {
         //The expected time to come out after the calculate time method it is set in string as we are casting it to int when saving it into leaderboard
         //This is done as an int variable, would sometimes cut the 0 at the front eg. 02 becomes 2.
-        string expectedTime = "2548";
+        int expectedTime = 2548;
         //Result time is the overall time left after the calculatetimeleft method is ran, the information stored here is by calculating the 
         //time left remaining and putting them into the corresponding minutes and seconds left. eg. 1800 becomes 30minutes and 00 seconds
         string resulltTime = "";
@@ -46,7 +46,7 @@ public class LeaderboardTest : MonoBehaviour
         resulltTime = calculateTimeLeftTest.overallTimeLeft;
 
         //Checking to see if both values are equal
-        Assert.AreEqual(expectedTime, resulltTime);
+        Assert.AreEqual(expectedTime, int.Parse(resulltTime));
     }
-    
+
 }
