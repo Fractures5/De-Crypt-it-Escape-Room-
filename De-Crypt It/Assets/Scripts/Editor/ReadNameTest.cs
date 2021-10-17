@@ -10,6 +10,8 @@ public class ReadNameTest
 
         Assert.IsTrue(readName.IsValid("john"));
         Assert.IsTrue(readName.IsValid("mary"));
+        Assert.IsFalse(readName.IsValid("TestingAllSorts#1"));
+        
     }
 
     [Test]
@@ -17,7 +19,7 @@ public class ReadNameTest
     {
         var readName = new ReadName();
         
-        Assert.IsFalse(readName.IsValid("MyNameIsJef123"));
+        Assert.IsTrue(readName.IsValid("MyNameIsJef123"));
         Assert.IsFalse(readName.IsValid(""));
         Assert.IsFalse(readName.IsValid(" "));
         Assert.IsFalse(readName.IsValid(null));
