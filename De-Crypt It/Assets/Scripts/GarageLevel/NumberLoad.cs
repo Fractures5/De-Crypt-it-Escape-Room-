@@ -18,11 +18,13 @@ public class NumberLoad : MonoBehaviour
 
     // Update is called once per frame
     public void Update()
-    {
+    {   
+        //if the player collider is in range and the UV light is turned on
         if (inRange == true && UvLightController.UvLightActive == true)
         {
             turnNumberActive();
         }
+        //if the UV light is turned off
         if (UvLightController.UvLightActive == false)
         {
             turnNumberNotActive();
@@ -33,16 +35,16 @@ public class NumberLoad : MonoBehaviour
     {
         // If the task is complete then....
         firstNumber?.gameObject.SetActive(true);
-        return true;
-        //firstNumberActive = true;
+        firstNumberActive = true;
+        return firstNumberActive;
     }
 
     public bool turnNumberNotActive()
     {
         // If the task is complete then....
         firstNumber?.gameObject.SetActive(false);
-        //firstNumberActive = false;
-        return false;
+        firstNumberActive = false;
+        return firstNumberActive;
     }
 
     // This function is called when the user is close to the box collider of the gameobject in the TV
@@ -52,7 +54,6 @@ public class NumberLoad : MonoBehaviour
         if (other.CompareTag("Light"))
         {
             inRange = true;
-            //firstNumber.SetActive(true);
         }
     }
 }
