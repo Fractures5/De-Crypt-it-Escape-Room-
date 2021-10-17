@@ -8,7 +8,6 @@ public class LockControl : MonoBehaviour
     private int[] result, correctCombination;
     public static bool isPadlockOpened = false;
     public static bool isPadlockClosed;
-    //public static bool turnTowardsBox = false;
     public Image correctImage;
 
     public void Update()
@@ -54,10 +53,6 @@ public class LockControl : MonoBehaviour
             StartCoroutine(correctCoroutine());
             //set padlock opened bool to true
             isPadlockOpened = true;
-            if (isPadlockOpened == true)
-            {
-                //turnTowardsBox = true;
-            }
         }
     }
 
@@ -67,7 +62,6 @@ public class LockControl : MonoBehaviour
         correctImage.gameObject.SetActive(true);
         yield return new WaitForSeconds(4);
         correctImage.gameObject.SetActive(false);
-        //turnTowardsBox = true;
     }
 
     private void OnDestroy()
