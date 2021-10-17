@@ -8,7 +8,7 @@ public class LockControl : MonoBehaviour
     private int[] result, correctCombination;
     public static bool isPadlockOpened = false;
     public static bool isPadlockClosed;
-    public static bool turnTowardsBox = false;
+    //public static bool turnTowardsBox = false;
     public Image correctImage;
 
     public void Update()
@@ -56,10 +56,9 @@ public class LockControl : MonoBehaviour
             isPadlockOpened = true;
             if (isPadlockOpened == true)
             {
-                turnTowardsBox = true;
+                //turnTowardsBox = true;
             }
         }
-
     }
 
     //IEnumerator function to display the correct pop up on in the padlock scene to let the player know they have input the correct padlock combination
@@ -68,7 +67,7 @@ public class LockControl : MonoBehaviour
         correctImage.gameObject.SetActive(true);
         yield return new WaitForSeconds(4);
         correctImage.gameObject.SetActive(false);
-        turnTowardsBox = true;
+        //turnTowardsBox = true;
     }
 
     private void OnDestroy()
