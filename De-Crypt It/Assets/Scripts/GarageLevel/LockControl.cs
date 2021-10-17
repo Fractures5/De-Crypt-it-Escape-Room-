@@ -19,8 +19,8 @@ public class LockControl : MonoBehaviour
         result = new int[]{0,0,0,0};
         correctCombination = new int[] {5,1,9,3};
         Rotate.Rotated += CheckResults;
-        turnTowardsBox = false;
-        isPadlockOpened = false;
+        //turnTowardsBox = false;
+        //isPadlockOpened = false;
     }
 
     private void CheckResults(string wheelName, int number)

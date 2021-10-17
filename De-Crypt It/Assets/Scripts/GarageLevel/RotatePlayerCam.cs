@@ -26,11 +26,9 @@ public class RotatePlayerCam : MonoBehaviour
         }
         if (LockControl.turnTowardsBox == false)
         {
-            Debug.Log("fuck unity");
         }
         /*if (LockControl.isPadlockOpened == true && LockControl.turnTowardsBox == true && EasyModePauseGame.isGamePaused == false && hasPlayerTurned == false)
         {
-            Debug.Log("should have turned kient");
             transform.Rotate(0, 180, 0);
             Camera.transform.Rotate(40, 0, 0);
             StartCoroutine(WaitForSeconds());
@@ -41,7 +39,6 @@ public class RotatePlayerCam : MonoBehaviour
         {
             //transform.Rotate(0, 0, 0);
             //Camera.transform.Rotate(0, 0, 0);
-            Debug.Log("Deez nuts");
         }
 
         if (EasyModePauseGame.isGamePaused == true && LockControl.turnTowardsBox == false)
@@ -62,7 +59,6 @@ public class RotatePlayerCam : MonoBehaviour
         yield return new WaitForSeconds(1);
         //LockControl.turnTowardsBox = false;
         //hasPlayerTurned = true;
-        Debug.Log("edibles");
         //LockControl.turnTowardsBox = false;
 
     }

@@ -11,6 +11,11 @@ public class Target : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<Renderer>();
+
+        if (isKeyCollected == true)
+        {
+            TheKey.SetActive(false);
+        }
         
     }
 
