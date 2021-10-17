@@ -85,7 +85,7 @@ public class Door : MonoBehaviour
             }
 
             //if door is closed and NO keys have been collected
-            if(isDoorOpened == false && Target.isKeyCollected == false && EnvironmentKey.hasWrongEnvKeyClltd == false) 
+            if(isDoorOpened == false && Target.isKeyCollected == false && (EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue == false && EnvironmentKeyRed.hasWrongEnvKeyClltdRed == false && EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen == false))
             {
                 //show hide instruction and show open instruction
                 doorCloseInstructions.gameObject.SetActive(false);
@@ -122,7 +122,7 @@ public class Door : MonoBehaviour
             }
 
             //if door has not been unlocked but wrong key is collected and door is not open
-            if (hasDoorBeenUnlocked == false && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false) 
+            if (hasDoorBeenUnlocked == false && (EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue == true || EnvironmentKeyRed.hasWrongEnvKeyClltdRed == true || EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen == true) && isDoorOpened == false) 
             {
                 doorUnlockInstructions.gameObject.SetActive(true);
             }

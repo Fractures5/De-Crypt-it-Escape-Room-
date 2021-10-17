@@ -7,7 +7,7 @@ public class EnvironmentKeyGreen : MonoBehaviour
 {
     public GameObject theIncorrectKey;
     public bool playerNextToKey = false;
-    public static bool hasWrongEnvKeyClltd = false;
+    public static bool hasWrongEnvKeyClltdGreen = false;
     public bool isRange = false;
     public Text collectKeyInstruction;
 
@@ -23,7 +23,7 @@ public class EnvironmentKeyGreen : MonoBehaviour
     void Start()
     {
         //The script will check if the key has been collected and if the key has been collected then the key's game object will be set to false
-        if (hasWrongEnvKeyClltd == true)
+        if (hasWrongEnvKeyClltdGreen == true)
         {
             //If the key has been collected then the game object's state will be set to false
             theIncorrectKey.SetActive(false);
@@ -38,7 +38,7 @@ public class EnvironmentKeyGreen : MonoBehaviour
         {
             PlayCollectKeySoundFX();
             theIncorrectKey.SetActive(false);
-            hasWrongEnvKeyClltd = true;
+            hasWrongEnvKeyClltdGreen = true;
             collectKeyInstruction.gameObject.SetActive(false);
         }
     }
