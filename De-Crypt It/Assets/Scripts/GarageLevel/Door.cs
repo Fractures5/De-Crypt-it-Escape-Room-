@@ -128,7 +128,7 @@ public class Door : MonoBehaviour
             }
             
             //if door has been unlocked and a decoy has been collected and the door has not been opened
-            if (hasDoorBeenUnlocked == true && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false)
+            if (hasDoorBeenUnlocked == true && (EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue == true || EnvironmentKeyRed.hasWrongEnvKeyClltdRed == true || EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen == true) && isDoorOpened == false)
             {
                 doorUnlockInstructions.gameObject.SetActive(false);
             }
@@ -155,8 +155,8 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if the player has pressed U and the door range is true and the correct key is collected a decoy key is collected 
-        if (Input.GetKeyDown(KeyCode.U) && door == true && Target.isKeyCollected == true && EnvironmentKey.hasWrongEnvKeyClltd == true)
+        //if the player has pressed U and the door range is true and the correct key is collected and a decoy key is collected 
+        if (Input.GetKeyDown(KeyCode.U) && door == true && Target.isKeyCollected == true && (EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue == true || EnvironmentKeyRed.hasWrongEnvKeyClltdRed == true || EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen == true))
         {
             //set the boolean value of hasDoorBeenUnlocked to true
             hasDoorBeenUnlocked = true;
@@ -202,16 +202,16 @@ public class Door : MonoBehaviour
             
         }
 
-        //if the player has pressed U and the door range is ture and a wrong key has been collected and the door is not open
-        else if (Input.GetKeyDown(KeyCode.U) && door == true && EnvironmentKey.hasWrongEnvKeyClltd == true && isDoorOpened == false)
+        //if the player has pressed U and the door range is true and a wrong key has been collected and the door is not open
+        else if (Input.GetKeyDown(KeyCode.U) && door == true && (EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue == true || EnvironmentKeyRed.hasWrongEnvKeyClltdRed == true || EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen == true) && isDoorOpened == false)
         {
             doorUnlockInstructions.gameObject.SetActive(false);
             PlayDoorStillLockedSoundFX();
             StartCoroutine(doorStillLocked());
         }
         
-        //if the player has 
-        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == false && EnvironmentKey.hasWrongEnvKeyClltd == false)
+        //if the player has pressed E and the door range is true and the correct key is not collected and none of the wrong/decoy keys are also not collected
+        else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == false && (EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue == false || EnvironmentKeyRed.hasWrongEnvKeyClltdRed == false || EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen == false))
         {
             PlayDoorLockedSoundFX();
             StartCoroutine(doorIsLocked());
