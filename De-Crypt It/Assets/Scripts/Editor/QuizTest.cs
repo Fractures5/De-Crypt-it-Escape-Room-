@@ -1,9 +1,11 @@
 using NUnit.Framework;
 using UnityEngine;
 
+// This script is for unit testing the quiz password input.
 public class QuizTest 
 {
-
+    // This function will pass all the tests as all the user input will either
+    // return true or false as expected.
     [Test]
     public void QuizPassword_Test()
     {
@@ -18,7 +20,9 @@ public class QuizTest
         Assert.IsFalse(readPassword.checkPassword(""));
         Assert.IsFalse(readPassword.checkPassword(null));
     }
-
+    
+    // This function will fail the unit tests because when using assert
+    // the input variables is not true.
     [Test]
     public void QuizPassword_FailTest()
     {
