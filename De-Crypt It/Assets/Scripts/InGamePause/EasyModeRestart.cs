@@ -38,7 +38,7 @@ public class EasyModeRestart : MonoBehaviour
         UvLightController.UvLightActive = false;
         BatteryInteraction.isBatteryCollected = false;
         
-        TimerCountdown.timeLeft = 3600;
+        TimerCountdown.timeLeft = 900;
 
     }
 
