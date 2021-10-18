@@ -176,10 +176,14 @@ public class LevelSelection : MonoBehaviour
         PadLockDrop.hasClipPlayed = false;
         PadLockDrop.hasEnumeratorRan = false;
         BatteryInteraction.isBatteryCollected = false;
-        EnvironmentKey.hasWrongEnvKeyClltd = false;
         Target.isKeyCollected = false;
         LockControl.isPadlockOpened = false;
         FlashlightController.FlashlightActive = false;
         UvLightController.UvLightActive = false;
+        EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue = false;
+        EnvironmentKeyRed.hasWrongEnvKeyClltdRed = false;
+        EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen = false;
+
+
     }
 }
