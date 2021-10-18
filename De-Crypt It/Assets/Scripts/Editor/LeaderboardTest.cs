@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
-public class LeaderboardTest : MonoBehaviour
+public class LeaderboardTest
 {
-    
     [Test]
     public static void calculateTimeLeftPass()
     {
@@ -48,5 +47,4 @@ public class LeaderboardTest : MonoBehaviour
         //Checking to see if both values are equal
         Assert.AreEqual(expectedTime, int.Parse(resulltTime));
     }
-
 }

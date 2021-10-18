@@ -188,7 +188,7 @@ public class MoveObjectController : MonoBehaviour
 	{
 		if (showInteractMsg)  //show on-screen prompts to user for guide.
 		{
-			GUI.Label(new Rect (Screen.width/2-90, Screen.height/2-45, 100, 50), msg,guiStyle);
+            GUI.Label(new Rect(Screen.width / 2 - 90, Screen.height / 2 - 45, 100, 50), msg, guiStyle);
 		}
 	}		
 	//End of GUI Config --------------
