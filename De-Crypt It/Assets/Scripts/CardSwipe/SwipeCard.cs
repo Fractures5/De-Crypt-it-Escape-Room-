@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class SwipeCard : MonoBehaviour, IDragHandler
 {
+    //This script is used for the card object in the card swipe puzzle to be moved around and swiped to complete the task
     public Canvas canvas;
 
     public void OnDrag(PointerEventData eventData)
