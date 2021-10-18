@@ -11,8 +11,10 @@ public class PadLockInitAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Gets the animation component attached to the object which this script is applied to
         rotatePadlockBody = GetComponent<Animation>();
         rotatePadlockBody.clip = rotatingClip;
+        //animation clip will be played
         rotatePadlockBody.Play();
     }
 
