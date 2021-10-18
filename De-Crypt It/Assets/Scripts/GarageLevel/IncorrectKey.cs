@@ -19,9 +19,12 @@ public class IncorrectKey : MonoBehaviour
     {
         
     }
+
+    //If the mouse pointer has entered the game object range
     private void OnMouseOver()
     {
         renderer.material.color = Color.green;
+        //if the player has pressed down on left click while the pointer is in the game object range
         if (Input.GetMouseButtonDown(0))
         {
             Key.active = false;
@@ -29,7 +32,7 @@ public class IncorrectKey : MonoBehaviour
         }
 
     }
-
+    //If the mouse pointer has exited the game object range
     private void OnMouseExit()
     {
         renderer.material.color = Color.white;
