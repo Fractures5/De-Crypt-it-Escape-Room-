@@ -26,17 +26,6 @@ public class ReadName : MonoBehaviour
         else{
             warningSign.SetActive(true);
         }
-
-        /*
-        foreach(char c in insertName)
-        {
-            if(char.IsWhiteSpace(c) == false)
-            {
-                checkSpace = true;
-                break;
-            }
-        }
-        */
     }
 
     public bool IsValid(string name)
