@@ -13,34 +13,37 @@ public class PadLockDrop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Gets the animation clip attached to the game object which this script is applied to and saves it into Animation variable
         padlockFalling = GetComponent<Animation>();
+        //hasClipPlayed = false;
+
+        /**if (LockControl.isPadlockOpened == true && hasClipPlayed == false)
+        {
+            padlockFalling.clip = plDropping;
+            padlockFalling.Play("PadlockFall");
+            hasClipPlayed = true;
+        }**/
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if padlock has been unlocked and the animation clip has not played yet
         if (LockControl.isPadlockOpened == true && hasClipPlayed == false)
         {
-            //play the PadlockFall animation clip
             padlockFalling.clip = plDropping;
             padlockFalling.Play("PadlockFall");
             hasClipPlayed = true;
             StartCoroutine(WaitForFall(padlockFalling));
         }
-        //checks if IEnumerator function has executed
         if (hasEnumeratorRan == true)
         {
-            //sets 2nd padlock gameobject stunt double to true state to display it on the ground
             stuntDouble.gameObject.SetActive(true);
             gameObject.SetActive(false);
+            //stuntDouble.gameObject.SetActive(true);
+            //gameObject.GetComponent<PadLockDrop>().enabled = false;
         }
 
-        //IEnumerator function which waits until padlock falling animation is complete
         IEnumerator WaitForFall(Animation animation)
         {
-            //while animation clip of padlock falling is running
             while (animation.isPlaying)
             {
                 yield return null;
@@ -50,4 +53,29 @@ public class PadLockDrop : MonoBehaviour
         }
     }
 
-}
+    
+        /**if (LockControl.isPadlockOpened == true && hasClipPlayed == false)
+        {
+            padlockFalling.clip = plDropping;
+            padlockFalling.Play("PadlockFall");
+            hasClipPlayed = true;
+        }
+        if (LockControl.isPadlockOpened == true && hasClipPlayed == true)
+        {
+            Debug.Log("The clip has played now");
+            padlockFalling.Stop("PadlockFall");
+        }
+        **/
+        //if (hasClipPlayed == true)
+        //{
+        //    Debug.Log("The clip has played now");
+        //    padlockFalling.Stop("PadlockFall");
+        //}
+        //if (LockControl.isPadlockOpened == true)
+        //{
+        //padlockFalling.clip = plDropping;
+        //padlockFalling.Play("PadlockFall");
+        //}
+
+
+    }

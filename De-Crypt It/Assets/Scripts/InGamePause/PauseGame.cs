@@ -85,7 +85,7 @@ public class PauseGame : MonoBehaviour
             Time.timeScale = 1;
             Cursor.visible = false;
             Capsule.SetActive(true);
-            Camera.GetComponent<FirstPersonLook>().enabled = true; //Getting script for FirstPersonLook and enables
+            Camera.GetComponent<FirstPersonLook>().enabled = true; //Getting script for flashlight and enables
             Camera.GetComponent<FlashlightController>().enabled = true;
             Camera.GetComponent<Zoom>().enabled = true;
             //House

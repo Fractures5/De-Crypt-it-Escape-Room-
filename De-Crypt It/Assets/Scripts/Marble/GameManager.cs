@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//this class will be used to store the instance of the game.
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
@@ -12,3 +11,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 }
+/* void EndGame(){
+     Debug.Log("Game Over");
+ }
+*/

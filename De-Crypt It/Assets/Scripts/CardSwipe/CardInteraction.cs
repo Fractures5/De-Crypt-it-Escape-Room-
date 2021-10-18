@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CardInteraction : MonoBehaviour
 {
+    //This script is used for the interaction and pick of the card interactable
     [SerializeField]
     public Color startcolor;
     public Text interactionText;
@@ -16,6 +17,7 @@ public class CardInteraction : MonoBehaviour
 
     void Update()
     {
+        //If the user is in range and presses e, the card will be picked up, instructions will be shown to the user of what to do with it
         if (inRange == true && Input.GetKeyDown(KeyCode.E))
         {
             interactionText.gameObject.SetActive(false);
@@ -24,6 +26,7 @@ public class CardInteraction : MonoBehaviour
             card.gameObject.SetActive(false);
         }
 
+        //Once the card swipe puzzle is complete, the card and its interactable will be set to false
         if (SwipeTask.isComplete == true)
         {
             card.gameObject.SetActive(false);
@@ -31,8 +34,10 @@ public class CardInteraction : MonoBehaviour
         }
     }
 
+    // This function is called when the user is close to the box collider of the card panel
     void OnTriggerEnter(Collider other)
     {
+        // If the task is complete, object is not higlighted, instructions is not shown and dont update the player within range
         if(cardPickUp == true)
         {
             startcolor = GetComponent<Renderer>().material.color;
@@ -54,6 +59,7 @@ public class CardInteraction : MonoBehaviour
         }
     }
 
+    // This function is called when the user is exiting the box collider of the card panel
     void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("Player"))

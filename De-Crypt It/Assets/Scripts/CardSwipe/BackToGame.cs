@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class BackToGame : MonoBehaviour
 {
+    //When this class is called, it will use scenemanager to load the medium game back up
     public void ReturnToGame()
     {
-        SceneManager.LoadScene(12);
+        SceneManager.LoadScene("MediumGame");
     }
 }

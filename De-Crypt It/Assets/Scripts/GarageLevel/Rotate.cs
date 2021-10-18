@@ -17,7 +17,6 @@ public class Rotate : MonoBehaviour
         numberShown = 0;
     }
 
-    //if the mouse button has pressed/clicked
     private void OnMouseDown()
     {
         if (coroutineAllowed)
@@ -26,14 +25,12 @@ public class Rotate : MonoBehaviour
         }
     }
 
-    //The IEnumerator function will be invoked when started and only if coroutineAllowed boolean value is true
     private IEnumerator RotateWheel()
     {
         coroutineAllowed = false;
 
         for (int i = 0; i <= 11; i++)
         {
-            //rotates the number wheel of the padlock
             transform.Rotate(0f, 3f, 0f);
             yield return new WaitForSeconds(0.01f);
         }

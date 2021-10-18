@@ -29,37 +29,30 @@ public class EasyModeRestart : MonoBehaviour
         PadLockDrop.hasClipPlayed = false;
         PadLockDrop.hasEnumeratorRan = false;
         BatteryInteraction.isBatteryCollected = false;
-        EnvironmentKeyRed.hasWrongEnvKeyClltdRed = false;
-        EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen = false;
-        EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue = false;
+        //EnvironmentKey.hasWrongEnvKeyClltd = false;
+        EnvironmentKeyRed.hasWrongEnvKeyClltd = false;
+        EnvironmentKeyGreen.hasWrongEnvKeyClltd = false;
+        EnvironmentKeyBlue.hasWrongEnvKeyClltd = false;
         Target.isKeyCollected = false;
         LockControl.isPadlockOpened = false;
         FlashlightController.FlashlightActive = false;
         UvLightController.UvLightActive = false;
-        BatteryInteraction.isBatteryCollected = false;
         
         TimerCountdown.timeLeft = 3600;
 
     }
-
-    //This function will be invoked if the Yes button is clicked
     private void YesClicked()
     {
-        //will invoke the restartStatus function and reload the EasyGame scene
         RestartConfirmationWindow.gameObject.SetActive(false);
         Debug.Log("Yes Clicked");
         Debug.Log("You chose to restart the game");
         restartStatus();
-        //reloads scene of EasyGame
         SceneManager.LoadScene("EasyGame");
-        //Time is set to real time
         Time.timeScale = 1;
     }
 
-    //This function will be invoked if the No button is clicked
     private void NoClicked()
     {
-        //RestartConfirmationWindow will be hidden
         RestartConfirmationWindow.gameObject.SetActive(false);
         Debug.Log("No Clicked");
         Debug.Log("You chose to NOT restart the game");
