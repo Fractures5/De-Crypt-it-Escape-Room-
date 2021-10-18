@@ -26,12 +26,16 @@ public class EasyModePauseGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Getting the state of the flashlight and UV light
         isFlashlightOn = FlashlightController.FlashlightActive;
         isUVLighton = UvLightController.UvLightActive;
+        //if player has pressed escape
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            //show cursor and do not lock cursor
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            //invoke Pause function
             Pause();
         }
     }
@@ -47,11 +51,11 @@ public class EasyModePauseGame : MonoBehaviour
             Flashlight.SetActive(false);
             uvLight.SetActive(false);
             Time.timeScale = 0; //pauses time, regular time is 1
-            Camera.GetComponent<FirstPersonLook>().enabled = false; //Getting script for flashlight and disables
+            Camera.GetComponent<FirstPersonLook>().enabled = false; //Getting script for FirstPersonLook and disables
             Camera.GetComponent<FlashlightController>().enabled = false;
             Camera.GetComponent<UvLightController>().enabled = false;
             Camera.GetComponent<Zoom>().enabled = false;
-            playerAudio.gameObject.SetActive(false);
+            playerAudio.gameObject.SetActive(false); //disables player controller audio
             isGamePaused = true;
         } 
         //enables the script when the player has left the pause menu
@@ -70,7 +74,7 @@ public class EasyModePauseGame : MonoBehaviour
 
             FlashlightController.FlashlightActive = isFlashlightOn;
             UvLightController.UvLightActive = isUVLighton;
-            playerAudio.gameObject.SetActive(true);
+            playerAudio.gameObject.SetActive(true); //enables player controller audio
             isGamePaused = false;
         }
         
