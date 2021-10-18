@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SwipeTask : MonoBehaviour
 {
-    //This script is used to display the course of actions during the card task puzzle
     public List<SwipePoint> swipePoints = new List<SwipePoint>();
 
     public float countdownMax = 0.5f;
@@ -14,6 +13,7 @@ public class SwipeTask : MonoBehaviour
 
     public GameObject winScreen;
     public GameObject closeCardSwipe;
+    //public GameObject card;
 
     public AudioSource winNoise;
     public AudioSource loseNoise;
@@ -37,7 +37,6 @@ public class SwipeTask : MonoBehaviour
 
     private IEnumerator FinishTask(bool wasSuccesful)
     {
-        //If the task is succesful, then the task will be complete, a green light will indicate success, the win screen for the task will be displayed and give the user to return back to the stage
         if (wasSuccesful)
         {
             isComplete = true;
@@ -49,7 +48,6 @@ public class SwipeTask : MonoBehaviour
         }
         else
         {
-            //A fail noise will be played along with a red light being emitted to show an unsucceful card swipe
             loseNoise.Play();
             redOn.SetActive(true);
         }
@@ -60,7 +58,6 @@ public class SwipeTask : MonoBehaviour
         redOn.SetActive(false);
     }
 
-    //This function is used to append the succesful card swipe triggers in one succesion, where if succesful will count as the task beng complete, and if not then the task will be false and reset
     public void SwipePointTrigger(SwipePoint swipePoint)
     {
         if (swipePoint == swipePoints[currentSwipePointIndex])

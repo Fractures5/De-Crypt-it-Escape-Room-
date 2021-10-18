@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SwipePoint : MonoBehaviour
 {
-    //This script is used to keep the swipe task puzzle awake and have the points of swipe be triggered when the card object is swiped through
     private SwipeTask swipeTask;
 
     private void Awake()
