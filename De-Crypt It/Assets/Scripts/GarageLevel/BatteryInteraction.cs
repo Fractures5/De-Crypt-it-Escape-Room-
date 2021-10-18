@@ -16,6 +16,14 @@ public class BatteryInteraction : MonoBehaviour
     public bool hasUVLightEnumeratorRan = false;
     public bool battery;
 
+    void Start()
+    {
+        if(isBatteryCollected == true)
+        {
+            Battery.SetActive(false);
+        }
+    }
+
     //for this method it will update the state of battery collected and whether the player can interact with the battery or not.
     void Update()
     {
