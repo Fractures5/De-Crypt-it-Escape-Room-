@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// This script will be the quiz controller and handle the quiz interactions.
 public class Quiz_Manager : MonoBehaviour
 {
     // List object of the question and answers for the quiz

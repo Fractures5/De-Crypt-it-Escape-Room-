@@ -10,7 +10,9 @@ public class UvLightController : MonoBehaviour
     public AudioSource clickSound;
     // Start is called before the first frame update
     public static bool lightState = false;
-    void Start()
+
+
+    public void Start()
     {
         UvLight.gameObject.SetActive(UvLightActive);
     }
@@ -22,22 +24,34 @@ public class UvLightController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.G))
             {
-            if (UvLightActive == false) //checks if flashlight is not on
-            {
-                //isOn = true;
-                clickSound.Play(); //plays audio for flashlight turning on (click)
-                UvLight.gameObject.SetActive(true);
-                UvLightActive = true; //turns on flashlight
-            }
-            else //if flashlight's state is anything but not on
-            {
-                //isOn = false;
-                clickSound.Play(); //plays audio for flashlight turning off (click)
-                UvLight.gameObject.SetActive(false);
-                UvLightActive = false; //turns off flashlight
-
-            }
+                ToggleLight();
             }
         }
+    }
+
+    public void ToggleLight() {
+                if (UvLightActive == false) //checks if flashlight is not on
+                {
+                    TurnOnLight();
+                }
+                else //if flashlight's state is anything but not on
+                {
+                    TurnOffLight();
+                }
+
+    }
+
+    public void TurnOnLight() {
+        //isOn = true;
+        clickSound?.Play(); //plays audio for flashlight turning on (click)
+        UvLight?.gameObject.SetActive(true);
+        UvLightActive = true; //turns on flashlight
+    }
+
+    public void TurnOffLight() {
+        //isOn = false;
+        clickSound?.Play(); //plays audio for flashlight turning off (click)
+        UvLight?.gameObject.SetActive(false);
+        UvLightActive = false; //turns off flashlight
     }
 }

@@ -11,34 +11,32 @@ public class ReadName : MonoBehaviour
     public GameObject inputField;
     public GameObject warningSign;
     public bool checkSpace = false;
+
     //This function checks if the player inputs the correct password, depending on that it will present the player an option to start the game if correct and error message if wrong
     //string.IsNullOrWhiteSpace(insertName))
     public void EnterGame()
     {
         insertName = inputField.GetComponent<Text>().text;
-        nameIndex = insertName.Length;
-        Debug.Log(nameIndex);
 
-        /*
-        foreach(char c in insertName)
-        {
-            if(char.IsWhiteSpace(c) == false)
-            {
-                checkSpace = true;
-                break;
-            }
-        }
-        */
-        if (string.IsNullOrEmpty(insertName) || nameIndex > 8 || string.IsNullOrWhiteSpace(insertName))
-        {
-            warningSign.SetActive(true);
-        }
-        else
-        {
+        if (IsValid(insertName)) {
             WinScreenTrigger.playernameInput = insertName;
             Debug.Log(insertName);
             SceneManager.LoadScene(1);
         }
+        else{
+            warningSign.SetActive(true);
+        }
+    }
 
+    public bool IsValid(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name) || name.Length > 8)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }

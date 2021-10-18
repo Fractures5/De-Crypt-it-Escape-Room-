@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// This script will handle the controls for the answers for the quiz.
 public class Answers : MonoBehaviour
 {
     //This script will handle the answers for the quiz puzzle 

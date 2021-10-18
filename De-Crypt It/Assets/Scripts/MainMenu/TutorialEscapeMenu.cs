@@ -35,7 +35,7 @@ public class TutorialEscapeMenu : MonoBehaviour
         isFlashlightOn = FlashlightController.FlashlightActive;
         isUVlightOn = TutorialUVLight.UvLightActive;
 
-        // If "esc" is pressed, disables the player controls and invokes the pause tutorial function
+        // If "esc" is pressed, disables the player, scripts, controls and invokes the pause tutorial function
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             firstPersonController.GetComponent<Jump>().enabled=false;
@@ -60,7 +60,7 @@ public class TutorialEscapeMenu : MonoBehaviour
     {
         if (isPaused == false)
         {
-            //Game is paused disable player controls
+            //Game is paused, disables player controls
             Time.timeScale = 0; 
             isPaused = true; // game is paused
             pauseMenu.SetActive(true);
@@ -88,7 +88,7 @@ public class TutorialEscapeMenu : MonoBehaviour
         }
     }
 
-    // Unpauses game once resume game is clicked and enables player controls
+    // Unpauses game once resume game is clicked and enables player scripts and controls.
     public void returnToMainMenu()
     {
         Cursor.visible = true;
@@ -104,7 +104,7 @@ public class TutorialEscapeMenu : MonoBehaviour
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
     }
-    // Unpauses game once resume game is clicked and enables player controls
+    // Unpauses game once resume game is clicked and enables player scripts and controls.
     public void resumeTutorial()
     {
         firstPersonController.GetComponent<FirstPersonMovement>().enabled=true;

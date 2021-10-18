@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script will manage the UV light controls in the tutorial mode.
 public class TutorialUVLight : MonoBehaviour
 {
     [SerializeField] GameObject UvLight;

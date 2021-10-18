@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class SwipeCard : MonoBehaviour, IDragHandler
 {
     public Canvas canvas;
-
+    //This script is used to move the card around in the card swipe puzzle
     public void OnDrag(PointerEventData eventData)
     {
         Vector2 pos;
