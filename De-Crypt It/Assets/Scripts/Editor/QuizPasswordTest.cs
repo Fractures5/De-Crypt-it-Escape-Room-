@@ -1,83 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using NUnit.Framework;
+using UnityEngine;
 
+// This script is for unit testing the quiz password input.
 public class QuizPasswordTest
 {
-   /*[Test]
-   public void QuizPasswordInput_PassUppercaseTest()
-   {
+    // This function will pass all the tests as all the user input will
+    // be true since the password is as expected.
+    [Test]
+    public void QuizPassword_PassTest()
+    {
+        var readPassword = new PasswordInput();
 
-      string passwordInput = "COMP602";
-      string expectedPasswordUpCase = "COMP602";
-      string expectedPasswordLowCase = "comp602";
-      bool loginSuccessful = false;
+        Assert.IsTrue(readPassword.checkPassword("COMP602"));
+        Assert.IsTrue(readPassword.checkPassword("comp602"));
+    }
 
-      if (passwordInput == expectedPasswordUpCase || passwordInput == expectedPasswordLowCase)
-      {
-         loginSuccessful = true;
-         Debug.Log("Correct password was entered message will be shown to the user!");
-         Debug.Log("Start quiz button will need to be shown to the user.");
-         Debug.Log("Login boolean variable will be set to true.");
+    // This function will fail the unit tests because when using assert
+    // the input variables is not true for the password input.
+    [Test]
+    public void QuizPassword_FailTest()
+    {
+        var readPassword = new PasswordInput();
 
-      }
-      else
-      {
-         Debug.Log("Unsuccessful password attempt message will be shown to the user.");
-      }
-
-      Assert.AreEqual(expectedPasswordUpCase, passwordInput); 
-   }
-
-   [Test]
-   public void QuizPasswordInput_PassLowercaseTest()
-   {
-
-      string passwordInput = "comp602";
-      string expectedPasswordUpCase = "COMP602";
-      string expectedPasswordLowCase = "comp602";
-      bool loginSuccessful = false;
-
-      if (passwordInput == expectedPasswordUpCase || passwordInput == expectedPasswordLowCase)
-      {
-         loginSuccessful = true;
-         Debug.Log("Correct password was entered message will be shown to the user!");
-         Debug.Log("Start quiz button will need to be shown to the user.");
-         Debug.Log("Login boolean variable will be set to true.");
-
-      }
-      else
-      {
-         Debug.Log("Unsuccessful password attempt message will be shown to the user.");
-      }
-
-      Assert.AreEqual(expectedPasswordLowCase, passwordInput); 
-   }
-
-   [Test]
-   public void QuizPasswordInput_FailTest()
-   {
-
-      string passwordInput = "602comp";
-      string expectedPasswordUpCase = "COMP602";
-      string expectedPasswordLowCase = "comp602";
-      bool loginSuccessful = false;
-
-      if (passwordInput == expectedPasswordUpCase || passwordInput == expectedPasswordLowCase)
-      {
-         loginSuccessful = true;
-         Debug.Log("Correct password was entered message will be shown to the user!");
-         Debug.Log("Start quiz button will need to be shown to the user.");
-         Debug.Log("Login boolean variable will be set to true.");
-
-      }
-      else
-      {
-         Debug.Log("Unsuccessful password attempt message will be shown to the user.");
-      }
-
-      Assert.AreEqual(expectedPasswordUpCase, passwordInput); 
-   }*/
-   
+        Assert.IsTrue(readPassword.checkPassword("602comp"));
+        Assert.IsTrue(readPassword.checkPassword("password"));
+        Assert.IsTrue(readPassword.checkPassword("    "));
+        Assert.IsTrue(readPassword.checkPassword(""));
+        Assert.IsTrue(readPassword.checkPassword(null));
+    }
 }

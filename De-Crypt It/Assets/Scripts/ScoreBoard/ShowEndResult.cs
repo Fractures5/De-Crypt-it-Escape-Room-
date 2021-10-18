@@ -13,6 +13,7 @@ public class ShowEndResult : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Shows the remaining time left after the player has escaped in the winning screen
         showMinutes.text = recordMinutesLeft;
         showSeconds.text = recordSecondsLeft;
     }
