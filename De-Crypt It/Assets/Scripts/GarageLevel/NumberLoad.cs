@@ -10,49 +10,49 @@ public class NumberLoad : MonoBehaviour
     [SerializeField]
     public Color startcolor;
 
-    // Boolean which checks if the player is in the range of the first hidden number
+    // Boolean which checks if the player is in the range of the tv object
     public bool inRange = false;
-    //Boolean which checks if the hidden number is active or not.
     public static bool firstNumberActive = false;
 
     public GameObject firstNumber;
 
-    // Update is called once per frame to check state of the hidden number
-    public void Update(){
-
-        if(inRange == true && UvLightController.UvLightActive == true){
-
+    // Update is called once per frame
+    public void Update()
+    {   
+        //if the player collider is in range and the UV light is turned on
+        if (inRange == true && UvLightController.UvLightActive == true)
+        {
             turnNumberActive();
         }
-        if(UvLightController.UvLightActive == false){
-            
+        //if the UV light is turned off
+        if (UvLightController.UvLightActive == false)
+        {
             turnNumberNotActive();
         }
-
     }
 
-    //This method has the task of turning the hidden number to active to allow the player to view the hidden number while the UV light is on.
-    public bool turnNumberActive(){
-
+    public bool turnNumberActive()
+    {
+        // If the task is complete then....
         firstNumber?.gameObject.SetActive(true);
-        return true;
-
+        firstNumberActive = true;
+        return firstNumberActive;
     }
 
-    //This method has the task of turning the hidden number to not active to not allow the player to view the hidden number.
-    public bool turnNumberNotActive(){
-
+    public bool turnNumberNotActive()
+    {
+        // If the task is complete then....
         firstNumber?.gameObject.SetActive(false);
-        return false;
-
+        firstNumberActive = false;
+        return firstNumberActive;
     }
 
-    // This function is called when the user is close to the box collider of the gameobject in the room
-    void OnTriggerEnter(Collider other){
-        
-        // if the tag of the object is light then the range is set to true allowing the player to interact with it.
-        if (other.CompareTag("Light")){
-
+    // This function is called when the user is close to the box collider of the gameobject in the TV
+    void OnTriggerEnter(Collider other)
+    {
+        // If the task is complete, object is not higlighted, instructions is not shown and dont update the player within range
+        if (other.CompareTag("Light"))
+        {
             inRange = true;
         }
     }
