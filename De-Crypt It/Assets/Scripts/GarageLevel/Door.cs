@@ -214,8 +214,9 @@ public class Door : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.E) && door == true && Target.isKeyCollected == false && (EnvironmentKeyBlue.hasWrongEnvKeyClltdBlue == false || EnvironmentKeyRed.hasWrongEnvKeyClltdRed == false || EnvironmentKeyGreen.hasWrongEnvKeyClltdGreen == false))
         {
             PlayDoorLockedSoundFX();
-            StartCoroutine(doorIsLocked());
             doorOpenInstructions.gameObject.SetActive(false);
+            //StartCoroutine(doorIsLocked());
+            //doorOpenInstructions.gameObject.SetActive(false);
         }
         
     }
